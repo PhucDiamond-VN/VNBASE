@@ -1,0 +1,3149 @@
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 20 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T00:17:51+0700] [Info] 
+----------------------------------
+[2025-06-12T00:17:51+0700] [Info]  gungame is a gun game mode released as
+[2025-06-12T00:17:51+0700] [Info]  an example mode for open.mp
+[2025-06-12T00:17:51+0700] [Info]  
+[2025-06-12T00:17:51+0700] [Info]  Author: NotUnlikeTheWaves (github)
+[2025-06-12T00:17:51+0700] [Info] ----------------------------------
+
+[2025-06-12T00:17:51+0700] [Info] Legacy Network started on port 7777
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 20 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T00:22:09+0700] [Info] Could not find:
+
+	 gamemodes\VNBASE.amx 
+While attempting to load a PAWN script, a file-not-found error was
+encountered.  This could be caused by many things:
+
+ * The wrong filename was given.
+ * The wrong gamemodes path was given.
+ * The server was launched from a different directory, making relative paths
+   relative to the wrong place (and thus wrong).
+ * You didn't copy the file to the correct directory or server.
+ * The compilation failed, leading to no output file.
+ * `-l` or `-a` were used to compile, which output intermediate steps for
+   inspecting, rather than a full script.
+ * Anything else, really just check the file is at the path given.
+
+[2025-06-12T00:22:09+0700] [Info] Legacy Network started on port 7777
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 20 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T00:31:56+0700] [Info]  
+[2025-06-12T00:31:56+0700] [Info]   -------------------------------
+[2025-06-12T00:31:56+0700] [Info]   |  My first open.mp gamemode! |
+[2025-06-12T00:31:56+0700] [Info]   -------------------------------
+[2025-06-12T00:31:56+0700] [Info]  
+[2025-06-12T00:31:56+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T00:32:07+0700] [Warning] Couldn't announce legacy network to open.mp list.
+[2025-06-12T00:32:07+0700] [Warning] 	 Status: 406
+[2025-06-12T00:32:07+0700] [Warning] 	 Message: {"error":"failed to query server: socket read timed out"}
+[2025-06-12T00:32:07+0700] [Warning] This won't affect the server's behaviour.
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component crashdetect.dll
+	Failed to load component: it is a SA-MP plugin, put it in plugins/ folder.
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 20 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T00:34:58+0700] [Info]  
+[2025-06-12T00:34:58+0700] [Info]   -------------------------------
+[2025-06-12T00:34:58+0700] [Info]   |  My first open.mp gamemode! |
+[2025-06-12T00:34:58+0700] [Info]   -------------------------------
+[2025-06-12T00:34:58+0700] [Info]  
+[2025-06-12T00:34:58+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T00:35:09+0700] [Warning] Couldn't announce legacy network to open.mp list.
+[2025-06-12T00:35:09+0700] [Warning] 	 Status: 406
+[2025-06-12T00:35:09+0700] [Warning] 	 Message: {"error":"failed to query server: socket read timed out"}
+[2025-06-12T00:35:09+0700] [Warning] This won't affect the server's behaviour.
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 20 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T00:36:26+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T00:36:26+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T00:36:26+0700] [Info] Loading plugin: mysql
+[2025-06-12T00:36:26+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T00:36:26+0700] [Info]  
+[2025-06-12T00:36:26+0700] [Info]   -------------------------------
+[2025-06-12T00:36:26+0700] [Info]   |  My first open.mp gamemode! |
+[2025-06-12T00:36:26+0700] [Info]   -------------------------------
+[2025-06-12T00:36:26+0700] [Info]  
+[2025-06-12T00:36:26+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T00:36:37+0700] [Warning] Couldn't announce legacy network to open.mp list.
+[2025-06-12T00:36:37+0700] [Warning] 	 Status: 406
+[2025-06-12T00:36:37+0700] [Warning] 	 Message: {"error":"failed to query server: socket read timed out"}
+[2025-06-12T00:36:37+0700] [Warning] This won't affect the server's behaviour.
+[2025-06-12T00:36:46+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 21 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T00:39:15+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T00:39:15+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T00:39:15+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T00:39:15+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T00:39:15+0700] [Info] Loading plugin: mysql
+[2025-06-12T00:39:15+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T00:39:15+0700] [Info] Loading plugin: requests
+[2025-06-12T00:39:15+0700] [Info]  
+[2025-06-12T00:39:15+0700] [Info]   -------------------------------
+[2025-06-12T00:39:15+0700] [Info]   |  My first open.mp gamemode! |
+[2025-06-12T00:39:15+0700] [Info]   -------------------------------
+[2025-06-12T00:39:15+0700] [Info]  
+[2025-06-12T00:39:15+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T00:39:19+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T00:39:19+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 21 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T00:41:58+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T00:41:58+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T00:41:58+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T00:41:58+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T00:41:58+0700] [Info] Loading plugin: mysql
+[2025-06-12T00:41:58+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T00:41:58+0700] [Info] Loading plugin: requests
+[2025-06-12T00:41:58+0700] [Info] Loading plugin: streamer
+[2025-06-12T00:41:58+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T00:41:58+0700] [Info]  
+[2025-06-12T00:41:58+0700] [Info]   -------------------------------
+[2025-06-12T00:41:58+0700] [Info]   |  My first open.mp gamemode! |
+[2025-06-12T00:41:58+0700] [Info]   -------------------------------
+[2025-06-12T00:41:58+0700] [Info]  
+[2025-06-12T00:41:58+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T00:42:06+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T00:42:06+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T00:42:06+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 22 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T00:43:14+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T00:43:14+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T00:43:14+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T00:43:14+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T00:43:14+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T00:43:14+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T00:43:14+0700] [Info] Loading plugin: mysql
+[2025-06-12T00:43:14+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T00:43:14+0700] [Info] Loading plugin: requests
+[2025-06-12T00:43:14+0700] [Info] Loading plugin: streamer
+[2025-06-12T00:43:14+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T00:43:14+0700] [Info]  
+[2025-06-12T00:43:14+0700] [Info]   -------------------------------
+[2025-06-12T00:43:14+0700] [Info]   |  My first open.mp gamemode! |
+[2025-06-12T00:43:14+0700] [Info]   -------------------------------
+[2025-06-12T00:43:14+0700] [Info]  
+[2025-06-12T00:43:14+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T00:43:18+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T00:43:18+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T00:43:18+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T00:43:18+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T00:54:43+0700] [Info] 
+[2025-06-12T00:54:43+0700] [Info]  ===============================
+[2025-06-12T00:54:43+0700] [Info] 
+[2025-06-12T00:54:43+0700] [Info]      sscanf component loaded.   
+[2025-06-12T00:54:43+0700] [Info] 
+[2025-06-12T00:54:43+0700] [Info]          Version: 2.13.8
+[2025-06-12T00:54:43+0700] [Info] 
+[2025-06-12T00:54:43+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T00:54:43+0700] [Info] 
+[2025-06-12T00:54:43+0700] [Info]  ===============================
+[2025-06-12T00:54:43+0700] [Info] 
+[2025-06-12T00:54:43+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T00:54:43+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T00:54:43+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T00:54:43+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T00:54:43+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T00:54:43+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T00:54:43+0700] [Info] Loading plugin: mysql
+[2025-06-12T00:54:43+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T00:54:43+0700] [Info] Loading plugin: requests
+[2025-06-12T00:54:43+0700] [Info] Loading plugin: streamer
+[2025-06-12T00:54:43+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T00:54:43+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T00:54:43+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T00:54:43+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T00:54:43+0700] [Info] [debug] #0 00006f30 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:292
+[2025-06-12T00:54:43+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T00:54:43+0700] [Info]  
+[2025-06-12T00:54:43+0700] [Info]   -------------------------------
+[2025-06-12T00:54:43+0700] [Info]   |  My first open.mp gamemode! |
+[2025-06-12T00:54:43+0700] [Info]   -------------------------------
+[2025-06-12T00:54:43+0700] [Info]  
+[2025-06-12T00:54:43+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T00:54:54+0700] [Warning] Couldn't announce legacy network to open.mp list.
+[2025-06-12T00:54:54+0700] [Warning] 	 Status: 406
+[2025-06-12T00:54:54+0700] [Warning] 	 Message: {"error":"failed to query server: socket read timed out"}
+[2025-06-12T00:54:54+0700] [Warning] This won't affect the server's behaviour.
+[2025-06-12T00:54:57+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T00:54:57+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T00:54:57+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T00:54:57+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T00:54:57+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T00:59:33+0700] [Info] 
+[2025-06-12T00:59:33+0700] [Info]  ===============================
+[2025-06-12T00:59:33+0700] [Info] 
+[2025-06-12T00:59:33+0700] [Info]      sscanf component loaded.   
+[2025-06-12T00:59:33+0700] [Info] 
+[2025-06-12T00:59:33+0700] [Info]          Version: 2.13.8
+[2025-06-12T00:59:33+0700] [Info] 
+[2025-06-12T00:59:33+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T00:59:33+0700] [Info] 
+[2025-06-12T00:59:33+0700] [Info]  ===============================
+[2025-06-12T00:59:33+0700] [Info] 
+[2025-06-12T00:59:33+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T00:59:33+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T00:59:33+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T00:59:33+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T00:59:33+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T00:59:33+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T00:59:33+0700] [Info] Loading plugin: mysql
+[2025-06-12T00:59:33+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T00:59:33+0700] [Info] Loading plugin: requests
+[2025-06-12T00:59:33+0700] [Info] Loading plugin: streamer
+[2025-06-12T00:59:33+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T00:59:33+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T00:59:33+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T00:59:33+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T00:59:33+0700] [Info] [debug] #0 00006f30 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:292
+[2025-06-12T00:59:33+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T00:59:33+0700] [Info]  
+[2025-06-12T00:59:33+0700] [Info]   -------------------------------
+[2025-06-12T00:59:33+0700] [Info]   |  My first open.mp gamemode! |
+[2025-06-12T00:59:33+0700] [Info]   -------------------------------
+[2025-06-12T00:59:33+0700] [Info]  
+[2025-06-12T00:59:33+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T00:59:44+0700] [Warning] Couldn't announce legacy network to open.mp list.
+[2025-06-12T00:59:44+0700] [Warning] 	 Status: 406
+[2025-06-12T00:59:44+0700] [Warning] 	 Message: {"error":"failed to query server: socket read timed out"}
+[2025-06-12T00:59:44+0700] [Warning] This won't affect the server's behaviour.
+[2025-06-12T01:00:08+0700] [Info] [connection] incoming connection: 127.0.0.1:49356 id: 0
+[2025-06-12T01:00:08+0700] [Info] [join] Phuc_Diamond has joined the server (0:127.0.0.1)
+[2025-06-12T01:05:11+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:05:11+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:05:11+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:05:11+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:05:11+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:05:20+0700] [Info] 
+[2025-06-12T01:05:20+0700] [Info]  ===============================
+[2025-06-12T01:05:20+0700] [Info] 
+[2025-06-12T01:05:20+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:05:20+0700] [Info] 
+[2025-06-12T01:05:20+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:05:20+0700] [Info] 
+[2025-06-12T01:05:20+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:05:20+0700] [Info] 
+[2025-06-12T01:05:20+0700] [Info]  ===============================
+[2025-06-12T01:05:20+0700] [Info] 
+[2025-06-12T01:05:20+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:05:20+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:05:20+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:05:20+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:05:20+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:05:20+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:05:20+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:05:20+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:05:20+0700] [Info] Loading plugin: requests
+[2025-06-12T01:05:20+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:05:20+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:05:20+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:05:20+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:05:20+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:05:20+0700] [Info] [debug] #0 00014a44 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:705
+[2025-06-12T01:05:20+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:05:20+0700] [Info]  
+[2025-06-12T01:05:20+0700] [Info]   -------------------------------
+[2025-06-12T01:05:20+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:05:20+0700] [Info]   -------------------------------
+[2025-06-12T01:05:20+0700] [Info]  
+[2025-06-12T01:05:20+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:05:31+0700] [Warning] Couldn't announce legacy network to open.mp list.
+[2025-06-12T01:05:31+0700] [Warning] 	 Status: 406
+[2025-06-12T01:05:31+0700] [Warning] 	 Message: {"error":"failed to query server: socket read timed out"}
+[2025-06-12T01:05:31+0700] [Warning] This won't affect the server's behaviour.
+[2025-06-12T01:05:40+0700] [Info] [connection] incoming connection: 127.0.0.1:50117 id: 0
+[2025-06-12T01:05:40+0700] [Info] [join] Phuc_Diamond has joined the server (0:127.0.0.1)
+[2025-06-12T01:06:27+0700] [Info] [part] Phuc_Diamond has left the server (0:1)
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:17:36+0700] [Info] 
+[2025-06-12T01:17:36+0700] [Info]  ===============================
+[2025-06-12T01:17:36+0700] [Info] 
+[2025-06-12T01:17:36+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:17:36+0700] [Info] 
+[2025-06-12T01:17:36+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:17:36+0700] [Info] 
+[2025-06-12T01:17:36+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:17:36+0700] [Info] 
+[2025-06-12T01:17:36+0700] [Info]  ===============================
+[2025-06-12T01:17:36+0700] [Info] 
+[2025-06-12T01:17:36+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:17:36+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:17:36+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:17:36+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:17:36+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:17:36+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:17:36+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:17:36+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:17:36+0700] [Info] Loading plugin: requests
+[2025-06-12T01:17:36+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:17:36+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:17:36+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:17:36+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:17:36+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:17:36+0700] [Info] [debug] #0 00006f30 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:292
+[2025-06-12T01:17:36+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:17:36+0700] [Info]  
+[2025-06-12T01:17:36+0700] [Info]   -------------------------------
+[2025-06-12T01:17:36+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:17:36+0700] [Info]   -------------------------------
+[2025-06-12T01:17:36+0700] [Info]  
+[2025-06-12T01:17:36+0700] [Error] Unable to start legacy network on port 7777. Port in use?
+[2025-06-12T01:17:50+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:17:50+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:17:50+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:17:50+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:17:50+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:17:50+0700] [Info] [debug] #0 000283b4 in public DestroyMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:1284
+[2025-06-12T01:17:50+0700] [Info] [debug] #1 000001b8 in public OnFilterScriptExit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:69
+[2025-06-12T01:17:50+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:17:50+0700] [Info] plugin.mysql: Unloading plugin...
+[2025-06-12T01:18:04+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:18:04+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:18:04+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:18:04+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:18:04+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:18:04+0700] [Info] [debug] #0 000283f0 in public DestroyMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:1286
+[2025-06-12T01:18:04+0700] [Info] [debug] #1 000001b8 in public OnFilterScriptExit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:69
+[2025-06-12T01:18:04+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:18:04+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:18:08+0700] [Info] 
+[2025-06-12T01:18:08+0700] [Info]  ===============================
+[2025-06-12T01:18:08+0700] [Info] 
+[2025-06-12T01:18:08+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:18:08+0700] [Info] 
+[2025-06-12T01:18:08+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:18:08+0700] [Info] 
+[2025-06-12T01:18:08+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:18:08+0700] [Info] 
+[2025-06-12T01:18:08+0700] [Info]  ===============================
+[2025-06-12T01:18:08+0700] [Info] 
+[2025-06-12T01:18:08+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:18:08+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:18:08+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:18:08+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:18:08+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:18:08+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:18:08+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:18:08+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:18:08+0700] [Info] Loading plugin: requests
+[2025-06-12T01:18:08+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:18:08+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:18:08+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:18:08+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:18:08+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:18:08+0700] [Info] [debug] #0 00014a44 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:705
+[2025-06-12T01:18:08+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:18:08+0700] [Info]  
+[2025-06-12T01:18:08+0700] [Info]   -------------------------------
+[2025-06-12T01:18:08+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:18:08+0700] [Info]   -------------------------------
+[2025-06-12T01:18:08+0700] [Info]  
+[2025-06-12T01:18:08+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:18:19+0700] [Warning] Couldn't announce legacy network to open.mp list.
+[2025-06-12T01:18:19+0700] [Warning] 	 Status: 406
+[2025-06-12T01:18:19+0700] [Warning] 	 Message: {"error":"failed to query server: socket read timed out"}
+[2025-06-12T01:18:19+0700] [Warning] This won't affect the server's behaviour.
+[2025-06-12T01:18:22+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:18:22+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:18:22+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:18:22+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:18:22+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:19:54+0700] [Info] 
+[2025-06-12T01:19:54+0700] [Info]  ===============================
+[2025-06-12T01:19:54+0700] [Info] 
+[2025-06-12T01:19:54+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:19:54+0700] [Info] 
+[2025-06-12T01:19:54+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:19:54+0700] [Info] 
+[2025-06-12T01:19:54+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:19:54+0700] [Info] 
+[2025-06-12T01:19:54+0700] [Info]  ===============================
+[2025-06-12T01:19:54+0700] [Info] 
+[2025-06-12T01:19:54+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:19:54+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:19:54+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:19:54+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:19:54+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:19:54+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:19:54+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:19:54+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:19:54+0700] [Info] Loading plugin: requests
+[2025-06-12T01:19:54+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:19:54+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:19:54+0700] [Info] Loading plugin: PawnPlus
+[2025-06-12T01:19:54+0700] [Info]  PawnPlus v1.5.1 loaded
+[2025-06-12T01:19:54+0700] [Info]  Created by IS4
+[2025-06-12T01:19:54+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:19:54+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:19:54+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:19:54+0700] [Info] [debug] #0 00006f30 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:292
+[2025-06-12T01:19:54+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:19:54+0700] [Info]  
+[2025-06-12T01:19:54+0700] [Info]   -------------------------------
+[2025-06-12T01:19:54+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:19:54+0700] [Info]   -------------------------------
+[2025-06-12T01:19:54+0700] [Info]  
+[2025-06-12T01:19:54+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:20:05+0700] [Warning] Couldn't announce legacy network to open.mp list.
+[2025-06-12T01:20:05+0700] [Warning] 	 Status: 406
+[2025-06-12T01:20:05+0700] [Warning] 	 Message: {"error":"failed to query server: socket read timed out"}
+[2025-06-12T01:20:05+0700] [Warning] This won't affect the server's behaviour.
+[2025-06-12T01:20:29+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:20:29+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:20:29+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:20:29+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:20:29+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:23:39+0700] [Info] 
+[2025-06-12T01:23:39+0700] [Info]  ===============================
+[2025-06-12T01:23:39+0700] [Info] 
+[2025-06-12T01:23:39+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:23:39+0700] [Info] 
+[2025-06-12T01:23:39+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:23:39+0700] [Info] 
+[2025-06-12T01:23:39+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:23:39+0700] [Info] 
+[2025-06-12T01:23:39+0700] [Info]  ===============================
+[2025-06-12T01:23:39+0700] [Info] 
+[2025-06-12T01:23:39+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:23:39+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:23:39+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:23:39+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:23:39+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:23:39+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:23:39+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:23:39+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:23:39+0700] [Info] Loading plugin: requests
+[2025-06-12T01:23:39+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:23:39+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:23:39+0700] [Info] Loading plugin: PawnPlus
+[2025-06-12T01:23:39+0700] [Info]  PawnPlus v1.5.1 loaded
+[2025-06-12T01:23:39+0700] [Info]  Created by IS4
+[2025-06-12T01:23:39+0700] [Error] Skipping legacy plugin 'SKY'; It requires memory hacking to run and is therefore broken on open.mp. There should be a replacement component supported by open.mp
+[2025-06-12T01:23:39+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:23:39+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:23:39+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:23:39+0700] [Info] [debug] #0 00006f30 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:292
+[2025-06-12T01:23:39+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:23:39+0700] [Info]  
+[2025-06-12T01:23:39+0700] [Info]   -------------------------------
+[2025-06-12T01:23:39+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:23:39+0700] [Info]   -------------------------------
+[2025-06-12T01:23:39+0700] [Info]  
+[2025-06-12T01:23:39+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:23:45+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:23:45+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:23:45+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:23:45+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:23:45+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component SKY.dll
+	Failed to load component: it is a SA-MP plugin, put it in plugins/ folder.
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:24:26+0700] [Info] 
+[2025-06-12T01:24:26+0700] [Info]  ===============================
+[2025-06-12T01:24:26+0700] [Info] 
+[2025-06-12T01:24:26+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:24:26+0700] [Info] 
+[2025-06-12T01:24:26+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:24:26+0700] [Info] 
+[2025-06-12T01:24:26+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:24:26+0700] [Info] 
+[2025-06-12T01:24:26+0700] [Info]  ===============================
+[2025-06-12T01:24:26+0700] [Info] 
+[2025-06-12T01:24:26+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:24:26+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:24:26+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:24:26+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:24:26+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:24:26+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:24:26+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:24:26+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:24:26+0700] [Info] Loading plugin: requests
+[2025-06-12T01:24:26+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:24:26+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:24:26+0700] [Info] Loading plugin: PawnPlus
+[2025-06-12T01:24:26+0700] [Info]  PawnPlus v1.5.1 loaded
+[2025-06-12T01:24:26+0700] [Info]  Created by IS4
+[2025-06-12T01:24:26+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:24:26+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:24:26+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:24:26+0700] [Info] [debug] #0 00006f30 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:292
+[2025-06-12T01:24:26+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:24:26+0700] [Info]  
+[2025-06-12T01:24:26+0700] [Info]   -------------------------------
+[2025-06-12T01:24:26+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:24:26+0700] [Info]   -------------------------------
+[2025-06-12T01:24:26+0700] [Info]  
+[2025-06-12T01:24:26+0700] [Info] Legacy Network started on port 7777
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:28:08+0700] [Info] 
+[2025-06-12T01:28:08+0700] [Info]  ===============================
+[2025-06-12T01:28:08+0700] [Info] 
+[2025-06-12T01:28:08+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:28:08+0700] [Info] 
+[2025-06-12T01:28:08+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:28:08+0700] [Info] 
+[2025-06-12T01:28:08+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:28:08+0700] [Info] 
+[2025-06-12T01:28:08+0700] [Info]  ===============================
+[2025-06-12T01:28:08+0700] [Info] 
+[2025-06-12T01:28:08+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:28:08+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:28:08+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:28:08+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:28:08+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:28:08+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:28:08+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:28:08+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:28:08+0700] [Info] Loading plugin: requests
+[2025-06-12T01:28:08+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:28:08+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:28:08+0700] [Info] Loading plugin: PawnPlus
+[2025-06-12T01:28:08+0700] [Info]  PawnPlus v1.5.1 loaded
+[2025-06-12T01:28:08+0700] [Info]  Created by IS4
+[2025-06-12T01:28:08+0700] [Info] Loading plugin: ColAndreas
+[2025-06-12T01:28:08+0700] [Info] *********************
+[2025-06-12T01:28:08+0700] [Info] ** Created By:     **
+[2025-06-12T01:28:08+0700] [Info] ** [uL]Chris42O    **
+[2025-06-12T01:28:08+0700] [Info] ** [uL]Slice       **
+[2025-06-12T01:28:08+0700] [Info] ** [uL]Pottus      **
+[2025-06-12T01:28:08+0700] [Info] *********************
+[2025-06-12T01:28:12+0700] [Info] Loaded collision data.
+[2025-06-12T01:28:12+0700] [Info] *********************
+[2025-06-12T01:28:12+0700] [Info]   ColAndreas Loaded
+[2025-06-12T01:28:12+0700] [Info]    v1.4.0
+[2025-06-12T01:28:12+0700] [Info] *********************
+[2025-06-12T01:28:12+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:28:12+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:28:12+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:28:12+0700] [Info] [debug] #0 00006f30 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:292
+[2025-06-12T01:28:12+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:28:12+0700] [Info]  
+[2025-06-12T01:28:12+0700] [Info]   -------------------------------
+[2025-06-12T01:28:12+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:28:12+0700] [Info]   -------------------------------
+[2025-06-12T01:28:12+0700] [Info]  
+[2025-06-12T01:28:12+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:28:21+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:28:21+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:28:21+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:28:21+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:28:21+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:30:46+0700] [Info] 
+[2025-06-12T01:30:46+0700] [Info]  ===============================
+[2025-06-12T01:30:46+0700] [Info] 
+[2025-06-12T01:30:46+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:30:46+0700] [Info] 
+[2025-06-12T01:30:46+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:30:46+0700] [Info] 
+[2025-06-12T01:30:46+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:30:46+0700] [Info] 
+[2025-06-12T01:30:46+0700] [Info]  ===============================
+[2025-06-12T01:30:46+0700] [Info] 
+[2025-06-12T01:30:46+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:30:46+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:30:46+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:30:46+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:30:46+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:30:46+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:30:46+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:30:46+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:30:46+0700] [Info] Loading plugin: requests
+[2025-06-12T01:30:46+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:30:46+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:30:46+0700] [Info] Loading plugin: PawnPlus
+[2025-06-12T01:30:46+0700] [Info]  PawnPlus v1.5.1 loaded
+[2025-06-12T01:30:46+0700] [Info]  Created by IS4
+[2025-06-12T01:30:46+0700] [Info] Loading plugin: ColAndreas
+[2025-06-12T01:30:46+0700] [Info] *********************
+[2025-06-12T01:30:46+0700] [Info] ** Created By:     **
+[2025-06-12T01:30:46+0700] [Info] ** [uL]Chris42O    **
+[2025-06-12T01:30:46+0700] [Info] ** [uL]Slice       **
+[2025-06-12T01:30:46+0700] [Info] ** [uL]Pottus      **
+[2025-06-12T01:30:46+0700] [Info] *********************
+[2025-06-12T01:30:51+0700] [Info] Loaded collision data.
+[2025-06-12T01:30:51+0700] [Info] *********************
+[2025-06-12T01:30:51+0700] [Info]   ColAndreas Loaded
+[2025-06-12T01:30:51+0700] [Info]    v1.4.0
+[2025-06-12T01:30:51+0700] [Info] *********************
+[2025-06-12T01:30:51+0700] [Info] Loading plugin: discord-connector
+[2025-06-12T01:30:51+0700] [Info]  >> discord-connector: bot token not specified in environment variable or server config.
+[2025-06-12T01:30:51+0700] [Info] Plugin failed to initialize.
+[2025-06-12T01:30:51+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:30:51+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:30:51+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:30:51+0700] [Info] [debug] #0 00006f30 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:292
+[2025-06-12T01:30:51+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:30:51+0700] [Info]  
+[2025-06-12T01:30:51+0700] [Info]   -------------------------------
+[2025-06-12T01:30:51+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:30:51+0700] [Info]   -------------------------------
+[2025-06-12T01:30:51+0700] [Info]  
+[2025-06-12T01:30:51+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:31:02+0700] [Warning] Couldn't announce legacy network to open.mp list.
+[2025-06-12T01:31:02+0700] [Warning] 	 Status: 2
+[2025-06-12T01:31:02+0700] [Warning] 	 Message: Could not establish connection
+[2025-06-12T01:31:02+0700] [Warning] This won't affect the server's behaviour.
+[2025-06-12T01:31:06+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:31:06+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:31:06+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:31:06+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:31:06+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:31:26+0700] [Info] 
+[2025-06-12T01:31:26+0700] [Info]  ===============================
+[2025-06-12T01:31:26+0700] [Info] 
+[2025-06-12T01:31:26+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:31:26+0700] [Info] 
+[2025-06-12T01:31:26+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:31:26+0700] [Info] 
+[2025-06-12T01:31:26+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:31:26+0700] [Info] 
+[2025-06-12T01:31:26+0700] [Info]  ===============================
+[2025-06-12T01:31:26+0700] [Info] 
+[2025-06-12T01:31:26+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:31:26+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:31:26+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:31:26+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:31:26+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:31:26+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:31:26+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:31:27+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:31:27+0700] [Info] Loading plugin: requests
+[2025-06-12T01:31:27+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:31:27+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:31:27+0700] [Info] Loading plugin: PawnPlus
+[2025-06-12T01:31:27+0700] [Info]  PawnPlus v1.5.1 loaded
+[2025-06-12T01:31:27+0700] [Info]  Created by IS4
+[2025-06-12T01:31:27+0700] [Info] Loading plugin: ColAndreas
+[2025-06-12T01:31:27+0700] [Info] *********************
+[2025-06-12T01:31:27+0700] [Info] ** Created By:     **
+[2025-06-12T01:31:27+0700] [Info] ** [uL]Chris42O    **
+[2025-06-12T01:31:27+0700] [Info] ** [uL]Slice       **
+[2025-06-12T01:31:27+0700] [Info] ** [uL]Pottus      **
+[2025-06-12T01:31:27+0700] [Info] *********************
+[2025-06-12T01:31:31+0700] [Info] Loaded collision data.
+[2025-06-12T01:31:31+0700] [Info] *********************
+[2025-06-12T01:31:31+0700] [Info]   ColAndreas Loaded
+[2025-06-12T01:31:31+0700] [Info]    v1.4.0
+[2025-06-12T01:31:31+0700] [Info] *********************
+[2025-06-12T01:31:31+0700] [Info] Loading plugin: discord-connector
+[2025-06-12T01:31:31+0700] [Info]  >> discord-connector: bot token not specified in environment variable or server config.
+[2025-06-12T01:31:31+0700] [Info] Plugin failed to initialize.
+[2025-06-12T01:31:31+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:31:31+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:31:31+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:31:31+0700] [Info] [debug] #0 00006f30 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:292
+[2025-06-12T01:31:31+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:31:31+0700] [Info]  
+[2025-06-12T01:31:31+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:31:31+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:31:31+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:31:31+0700] [Info]  
+[2025-06-12T01:31:31+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:31:42+0700] [Warning] Couldn't announce legacy network to open.mp list.
+[2025-06-12T01:31:42+0700] [Warning] 	 Status: 406
+[2025-06-12T01:31:42+0700] [Warning] 	 Message: {"error":"failed to query server: socket read timed out"}
+[2025-06-12T01:31:42+0700] [Warning] This won't affect the server's behaviour.
+[2025-06-12T01:31:43+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:31:43+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:31:43+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:31:43+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:31:43+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:31:43+0700] [Info] [debug] #0 000283f0 in public DestroyMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:1286
+[2025-06-12T01:31:43+0700] [Info] [debug] #1 000001b8 in public OnFilterScriptExit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:69
+[2025-06-12T01:31:43+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:31:43+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:33:04+0700] [Info] 
+[2025-06-12T01:33:04+0700] [Info]  ===============================
+[2025-06-12T01:33:04+0700] [Info] 
+[2025-06-12T01:33:04+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:33:04+0700] [Info] 
+[2025-06-12T01:33:04+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:33:04+0700] [Info] 
+[2025-06-12T01:33:04+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:33:04+0700] [Info] 
+[2025-06-12T01:33:04+0700] [Info]  ===============================
+[2025-06-12T01:33:04+0700] [Info] 
+[2025-06-12T01:33:04+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:33:04+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:33:04+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:33:04+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:33:04+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:33:04+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:33:04+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:33:04+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:33:04+0700] [Info] Loading plugin: requests
+[2025-06-12T01:33:04+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:33:04+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:33:04+0700] [Info] Loading plugin: PawnPlus
+[2025-06-12T01:33:04+0700] [Info]  PawnPlus v1.5.1 loaded
+[2025-06-12T01:33:04+0700] [Info]  Created by IS4
+[2025-06-12T01:33:04+0700] [Info] Loading plugin: ColAndreas
+[2025-06-12T01:33:04+0700] [Info] *********************
+[2025-06-12T01:33:04+0700] [Info] ** Created By:     **
+[2025-06-12T01:33:04+0700] [Info] ** [uL]Chris42O    **
+[2025-06-12T01:33:04+0700] [Info] ** [uL]Slice       **
+[2025-06-12T01:33:04+0700] [Info] ** [uL]Pottus      **
+[2025-06-12T01:33:04+0700] [Info] *********************
+[2025-06-12T01:33:08+0700] [Info] Loaded collision data.
+[2025-06-12T01:33:08+0700] [Info] *********************
+[2025-06-12T01:33:08+0700] [Info]   ColAndreas Loaded
+[2025-06-12T01:33:08+0700] [Info]    v1.4.0
+[2025-06-12T01:33:08+0700] [Info] *********************
+[2025-06-12T01:33:08+0700] [Info] Loading plugin: discord-connector
+[2025-06-12T01:33:08+0700] [Info]  >> discord-connector: bot token not specified in environment variable or server config.
+[2025-06-12T01:33:08+0700] [Info] Plugin failed to initialize.
+[2025-06-12T01:33:08+0700] [Info] Loading plugin: json
+[2025-06-12T01:33:08+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:33:08+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:33:08+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:33:08+0700] [Info] [debug] #0 00006f30 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:292
+[2025-06-12T01:33:08+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:33:08+0700] [Info]  
+[2025-06-12T01:33:08+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:33:08+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:33:08+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:33:08+0700] [Info]  
+[2025-06-12T01:33:08+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:33:17+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:33:17+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:33:17+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:33:17+0700] [Info]  PawnPlus v1.5.1 unloaded
+[2025-06-12T01:33:17+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:33:17+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:35:52+0700] [Info] 
+[2025-06-12T01:35:52+0700] [Info]  ===============================
+[2025-06-12T01:35:52+0700] [Info] 
+[2025-06-12T01:35:52+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:35:52+0700] [Info] 
+[2025-06-12T01:35:52+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:35:52+0700] [Info] 
+[2025-06-12T01:35:52+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:35:52+0700] [Info] 
+[2025-06-12T01:35:52+0700] [Info]  ===============================
+[2025-06-12T01:35:52+0700] [Info] 
+[2025-06-12T01:35:52+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:35:52+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:35:52+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:35:52+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:35:52+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:35:52+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:35:52+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:35:52+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:35:52+0700] [Info] Loading plugin: requests
+[2025-06-12T01:35:52+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:35:52+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:35:52+0700] [Info] Loading plugin: PawnPlus
+[2025-06-12T01:35:52+0700] [Info]  PawnPlus v1.5.1 loaded
+[2025-06-12T01:35:52+0700] [Info]  Created by IS4
+[2025-06-12T01:35:52+0700] [Info] Loading plugin: ColAndreas
+[2025-06-12T01:35:52+0700] [Info] *********************
+[2025-06-12T01:35:52+0700] [Info] ** Created By:     **
+[2025-06-12T01:35:52+0700] [Info] ** [uL]Chris42O    **
+[2025-06-12T01:35:52+0700] [Info] ** [uL]Slice       **
+[2025-06-12T01:35:52+0700] [Info] ** [uL]Pottus      **
+[2025-06-12T01:35:52+0700] [Info] *********************
+[2025-06-12T01:35:56+0700] [Info] Loaded collision data.
+[2025-06-12T01:35:56+0700] [Info] *********************
+[2025-06-12T01:35:56+0700] [Info]   ColAndreas Loaded
+[2025-06-12T01:35:56+0700] [Info]    v1.4.0
+[2025-06-12T01:35:56+0700] [Info] *********************
+[2025-06-12T01:35:56+0700] [Info] Loading plugin: discord-connector
+[2025-06-12T01:35:56+0700] [Info]  >> discord-connector: bot token not specified in environment variable or server config.
+[2025-06-12T01:35:56+0700] [Info] Plugin failed to initialize.
+[2025-06-12T01:35:56+0700] [Info] Loading plugin: json
+[2025-06-12T01:35:56+0700] [Info] Loading plugin: pawnregex
+[2025-06-12T01:35:56+0700] [Info] [Pawn.Regex] plugin v1.2.3 loading...
+[2025-06-12T01:35:56+0700] [Info] [Pawn.Regex] 
+
+    | Pawn.Regex 1.2.3 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:59:38
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.Regex
+
+[2025-06-12T01:35:56+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:35:56+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:35:56+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:35:56+0700] [Info] [debug] #0 00006f30 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:292
+[2025-06-12T01:35:56+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:35:56+0700] [Info]  
+[2025-06-12T01:35:56+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:35:56+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:35:56+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:35:56+0700] [Info]  
+[2025-06-12T01:35:56+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:36:05+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:36:05+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:36:05+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:36:05+0700] [Info] [Pawn.Regex] plugin unloaded
+[2025-06-12T01:36:05+0700] [Info]  PawnPlus v1.5.1 unloaded
+[2025-06-12T01:36:05+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:36:05+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:37:35+0700] [Info] 
+[2025-06-12T01:37:35+0700] [Info]  ===============================
+[2025-06-12T01:37:35+0700] [Info] 
+[2025-06-12T01:37:35+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:37:35+0700] [Info] 
+[2025-06-12T01:37:35+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:37:35+0700] [Info] 
+[2025-06-12T01:37:35+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:37:35+0700] [Info] 
+[2025-06-12T01:37:35+0700] [Info]  ===============================
+[2025-06-12T01:37:35+0700] [Info] 
+[2025-06-12T01:37:35+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:37:35+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:37:35+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:37:35+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:37:35+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:37:35+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:37:35+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:37:35+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:37:35+0700] [Info] Loading plugin: requests
+[2025-06-12T01:37:35+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:37:35+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:37:35+0700] [Info] Loading plugin: PawnPlus
+[2025-06-12T01:37:35+0700] [Info]  PawnPlus v1.5.1 loaded
+[2025-06-12T01:37:35+0700] [Info]  Created by IS4
+[2025-06-12T01:37:35+0700] [Info] Loading plugin: ColAndreas
+[2025-06-12T01:37:35+0700] [Info] *********************
+[2025-06-12T01:37:35+0700] [Info] ** Created By:     **
+[2025-06-12T01:37:35+0700] [Info] ** [uL]Chris42O    **
+[2025-06-12T01:37:35+0700] [Info] ** [uL]Slice       **
+[2025-06-12T01:37:35+0700] [Info] ** [uL]Pottus      **
+[2025-06-12T01:37:35+0700] [Info] *********************
+[2025-06-12T01:37:39+0700] [Info] Loaded collision data.
+[2025-06-12T01:37:39+0700] [Info] *********************
+[2025-06-12T01:37:39+0700] [Info]   ColAndreas Loaded
+[2025-06-12T01:37:39+0700] [Info]    v1.4.0
+[2025-06-12T01:37:39+0700] [Info] *********************
+[2025-06-12T01:37:39+0700] [Info] Loading plugin: discord-connector
+[2025-06-12T01:37:39+0700] [Info]  >> discord-connector: bot token not specified in environment variable or server config.
+[2025-06-12T01:37:39+0700] [Info] Plugin failed to initialize.
+[2025-06-12T01:37:39+0700] [Info] Loading plugin: json
+[2025-06-12T01:37:39+0700] [Info] Loading plugin: pawnregex
+[2025-06-12T01:37:39+0700] [Info] [Pawn.Regex] plugin v1.2.3 loading...
+[2025-06-12T01:37:39+0700] [Info] [Pawn.Regex] 
+
+    | Pawn.Regex 1.2.3 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:59:38
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.Regex
+
+[2025-06-12T01:37:39+0700] [Info] Loading plugin: pawn-memory
+[2025-06-12T01:37:39+0700] [Info] ========================
+[2025-06-12T01:37:39+0700] [Info] = Memory access plugin =
+[2025-06-12T01:37:39+0700] [Info] =       Made by BigETI =
+[2025-06-12T01:37:39+0700] [Info] = Loaded!              =
+[2025-06-12T01:37:39+0700] [Info] ========================
+[2025-06-12T01:37:39+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:37:39+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:37:39+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:37:39+0700] [Info] [debug] #0 00014a44 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:705
+[2025-06-12T01:37:39+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:37:39+0700] [Info]  
+[2025-06-12T01:37:39+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:37:39+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:37:39+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:37:39+0700] [Info]  
+[2025-06-12T01:37:39+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:37:46+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:37:46+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:37:46+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:37:46+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:37:46+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:37:46+0700] [Info] [debug] #0 000283f0 in public DestroyMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:1286
+[2025-06-12T01:37:46+0700] [Info] [debug] #1 000001b8 in public OnFilterScriptExit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:69
+[2025-06-12T01:37:46+0700] [Info] [Pawn.Regex] plugin unloaded
+[2025-06-12T01:37:46+0700] [Info]  PawnPlus v1.5.1 unloaded
+[2025-06-12T01:37:46+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:37:46+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:41:40+0700] [Info] 
+[2025-06-12T01:41:40+0700] [Info]  ===============================
+[2025-06-12T01:41:40+0700] [Info] 
+[2025-06-12T01:41:40+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:41:40+0700] [Info] 
+[2025-06-12T01:41:40+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:41:40+0700] [Info] 
+[2025-06-12T01:41:40+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:41:40+0700] [Info] 
+[2025-06-12T01:41:40+0700] [Info]  ===============================
+[2025-06-12T01:41:40+0700] [Info] 
+[2025-06-12T01:41:40+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:41:40+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:41:40+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:41:40+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:41:40+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:41:40+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:41:40+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:41:40+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:41:40+0700] [Info] Loading plugin: requests
+[2025-06-12T01:41:40+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:41:40+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:41:40+0700] [Info] Loading plugin: PawnPlus
+[2025-06-12T01:41:40+0700] [Info]  PawnPlus v1.5.1 loaded
+[2025-06-12T01:41:40+0700] [Info]  Created by IS4
+[2025-06-12T01:41:40+0700] [Info] Loading plugin: ColAndreas
+[2025-06-12T01:41:40+0700] [Info] *********************
+[2025-06-12T01:41:40+0700] [Info] ** Created By:     **
+[2025-06-12T01:41:40+0700] [Info] ** [uL]Chris42O    **
+[2025-06-12T01:41:40+0700] [Info] ** [uL]Slice       **
+[2025-06-12T01:41:40+0700] [Info] ** [uL]Pottus      **
+[2025-06-12T01:41:40+0700] [Info] *********************
+[2025-06-12T01:41:44+0700] [Info] Loaded collision data.
+[2025-06-12T01:41:44+0700] [Info] *********************
+[2025-06-12T01:41:44+0700] [Info]   ColAndreas Loaded
+[2025-06-12T01:41:44+0700] [Info]    v1.4.0
+[2025-06-12T01:41:44+0700] [Info] *********************
+[2025-06-12T01:41:44+0700] [Info] Loading plugin: discord-connector
+[2025-06-12T01:41:44+0700] [Info]  >> discord-connector: bot token not specified in environment variable or server config.
+[2025-06-12T01:41:44+0700] [Info] Plugin failed to initialize.
+[2025-06-12T01:41:44+0700] [Info] Loading plugin: json
+[2025-06-12T01:41:44+0700] [Info] Loading plugin: pawnregex
+[2025-06-12T01:41:44+0700] [Info] [Pawn.Regex] plugin v1.2.3 loading...
+[2025-06-12T01:41:44+0700] [Info] [Pawn.Regex] 
+
+    | Pawn.Regex 1.2.3 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:59:38
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.Regex
+
+[2025-06-12T01:41:44+0700] [Info] Loading plugin: pawn-memory
+[2025-06-12T01:41:44+0700] [Info] ========================
+[2025-06-12T01:41:44+0700] [Info] = Memory access plugin =
+[2025-06-12T01:41:44+0700] [Info] =       Made by BigETI =
+[2025-06-12T01:41:44+0700] [Info] = Loaded!              =
+[2025-06-12T01:41:44+0700] [Info] ========================
+[2025-06-12T01:41:44+0700] [Info] Loading plugin: dns
+[2025-06-12T01:41:44+0700] [Info] Could not load plugin:
+The specified module could not be found.
+[2025-06-12T01:41:44+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:41:44+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:41:44+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:41:44+0700] [Info] [debug] #0 0001b80c in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:933
+[2025-06-12T01:41:44+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:41:44+0700] [Info]  
+[2025-06-12T01:41:44+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:41:44+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:41:44+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:41:44+0700] [Info]  
+[2025-06-12T01:41:44+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:41:55+0700] [Warning] Couldn't announce legacy network to open.mp list.
+[2025-06-12T01:41:55+0700] [Warning] 	 Status: 406
+[2025-06-12T01:41:55+0700] [Warning] 	 Message: {"error":"failed to query server: socket read timed out"}
+[2025-06-12T01:41:55+0700] [Warning] This won't affect the server's behaviour.
+[2025-06-12T01:42:02+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:42:02+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:42:02+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:42:02+0700] [Info] [Pawn.Regex] plugin unloaded
+[2025-06-12T01:42:02+0700] [Info]  PawnPlus v1.5.1 unloaded
+[2025-06-12T01:42:02+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:42:02+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:42:26+0700] [Info] 
+[2025-06-12T01:42:26+0700] [Info]  ===============================
+[2025-06-12T01:42:26+0700] [Info] 
+[2025-06-12T01:42:26+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:42:26+0700] [Info] 
+[2025-06-12T01:42:26+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:42:26+0700] [Info] 
+[2025-06-12T01:42:26+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:42:26+0700] [Info] 
+[2025-06-12T01:42:26+0700] [Info]  ===============================
+[2025-06-12T01:42:26+0700] [Info] 
+[2025-06-12T01:42:26+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:42:26+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:42:26+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:42:26+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:42:26+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:42:26+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:42:26+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:42:26+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:42:26+0700] [Info] Loading plugin: requests
+[2025-06-12T01:42:26+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:42:26+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:42:26+0700] [Info] Loading plugin: PawnPlus
+[2025-06-12T01:42:26+0700] [Info]  PawnPlus v1.5.1 loaded
+[2025-06-12T01:42:26+0700] [Info]  Created by IS4
+[2025-06-12T01:42:26+0700] [Info] Loading plugin: ColAndreas
+[2025-06-12T01:42:26+0700] [Info] *********************
+[2025-06-12T01:42:26+0700] [Info] ** Created By:     **
+[2025-06-12T01:42:26+0700] [Info] ** [uL]Chris42O    **
+[2025-06-12T01:42:26+0700] [Info] ** [uL]Slice       **
+[2025-06-12T01:42:26+0700] [Info] ** [uL]Pottus      **
+[2025-06-12T01:42:26+0700] [Info] *********************
+[2025-06-12T01:42:30+0700] [Info] Loaded collision data.
+[2025-06-12T01:42:30+0700] [Info] *********************
+[2025-06-12T01:42:30+0700] [Info]   ColAndreas Loaded
+[2025-06-12T01:42:30+0700] [Info]    v1.4.0
+[2025-06-12T01:42:30+0700] [Info] *********************
+[2025-06-12T01:42:30+0700] [Info] Loading plugin: discord-connector
+[2025-06-12T01:42:30+0700] [Info]  >> discord-connector: bot token not specified in environment variable or server config.
+[2025-06-12T01:42:30+0700] [Info] Plugin failed to initialize.
+[2025-06-12T01:42:30+0700] [Info] Loading plugin: json
+[2025-06-12T01:42:30+0700] [Info] Loading plugin: pawnregex
+[2025-06-12T01:42:30+0700] [Info] [Pawn.Regex] plugin v1.2.3 loading...
+[2025-06-12T01:42:30+0700] [Info] [Pawn.Regex] 
+
+    | Pawn.Regex 1.2.3 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:59:38
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.Regex
+
+[2025-06-12T01:42:30+0700] [Info] Loading plugin: pawn-memory
+[2025-06-12T01:42:30+0700] [Info] ========================
+[2025-06-12T01:42:30+0700] [Info] = Memory access plugin =
+[2025-06-12T01:42:30+0700] [Info] =       Made by BigETI =
+[2025-06-12T01:42:30+0700] [Info] = Loaded!              =
+[2025-06-12T01:42:30+0700] [Info] ========================
+[2025-06-12T01:42:30+0700] [Info] Loading plugin: dns
+[2025-06-12T01:42:30+0700] [Info] Could not load plugin:
+The specified module could not be found.
+[2025-06-12T01:42:30+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:42:30+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:42:30+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:42:30+0700] [Info] [debug] #0 00006f30 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:292
+[2025-06-12T01:42:30+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:42:30+0700] [Info]  
+[2025-06-12T01:42:30+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:42:30+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:42:30+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:42:30+0700] [Info]  
+[2025-06-12T01:42:30+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:42:34+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:42:34+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:42:34+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:42:34+0700] [Info] [Pawn.Regex] plugin unloaded
+[2025-06-12T01:42:34+0700] [Info]  PawnPlus v1.5.1 unloaded
+[2025-06-12T01:42:34+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:42:34+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:46:17+0700] [Info] 
+[2025-06-12T01:46:17+0700] [Info]  ===============================
+[2025-06-12T01:46:17+0700] [Info] 
+[2025-06-12T01:46:17+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:46:17+0700] [Info] 
+[2025-06-12T01:46:17+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:46:17+0700] [Info] 
+[2025-06-12T01:46:17+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:46:17+0700] [Info] 
+[2025-06-12T01:46:17+0700] [Info]  ===============================
+[2025-06-12T01:46:17+0700] [Info] 
+[2025-06-12T01:46:17+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:46:17+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:46:18+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:46:18+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:46:18+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:46:18+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:46:18+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:46:18+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:46:18+0700] [Info] Loading plugin: requests
+[2025-06-12T01:46:18+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:46:18+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:46:18+0700] [Info] Loading plugin: PawnPlus
+[2025-06-12T01:46:18+0700] [Info]  PawnPlus v1.5.1 loaded
+[2025-06-12T01:46:18+0700] [Info]  Created by IS4
+[2025-06-12T01:46:18+0700] [Info] Loading plugin: ColAndreas
+[2025-06-12T01:46:18+0700] [Info] *********************
+[2025-06-12T01:46:18+0700] [Info] ** Created By:     **
+[2025-06-12T01:46:18+0700] [Info] ** [uL]Chris42O    **
+[2025-06-12T01:46:18+0700] [Info] ** [uL]Slice       **
+[2025-06-12T01:46:18+0700] [Info] ** [uL]Pottus      **
+[2025-06-12T01:46:18+0700] [Info] *********************
+[2025-06-12T01:46:21+0700] [Info] Loaded collision data.
+[2025-06-12T01:46:21+0700] [Info] *********************
+[2025-06-12T01:46:21+0700] [Info]   ColAndreas Loaded
+[2025-06-12T01:46:21+0700] [Info]    v1.4.0
+[2025-06-12T01:46:21+0700] [Info] *********************
+[2025-06-12T01:46:21+0700] [Info] Loading plugin: discord-connector
+[2025-06-12T01:46:21+0700] [Info]  >> discord-connector: bot token not specified in environment variable or server config.
+[2025-06-12T01:46:21+0700] [Info] Plugin failed to initialize.
+[2025-06-12T01:46:21+0700] [Info] Loading plugin: json
+[2025-06-12T01:46:21+0700] [Info] Loading plugin: pawnregex
+[2025-06-12T01:46:21+0700] [Info] [Pawn.Regex] plugin v1.2.3 loading...
+[2025-06-12T01:46:21+0700] [Info] [Pawn.Regex] 
+
+    | Pawn.Regex 1.2.3 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:59:38
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.Regex
+
+[2025-06-12T01:46:22+0700] [Info] Loading plugin: pawn-memory
+[2025-06-12T01:46:22+0700] [Info] ========================
+[2025-06-12T01:46:22+0700] [Info] = Memory access plugin =
+[2025-06-12T01:46:22+0700] [Info] =       Made by BigETI =
+[2025-06-12T01:46:22+0700] [Info] = Loaded!              =
+[2025-06-12T01:46:22+0700] [Info] ========================
+[2025-06-12T01:46:22+0700] [Info] Loading plugin: Whirlpool
+[2025-06-12T01:46:22+0700] [Info] Could not load plugin:
+The specified module could not be found.
+[2025-06-12T01:46:22+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:46:22+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:46:22+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:46:22+0700] [Info] [debug] #0 0001b80c in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:933
+[2025-06-12T01:46:22+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:46:22+0700] [Info]  
+[2025-06-12T01:46:22+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:46:22+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:46:22+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:46:22+0700] [Info]  
+[2025-06-12T01:46:22+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:46:26+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:46:26+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:46:26+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:46:26+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:46:26+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:46:26+0700] [Info] [debug] #0 000283f0 in public DestroyMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:1286
+[2025-06-12T01:46:26+0700] [Info] [debug] #1 000001b8 in public OnFilterScriptExit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:69
+[2025-06-12T01:46:26+0700] [Info] [Pawn.Regex] plugin unloaded
+[2025-06-12T01:46:26+0700] [Info]  PawnPlus v1.5.1 unloaded
+[2025-06-12T01:46:26+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:46:26+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:46:58+0700] [Info] 
+[2025-06-12T01:46:58+0700] [Info]  ===============================
+[2025-06-12T01:46:58+0700] [Info] 
+[2025-06-12T01:46:58+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:46:58+0700] [Info] 
+[2025-06-12T01:46:58+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:46:58+0700] [Info] 
+[2025-06-12T01:46:58+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:46:58+0700] [Info] 
+[2025-06-12T01:46:58+0700] [Info]  ===============================
+[2025-06-12T01:46:58+0700] [Info] 
+[2025-06-12T01:46:58+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:46:58+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:46:58+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:46:58+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:46:58+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:46:58+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:46:58+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:46:58+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:46:58+0700] [Info] Loading plugin: requests
+[2025-06-12T01:46:58+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:46:58+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:46:58+0700] [Info] Loading plugin: PawnPlus
+[2025-06-12T01:46:58+0700] [Info]  PawnPlus v1.5.1 loaded
+[2025-06-12T01:46:58+0700] [Info]  Created by IS4
+[2025-06-12T01:46:58+0700] [Info] Loading plugin: ColAndreas
+[2025-06-12T01:46:58+0700] [Info] *********************
+[2025-06-12T01:46:58+0700] [Info] ** Created By:     **
+[2025-06-12T01:46:58+0700] [Info] ** [uL]Chris42O    **
+[2025-06-12T01:46:58+0700] [Info] ** [uL]Slice       **
+[2025-06-12T01:46:58+0700] [Info] ** [uL]Pottus      **
+[2025-06-12T01:46:58+0700] [Info] *********************
+[2025-06-12T01:47:03+0700] [Info] Loaded collision data.
+[2025-06-12T01:47:03+0700] [Info] *********************
+[2025-06-12T01:47:03+0700] [Info]   ColAndreas Loaded
+[2025-06-12T01:47:03+0700] [Info]    v1.4.0
+[2025-06-12T01:47:03+0700] [Info] *********************
+[2025-06-12T01:47:03+0700] [Info] Loading plugin: discord-connector
+[2025-06-12T01:47:03+0700] [Info]  >> discord-connector: bot token not specified in environment variable or server config.
+[2025-06-12T01:47:03+0700] [Info] Plugin failed to initialize.
+[2025-06-12T01:47:03+0700] [Info] Loading plugin: json
+[2025-06-12T01:47:03+0700] [Info] Loading plugin: pawnregex
+[2025-06-12T01:47:03+0700] [Info] [Pawn.Regex] plugin v1.2.3 loading...
+[2025-06-12T01:47:03+0700] [Info] [Pawn.Regex] 
+
+    | Pawn.Regex 1.2.3 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:59:38
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.Regex
+
+[2025-06-12T01:47:03+0700] [Info] Loading plugin: pawn-memory
+[2025-06-12T01:47:03+0700] [Info] ========================
+[2025-06-12T01:47:03+0700] [Info] = Memory access plugin =
+[2025-06-12T01:47:03+0700] [Info] =       Made by BigETI =
+[2025-06-12T01:47:03+0700] [Info] = Loaded!              =
+[2025-06-12T01:47:03+0700] [Info] ========================
+[2025-06-12T01:47:03+0700] [Info] Loading plugin: Whirlpool
+[2025-06-12T01:47:03+0700] [Info]  
+[2025-06-12T01:47:03+0700] [Info]  ==================
+[2025-06-12T01:47:03+0700] [Info]  
+[2025-06-12T01:47:03+0700] [Info]   Whirlpool loaded
+[2025-06-12T01:47:03+0700] [Info]  
+[2025-06-12T01:47:03+0700] [Info]  ==================
+[2025-06-12T01:47:03+0700] [Info]  
+[2025-06-12T01:47:03+0700] [Info] AMX (575266688) loaded
+[2025-06-12T01:47:03+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:47:03+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:47:03+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:47:03+0700] [Info] [debug] #0 00006f30 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:292
+[2025-06-12T01:47:03+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:47:03+0700] [Info] AMX (304541464) loaded
+[2025-06-12T01:47:03+0700] [Info]  
+[2025-06-12T01:47:03+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:47:03+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:47:03+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:47:03+0700] [Info]  
+[2025-06-12T01:47:03+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:47:07+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:47:07+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:47:07+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:47:07+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:47:07+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:47:07+0700] [Info] [debug] #0 000283f0 in public DestroyMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:1286
+[2025-06-12T01:47:07+0700] [Info] [debug] #1 000001b8 in public OnFilterScriptExit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:69
+[2025-06-12T01:47:07+0700] [Info]  
+[2025-06-12T01:47:07+0700] [Info]  ====================
+[2025-06-12T01:47:07+0700] [Info]  
+[2025-06-12T01:47:07+0700] [Info]   Whirlpool unloaded
+[2025-06-12T01:47:07+0700] [Info]  
+[2025-06-12T01:47:07+0700] [Info]  ====================
+[2025-06-12T01:47:07+0700] [Info]  
+[2025-06-12T01:47:07+0700] [Info] [Pawn.Regex] plugin unloaded
+[2025-06-12T01:47:07+0700] [Info]  PawnPlus v1.5.1 unloaded
+[2025-06-12T01:47:07+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:47:07+0700] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.4.0.2783) from commit 601de2e1c8da86ff7979821a82bce20568d547dc
+Loading component Actors.dll
+	Successfully loaded component Actors (1.4.0.2783) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.4.0.2783) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.4.0.2783) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.4.0.2783) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.4.0.2783) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.4.0.2783) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.4.0.2783) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.4.0.2783) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.4.0.2783) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.4.0.2783) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.4.0.2783) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.4.0.2783) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.4.0.2783) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.4.0.2783) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.4.0.2783) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.4.0.2783) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.4.0.2783) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.4.0.2783) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.4.0.2783) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.4.0.2783) with UID 3f1f62ee9e22ab19
+Loaded 23 component(s) from D:\working\VNBASE\GAMEMODE\components
+[2025-06-12T01:55:00+0700] [Info] 
+[2025-06-12T01:55:00+0700] [Info]  ===============================
+[2025-06-12T01:55:00+0700] [Info] 
+[2025-06-12T01:55:00+0700] [Info]      sscanf component loaded.   
+[2025-06-12T01:55:00+0700] [Info] 
+[2025-06-12T01:55:00+0700] [Info]          Version: 2.13.8
+[2025-06-12T01:55:00+0700] [Info] 
+[2025-06-12T01:55:00+0700] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2025-06-12T01:55:00+0700] [Info] 
+[2025-06-12T01:55:00+0700] [Info]  ===============================
+[2025-06-12T01:55:00+0700] [Info] 
+[2025-06-12T01:55:00+0700] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2025-06-12T01:55:01+0700] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2025-06-12T01:55:01+0700] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2025-06-12T01:55:01+0700] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2025-06-12T01:55:01+0700] [Info] Loading plugin: crashdetect
+[2025-06-12T01:55:01+0700] [Info]   CrashDetect plugin 4.22-1-gcd608b6
+[2025-06-12T01:55:01+0700] [Info] Loading plugin: mysql
+[2025-06-12T01:55:01+0700] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2025-06-12T01:55:01+0700] [Info] Loading plugin: requests
+[2025-06-12T01:55:01+0700] [Info] Loading plugin: streamer
+[2025-06-12T01:55:01+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2025-06-12T01:55:01+0700] [Info] Loading plugin: PawnPlus
+[2025-06-12T01:55:01+0700] [Info]  PawnPlus v1.5.1 loaded
+[2025-06-12T01:55:01+0700] [Info]  Created by IS4
+[2025-06-12T01:55:01+0700] [Info] Loading plugin: ColAndreas
+[2025-06-12T01:55:01+0700] [Info] *********************
+[2025-06-12T01:55:01+0700] [Info] ** Created By:     **
+[2025-06-12T01:55:01+0700] [Info] ** [uL]Chris42O    **
+[2025-06-12T01:55:01+0700] [Info] ** [uL]Slice       **
+[2025-06-12T01:55:01+0700] [Info] ** [uL]Pottus      **
+[2025-06-12T01:55:01+0700] [Info] *********************
+[2025-06-12T01:55:05+0700] [Info] Loaded collision data.
+[2025-06-12T01:55:05+0700] [Info] *********************
+[2025-06-12T01:55:05+0700] [Info]   ColAndreas Loaded
+[2025-06-12T01:55:05+0700] [Info]    v1.4.0
+[2025-06-12T01:55:05+0700] [Info] *********************
+[2025-06-12T01:55:05+0700] [Info] Loading plugin: discord-connector
+[2025-06-12T01:55:05+0700] [Info]  >> discord-connector: bot token not specified in environment variable or server config.
+[2025-06-12T01:55:05+0700] [Info] Plugin failed to initialize.
+[2025-06-12T01:55:05+0700] [Info] Loading plugin: json
+[2025-06-12T01:55:05+0700] [Info] Loading plugin: pawnregex
+[2025-06-12T01:55:05+0700] [Info] [Pawn.Regex] plugin v1.2.3 loading...
+[2025-06-12T01:55:05+0700] [Info] [Pawn.Regex] 
+
+    | Pawn.Regex 1.2.3 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:59:38
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.Regex
+
+[2025-06-12T01:55:05+0700] [Info] Loading plugin: pawn-memory
+[2025-06-12T01:55:05+0700] [Info] ========================
+[2025-06-12T01:55:05+0700] [Info] = Memory access plugin =
+[2025-06-12T01:55:05+0700] [Info] =       Made by BigETI =
+[2025-06-12T01:55:05+0700] [Info] = Loaded!              =
+[2025-06-12T01:55:05+0700] [Info] ========================
+[2025-06-12T01:55:05+0700] [Info] Loading plugin: Whirlpool
+[2025-06-12T01:55:05+0700] [Info]  
+[2025-06-12T01:55:05+0700] [Info]  ==================
+[2025-06-12T01:55:05+0700] [Info]  
+[2025-06-12T01:55:05+0700] [Info]   Whirlpool loaded
+[2025-06-12T01:55:05+0700] [Info]  
+[2025-06-12T01:55:05+0700] [Info]  ==================
+[2025-06-12T01:55:05+0700] [Info]  
+[2025-06-12T01:55:05+0700] [Info] AMX (575197152) loaded
+[2025-06-12T01:55:05+0700] [Info]   MapFix by Nexius v4.6.6 loaded (filterscript version).
+[2025-06-12T01:55:05+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:55:05+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:55:05+0700] [Info] [debug] #0 00006f30 in public CreateMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:292
+[2025-06-12T01:55:05+0700] [Info] [debug] #1 0000012c in public OnFilterScriptInit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:59
+[2025-06-12T01:55:05+0700] [Info] AMX (229742536) loaded
+[2025-06-12T01:55:05+0700] [Info]  
+[2025-06-12T01:55:05+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:55:05+0700] [Info]   |  Copyright 2025 SAMP Vietnam Gamemode Team  |
+[2025-06-12T01:55:05+0700] [Info]   -----------------------------------------------
+[2025-06-12T01:55:05+0700] [Info]  
+[2025-06-12T01:55:05+0700] [Info] Legacy Network started on port 7777
+[2025-06-12T01:55:16+0700] [Warning] Couldn't announce legacy network to open.mp list.
+[2025-06-12T01:55:16+0700] [Warning] 	 Status: 406
+[2025-06-12T01:55:16+0700] [Warning] 	 Message: {"error":"failed to query server: socket read timed out"}
+[2025-06-12T01:55:16+0700] [Warning] This won't affect the server's behaviour.
+[2025-06-12T01:55:19+0700] [Info] [connection] incoming connection: 127.0.0.1:64070 id: 0
+[2025-06-12T01:55:19+0700] [Info] [join] Phuc_Diamond has joined the server (0:127.0.0.1)
+[2025-06-12T01:55:44+0700] [Info] [part] Phuc_Diamond has left the server (0:1)
+[2025-06-12T01:56:32+0700] [Info] [Pawn.RakNet] plugin unloaded
+[2025-06-12T01:56:32+0700] [Info] [Pawn.CMD] plugin unloaded
+[2025-06-12T01:56:32+0700] [Info]   MapFix by Nexius v4.6.6 unloaded (filterscript version).
+[2025-06-12T01:56:32+0700] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2025-06-12T01:56:32+0700] [Info] [debug] AMX backtrace:
+[2025-06-12T01:56:32+0700] [Info] [debug] #0 000283f0 in public DestroyMapFixObjects () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:1286
+[2025-06-12T01:56:32+0700] [Info] [debug] #1 000001b8 in public OnFilterScriptExit () at D:\working\VNBASE\GAMEMODE\filterscripts\mapfix.pwn:69
+[2025-06-12T01:56:32+0700] [Info]  
+[2025-06-12T01:56:32+0700] [Info]  ====================
+[2025-06-12T01:56:32+0700] [Info]  
+[2025-06-12T01:56:32+0700] [Info]   Whirlpool unloaded
+[2025-06-12T01:56:32+0700] [Info]  
+[2025-06-12T01:56:32+0700] [Info]  ====================
+[2025-06-12T01:56:32+0700] [Info]  
+[2025-06-12T01:56:32+0700] [Info] [Pawn.Regex] plugin unloaded
+[2025-06-12T01:56:32+0700] [Info]  PawnPlus v1.5.1 unloaded
+[2025-06-12T01:56:32+0700] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2025-06-12T01:56:32+0700] [Info] plugin.mysql: Unloading plugin...
