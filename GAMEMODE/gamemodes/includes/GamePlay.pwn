@@ -44,3 +44,7 @@ hook OnPlayerSpawn(playerid)
 	SetPlayerInterior(playerid, 0);
 	return 1;
 }
+
+hook OnGameModeInit(){
+    return 1;
+}

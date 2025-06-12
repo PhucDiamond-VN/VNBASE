@@ -12,3 +12,21 @@ stock SendMessageToNearbyPlayers(playerid, Float:range, color, const message[])
         }
     }
 }
+stock strtoupper(const string[])
+{
+    new upperString[256];
+    for (new character = 0; character < strlen(string); character++)
+    {
+        upperString[character] = toupper(string[character]);
+    }
+    return upperString;
+}
+stock strtolower(const string[])
+{
+    new upperString[256];
+    for (new character = 0; character < strlen(string); character++)
+    {
+        upperString[character] = tolower(string[character]);
+    }
+    return upperString;
+}

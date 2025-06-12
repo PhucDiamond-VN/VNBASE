@@ -25,22 +25,34 @@ main()
 	printf("  ------------------------------------------");
 	printf(" ");
 }
-
-#include "./includes/database.pwn"
-#include "./includes/stock.pwn"
-#include "./includes/GamePlay.pwn"
-
-public OnGameModeInit()
+hook OnGameModeInit()
 {
-	
+	mysql_connect_file("mysql.ini");
+	if (MYSQL_DEFAULT_HANDLE == MYSQL_INVALID_HANDLE || mysql_errno(MYSQL_DEFAULT_HANDLE) != 0)
+	{
+		print("MySQL connection failed. Server is shutting down.");
+		SendRconCommand("exit"); // close the server if there is no connection
+		return 1;
+	}
+	print("MySQL connection is successful.");
+
 	EnableStuntBonusForAll(false);
 	DisableInteriorEnterExits();
 	SetGameModeText("Copyright 2025 PhucDiamond-VN/VNBASE");
 	return 1;
 }
 
-public OnGameModeExit()
+
+
+#include "./includes/database.pwn"
+#include "./includes/stock.pwn"
+#include "./includes/GamePlay.pwn"
+
+
+
+hook OnGameModeExit()
 {
+	mysql_close(MYSQL_DEFAULT_HANDLE);
 	return 1;
 }
 
