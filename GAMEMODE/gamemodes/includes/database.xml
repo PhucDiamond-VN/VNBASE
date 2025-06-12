@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="file:///C|/Users/Administrator/Desktop/VNBASE/GAMEMODE/qawno/xml/pawndoc.xsl" type="text/xsl"?>
+<doc source="C:\Users\Administrator\Desktop\VNBASE\GAMEMODE\gamemodes\includes\database.pwn">
+	<assembly>
+		<name>database.pwn</name>
+	</assembly>
+	<members>
+
+		<!-- enumerations -->
+
+		<!-- constants -->
+
+		<!-- variables -->
+		<member name="F:PlayerInfo">
+		</member>
+		<member name="F:__date">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__time">
+		</member>
+
+		<!-- functions -->
+
+	</members>
+</doc>
