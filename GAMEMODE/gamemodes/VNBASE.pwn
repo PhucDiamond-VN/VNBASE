@@ -1,8 +1,10 @@
 #include <open.mp>
 #include <a_mysql>
 #include <easydialog>
+#include <streamer>
 #include <YSI-Includes\YSI_Coding\y_hooks>
 #include <YSI-Includes\YSI_Coding\y_va>
+#include <YSI-Includes\YSI_Coding\y_timers>
 #include <YSI-Includes\YSI_Data\y_iterate>
 #define func%0(%1) forward %0(%1); public %0(%1)
 #if !defined setnull
@@ -10,12 +12,23 @@
 #endif
 
 /*
-     ___      _
-    / __| ___| |_ _  _ _ __
-    \__ \/ -_)  _| || | '_ \
-    |___/\___|\__|\_,_| .__/
-                      |_|
+	 ___      _
+	/ __| ___| |_ _  _ _ __
+	\__ \/ -_)  _| || | '_ \
+	|___/\___|\__|\_,_| .__/
+					  |_|
 */
+////////////////////////////////////////////////////////////////////////////////////////
+#define ToaDo_Cammera_Dangky 2463.2151,-1655.5500,20.3047 // vị trí của cam khi vào đăng ký
+#define GocNhin_Cammera_Dangky 2509.6338,-1687.9923,13.5510 // vị trí mà cam nhìn vào khi đăng ký
+#define ToaDo_DangkyXong_X 2495.2061 // đăng ký xong tele qua đây
+#define ToaDo_DangkyXong_Y -1690.9382 // đăng ký xong tele qua đây
+#define ToaDo_DangkyXong_Z 14.7656 // đăng ký xong tele qua đây
+#define ToaDo_DangkyXong_A 1.4737 // đăng ký xong tele qua đây
+/////////////////////////////////////////////////////////////////////////////////////////
+#define TimeSavePlayerData 60000*3 // 3 phút save một lần
+#define MinPassLen 3 // độ dài tối thiểu của pass
+#define MaxPassLen 33 // độ dài tối đa của pass
 
 main()
 {
@@ -50,9 +63,27 @@ hook OnGameModeInit()
 
 
 
+
+#include <YSI-Includes\YSI_Coding\y_hooks>
 hook OnGameModeExit()
 {
+	foreach(new i:Player){
+		CallRemoteFunction("OnPlayerDisconnect", "dd", i, 4);
+	}
+	DestroyAllDynamicObjects();
+	DestroyAllDynamicPickups();
+	DestroyAllDynamicCPs();
+	DestroyAllDynamicAreas();
+	DestroyAllDynamicRaceCPs();
+	DestroyAllDynamicMapIcons();
+	DestroyAllDynamic3DTextLabels();
 	mysql_close(MYSQL_DEFAULT_HANDLE);
 	return 1;
 }
-
+ptask SavePlayerData[TimeSavePlayerData](playerid){
+	SavePlayerInfo(playerid);
+}
+hook OnPlayerDisconnect(playerid, reason){
+	SavePlayerInfo(playerid);
+	return 1;
+}

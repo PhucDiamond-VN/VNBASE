@@ -1,3 +1,4 @@
+
 stock SendMessageToNearbyPlayers(playerid, Float:range, color, const message[])
 {
     new Float:x, Float:y, Float:z;
@@ -11,6 +12,13 @@ stock SendMessageToNearbyPlayers(playerid, Float:range, color, const message[])
             SendClientMessage(i, color, message);
         }
     }
+}
+hook function ClearAnimations(playerid, FORCE_SYNC:forceSync = SYNC_ALL){
+    return continue(playerid, forceSync);
+}
+hook function SetPlayerName(playerid, const name[]){
+    format(PlayerInfo[playerid][username], 32, name);
+    return continue(playerid, name);
 }
 stock strtoupper(const string[])
 {
