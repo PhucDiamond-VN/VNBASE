@@ -108,9 +108,9 @@ func OnPlayerDataLoaded(playerid)
     }
 
 //////////////////////////////////////////////////// nếu thêm dữ liệu mới thì cập nhật chỗ này /////////////////////////////////////////////////////////
-    cache_get_value_int(0, "id", PlayerInfo[playerid][mysqlid]);
-    cache_get_value_int(0, "pint", PlayerInfo[playerid][pint]);
-    cache_get_value_int(0, "pvw", PlayerInfo[playerid][pvw]);
+    cache_get_value_name_int(0, "id", PlayerInfo[playerid][mysqlid]);
+    cache_get_value_name_int(0, "pint", PlayerInfo[playerid][pint]);
+    cache_get_value_name_int(0, "pvw", PlayerInfo[playerid][pvw]);
     cache_get_value_name_float(0, "ppos[0]", PlayerInfo[playerid][ppos][0]);
     cache_get_value_name_float(0, "ppos[1]", PlayerInfo[playerid][ppos][1]);
     cache_get_value_name_float(0, "ppos[2]", PlayerInfo[playerid][ppos][2]);
