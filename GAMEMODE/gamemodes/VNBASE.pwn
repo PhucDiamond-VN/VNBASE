@@ -41,7 +41,8 @@ main()
 hook OnGameModeInit()
 {
 	mysql_connect_file("mysql.ini");
-	if (MYSQL_DEFAULT_HANDLE == MYSQL_INVALID_HANDLE || mysql_errno(MYSQL_DEFAULT_HANDLE) != 0)
+	new error = mysql_errno(MYSQL_DEFAULT_HANDLE);
+	if (MYSQL_DEFAULT_HANDLE == MYSQL_INVALID_HANDLE || (error != 0 && error != 1060))
 	{
 		print("MySQL connection failed. Server is shutting down.");
 		SendRconCommand("exit"); // close the server if there is no connection
