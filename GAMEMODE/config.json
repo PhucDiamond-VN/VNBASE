@@ -100,7 +100,7 @@
         "main_scripts": [
             "VNBASE"
         ],
-        "side_scripts": ["filterscripts/mapfix"]
+        "side_scripts": ["filterscripts/mapfix", "filterscripts/door"]
     },
     "rcon": {
         "allow_teleport": false,
