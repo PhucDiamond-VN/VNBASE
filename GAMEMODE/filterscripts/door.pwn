@@ -93,9 +93,11 @@ public DelayUpdate(did){
 	return 1;
 }
 static UpdateDynamicDoor(did, bool:update = false){
-	if(vDelayUpdate[did] != -1)KillTimer(vDelayUpdate[did]);
-	vDelayUpdate[did] = SetTimerEx("DelayUpdate", 500, false, "d", did);
-	if(!update)return 1;
+	if(!update){
+		if(vDelayUpdate[did] != -1)KillTimer(vDelayUpdate[did]);
+		vDelayUpdate[did] = SetTimerEx("DelayUpdate", 500, false, "d", did);
+		return 1;
+	}
 	if(DoorInfo[did][dPickupId_Ext] != STREAMER_TAG_PICKUP:-1){
 		DestroyDynamicPickup(DoorInfo[did][dPickupId_Ext]);
 		DoorInfo[did][dPickupId_Ext] = STREAMER_TAG_PICKUP:-1;
