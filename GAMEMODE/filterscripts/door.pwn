@@ -197,10 +197,10 @@ public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys){
 	new pint = GetPlayerInterior(playerid), pvw = GetPlayerVirtualWorld(playerid);
 	for(new did; did < MAX_DOORS; did++){
 		if(pint == DoorInfo[did][dIntId_Ext] && pvw == DoorInfo[did][dVwId_Ext] && IsPlayerInRangeOfPoint(playerid, DoorInfo[did][dRangeEnterExit], DoorInfo[did][dPos_Ext][0], DoorInfo[did][dPos_Ext][1], DoorInfo[did][dPos_Ext][2])){
-			CallRemoteFunction("OnPlayerEnterExitDoor", "ddfffdd", playerid, 1, DoorInfo[did][dPos_Int][0], DoorInfo[did][dPos_Int][1], DoorInfo[did][dPos_Int][2], DoorInfo[did][dVwId_Int], DoorInfo[did][dIntId_Int]);
+			CallRemoteFunction("OnPlayerEnterExitDoor", "dddfffdd", playerid, did, 1, DoorInfo[did][dPos_Int][0], DoorInfo[did][dPos_Int][1], DoorInfo[did][dPos_Int][2], DoorInfo[did][dVwId_Int], DoorInfo[did][dIntId_Int]);
 		}
 		if(pint == DoorInfo[did][dIntId_Int] && pvw == DoorInfo[did][dVwId_Int] && IsPlayerInRangeOfPoint(playerid, DoorInfo[did][dRangeEnterExit], DoorInfo[did][dPos_Int][0], DoorInfo[did][dPos_Int][1], DoorInfo[did][dPos_Int][2])){
-			CallRemoteFunction("OnPlayerEnterExitDoor", "ddfffdd", playerid, 0, DoorInfo[did][dPos_Ext][0], DoorInfo[did][dPos_Ext][1], DoorInfo[did][dPos_Ext][2], DoorInfo[did][dVwId_Ext], DoorInfo[did][dIntId_Ext]);
+			CallRemoteFunction("OnPlayerEnterExitDoor", "dddfffdd", playerid, did, 0, DoorInfo[did][dPos_Ext][0], DoorInfo[did][dPos_Ext][1], DoorInfo[did][dPos_Ext][2], DoorInfo[did][dVwId_Ext], DoorInfo[did][dIntId_Ext]);
 		}
 	}
 }
@@ -317,4 +317,4 @@ public SetDoorIntVirtualWorld(did, virtualworld){
 	return 1;
 }
 
-forward OnPlayerEnterExitDoor(playerid, response, Float:x, Float:y, Float:z, virtualworld, interior);
+forward OnPlayerEnterExitDoor(playerid, doorid, response, Float:x, Float:y, Float:z, virtualworld, interior);
