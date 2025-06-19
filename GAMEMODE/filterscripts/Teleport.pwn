@@ -4,13 +4,13 @@
 forward waitloadingmap(playerid);
 public waitloadingmap(playerid){
 	DeletePVar(playerid, "waitloadingmap");
-	TogglePlayerControllable(playerid, true);
+	if(CallRemoteFunction("OnPlayerTeleportSuccess", "d", playerid)) TogglePlayerControllable(playerid, true);
 	return 1;
 }
 forward Teleport(playerid, Float:x, Float:y, Float:z, vw, int);
 public Teleport(playerid, Float:x, Float:y, Float:z, vw, int){
 	TogglePlayerControllable(playerid, false);
-	Streamer_UpdateEx(playerid, x, y, z, vw, int, .compensatedtime = 2000);
+	Streamer_UpdateEx(playerid, x, y, z, vw, int);
 	SetPlayerVirtualWorld(playerid, vw);
 	SetPlayerInterior(playerid, int);
 	SetPlayerPos(playerid, x, y, z);
