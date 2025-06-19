@@ -2,12 +2,13 @@
 #include <a_mysql>
 #include <easydialog>
 #include <streamer>
+#include <Pawn.CMD>
 #include <YSI-Includes\YSI_Coding\y_hooks>
 #include <YSI-Includes\YSI_Coding\y_va>
 #include <YSI-Includes\YSI_Coding\y_timers>
 #include <YSI-Includes\YSI_Data\y_iterate>
-#include "./includes/Teleport.pwn"
-#include "./includes/Door.pwn"
+#include "./includes/CallTeleportSystem.pwn"
+#include "./includes/Door/CallDoorSystem.pwn"
 #define func%0(%1) forward %0(%1); public %0(%1)
 #if !defined setnull
 	#define setnull(%1) %1[0]='\1'; %1[1]=0
@@ -61,6 +62,7 @@ hook OnGameModeInit()
 
 #include "./includes/database.pwn"
 #include "./includes/stock.pwn"
+#include "./includes/Door/DoorCMD.pwn"
 #include "./includes/GamePlay.pwn"
 
 
