@@ -85,7 +85,17 @@ static SaveDoor(did){
         did), false);
 	return 1;
 }
-static UpdateDynamicDoor(did){
+new vDelayUpdate[MAX_DOORS] = {-1,...};
+forward DelayUpdate(did);
+public DelayUpdate(did){
+	vDelayUpdate[did] = -1;
+	UpdateDynamicDoor(did, true);
+	return 1;
+}
+static UpdateDynamicDoor(did, bool:update = false){
+	if(vDelayUpdate[did] != -1)KillTimer(vDelayUpdate[did]);
+	vDelayUpdate[did] = SetTimerEx("DelayUpdate", 500, false, "d", did);
+	if(!update)return 1;
 	if(DoorInfo[did][dPickupId_Ext] != STREAMER_TAG_PICKUP:-1){
 		DestroyDynamicPickup(DoorInfo[did][dPickupId_Ext]);
 		DoorInfo[did][dPickupId_Ext] = STREAMER_TAG_PICKUP:-1;
@@ -194,15 +204,20 @@ public OnDoorDataLoaded(){
 }
 
 public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys){
-	new pint = GetPlayerInterior(playerid), pvw = GetPlayerVirtualWorld(playerid);
-	for(new did; did < MAX_DOORS; did++){
-		if(pint == DoorInfo[did][dIntId_Ext] && pvw == DoorInfo[did][dVwId_Ext] && IsPlayerInRangeOfPoint(playerid, DoorInfo[did][dRangeEnterExit], DoorInfo[did][dPos_Ext][0], DoorInfo[did][dPos_Ext][1], DoorInfo[did][dPos_Ext][2])){
-			CallRemoteFunction("OnPlayerEnterExitDoor", "dddfffdd", playerid, did, 1, DoorInfo[did][dPos_Int][0], DoorInfo[did][dPos_Int][1], DoorInfo[did][dPos_Int][2], DoorInfo[did][dVwId_Int], DoorInfo[did][dIntId_Int]);
-		}
-		if(pint == DoorInfo[did][dIntId_Int] && pvw == DoorInfo[did][dVwId_Int] && IsPlayerInRangeOfPoint(playerid, DoorInfo[did][dRangeEnterExit], DoorInfo[did][dPos_Int][0], DoorInfo[did][dPos_Int][1], DoorInfo[did][dPos_Int][2])){
-			CallRemoteFunction("OnPlayerEnterExitDoor", "dddfffdd", playerid, did, 0, DoorInfo[did][dPos_Ext][0], DoorInfo[did][dPos_Ext][1], DoorInfo[did][dPos_Ext][2], DoorInfo[did][dVwId_Ext], DoorInfo[did][dIntId_Ext]);
+	if(newkeys & KEY_YES){
+		new pint = GetPlayerInterior(playerid), pvw = GetPlayerVirtualWorld(playerid);
+		for(new did; did < MAX_DOORS; did++){
+			if(IsDoorExist(did)){
+				if(pint == DoorInfo[did][dIntId_Ext] && pvw == DoorInfo[did][dVwId_Ext] && IsPlayerInRangeOfPoint(playerid, DoorInfo[did][dRangeEnterExit], DoorInfo[did][dPos_Ext][0], DoorInfo[did][dPos_Ext][1], DoorInfo[did][dPos_Ext][2])){
+					CallRemoteFunction("OnPlayerEnterExitDoor", "dddfffdd", playerid, did, 1, DoorInfo[did][dPos_Int][0], DoorInfo[did][dPos_Int][1], DoorInfo[did][dPos_Int][2], DoorInfo[did][dVwId_Int], DoorInfo[did][dIntId_Int]);
+				}
+				if(pint == DoorInfo[did][dIntId_Int] && pvw == DoorInfo[did][dVwId_Int] && IsPlayerInRangeOfPoint(playerid, DoorInfo[did][dRangeEnterExit], DoorInfo[did][dPos_Int][0], DoorInfo[did][dPos_Int][1], DoorInfo[did][dPos_Int][2])){
+					CallRemoteFunction("OnPlayerEnterExitDoor", "dddfffdd", playerid, did, 0, DoorInfo[did][dPos_Ext][0], DoorInfo[did][dPos_Ext][1], DoorInfo[did][dPos_Ext][2], DoorInfo[did][dVwId_Ext], DoorInfo[did][dIntId_Ext]);
+				}
+			}
 		}
 	}
+	return 1;
 }
 forward DeleteDoor(did);
 public DeleteDoor(did){
