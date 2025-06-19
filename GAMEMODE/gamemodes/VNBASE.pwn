@@ -6,11 +6,11 @@
 #include <YSI-Includes\YSI_Coding\y_va>
 #include <YSI-Includes\YSI_Coding\y_timers>
 #include <YSI-Includes\YSI_Data\y_iterate>
+#include "./includes/Teleport.pwn"
 #define func%0(%1) forward %0(%1); public %0(%1)
 #if !defined setnull
 	#define setnull(%1) %1[0]='\1'; %1[1]=0
 #endif
-
 /*
 	 ___      _
 	/ __| ___| |_ _  _ _ __
@@ -29,7 +29,7 @@
 #define TimeSavePlayerData 60000*3 // 3 phút save một lần
 #define MinPassLen 3 // độ dài tối thiểu của pass
 #define MaxPassLen 33 // độ dài tối đa của pass
-
+/////////////////////////////////////////////////////////////////////////////////////////
 main()
 {
 	printf(" ");
