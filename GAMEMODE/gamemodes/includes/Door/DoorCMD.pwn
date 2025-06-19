@@ -3,7 +3,7 @@ CMD:cdoor(playerid){
 		new did = GetFreeDoorid(), Float:pos[3];
 		GetPlayerPos(playerid, pos[0], pos[1], pos[2]);
 		SetDoorExtPos(did, pos[0], pos[1], pos[2]);
-		SetDoorIntPos(did, pos[0], pos[1], pos[2]);
+		SetDoorIntPos(did, pos[0], pos[1], pos[2]+2);
 		SetDoorExtInterior(did, GetPlayerInterior(playerid));
 		SetDoorIntInterior(did, GetPlayerInterior(playerid));
 		SetDoorExtVirtualWorld(did, GetPlayerVirtualWorld(playerid));

@@ -94,6 +94,10 @@ hook OnPlayerConnect(playerid){
     PlayerInfo[playerid] = empty;
 	return 1;
 }
+hook OnPlayerDisconnect(playerid, reason){
+    PlayerInfo[playerid][IsLoging] = false;
+    return 1;
+}
 hook OnPlayerSpawn(playerid){
     if(!PlayerInfo[playerid][IsLoging])LoadPlayerInfo(playerid);
     SetCameraBehindPlayer(playerid);

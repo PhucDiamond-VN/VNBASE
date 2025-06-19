@@ -59,6 +59,7 @@ Dialog:PlayerRegister(playerid, response, listitem, inputtext[]) {
         PlayerInfo[playerid][ppos][2] = ToaDo_DangkyXong_Z;
         PlayerInfo[playerid][ppos][3] = ToaDo_DangkyXong_A;
         SavePlayerInfo(playerid);
+        PlayerInfo[playerid][IsLoging] = true;
         CallLocalFunction("OnPlayerLoging", "d", playerid);
     }
     else return Kick(playerid);
