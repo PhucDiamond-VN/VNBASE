@@ -102,3 +102,26 @@ func OnPlayerLoging(playerid){
     SetCameraBehindPlayer(playerid);
     return 1;
 }
+
+public OnPlayerCommandReceived(playerid, cmd[], params[], flags)
+{
+  if (!PlayerInfo[playerid][IsLoging])
+  {
+    SendClientMessage(playerid, -1, "Ban phai dang nhap de co the su dung lenh");
+    return 0;
+  }
+
+  return 1;
+}
+
+public OnPlayerCommandPerformed(playerid, cmd[], params[], result, flags)
+{
+  if (result == -1)
+  {
+    SendClientMessage(playerid, 0xFFFFFFFF, "server khong co lenh nay.");
+
+    return 0;
+  }
+
+  return 1;
+}
