@@ -83,7 +83,7 @@ git clone https://github.com/PhucDiamond-VN/VNBASE.git
 
 - Mọi đóng góp đều được hoan nghênh! Hãy tạo Pull Request hoặc Issue nếu bạn có ý tưởng, cải tiến hoặc tìm thấy bug.
 - Tham gia cộng đồng tại:  
-  📌 *[Discord/Facebook Group]* *(https://www.facebook.com/diamondPhuc.dz/)*  
+  📌 *[Discord]* *(https://discord.gg/uxuuh8bX4Y)*
 - Liên hệ qua GitHub: [@PhucDiamond-VN](https://github.com/PhucDiamond-VN)
 
 ---

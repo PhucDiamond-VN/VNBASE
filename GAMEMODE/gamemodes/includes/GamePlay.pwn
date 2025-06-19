@@ -65,7 +65,7 @@ Dialog:PlayerRegister(playerid, response, listitem, inputtext[]) {
     return 1;
 }
 func OnPlayerRegister(playerid){
-    SetPlayerPos(playerid, ToaDo_Cammera_Dangky);
+    Teleport(playerid, ToaDo_Cammera_Dangky);
     SetPlayerCameraPos(playerid, ToaDo_Cammera_Dangky);
     SetPlayerCameraLookAt(playerid, GocNhin_Cammera_Dangky);
     SetPlayerVirtualWorld(playerid, 1000+playerid);
@@ -84,7 +84,7 @@ Dialog:PlayerLogin(playerid, response, listitem, inputtext[]) {
 
 func OnPlayerLoging(playerid){
     if(!PlayerInfo[playerid][IsLoging]){
-        SetPlayerPos(playerid, ToaDo_Cammera_Dangky);
+        Teleport(playerid, ToaDo_Cammera_Dangky);
         SetPlayerCameraPos(playerid, ToaDo_Cammera_Dangky);
         SetPlayerCameraLookAt(playerid, GocNhin_Cammera_Dangky);
         SetPlayerVirtualWorld(playerid, 1000+playerid);
@@ -96,7 +96,7 @@ func OnPlayerLoging(playerid){
     ClearAnimations(playerid);
     SetPlayerVirtualWorld(playerid, PlayerInfo[playerid][pvw]);
     SetPlayerInterior(playerid, PlayerInfo[playerid][pint]);
-    SetPlayerPos(playerid, PlayerInfo[playerid][ppos][0], PlayerInfo[playerid][ppos][1], PlayerInfo[playerid][ppos][2]);
+    Teleport(playerid, PlayerInfo[playerid][ppos][0], PlayerInfo[playerid][ppos][1], PlayerInfo[playerid][ppos][2]);
     SetPlayerFacingAngle(playerid, PlayerInfo[playerid][ppos][3]);
     SetCameraBehindPlayer(playerid);
     return 1;

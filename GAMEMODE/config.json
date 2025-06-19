@@ -96,11 +96,11 @@
     },
     "password": "",
     "pawn": {
-        "legacy_plugins": ["crashdetect", "mysql", "requests", "streamer", "PawnPlus", "ColAndreas", "discord-connector", "json", "pawnregex", "pawn-memory", "Whirlpool"],
+        "legacy_plugins": ["crashdetect", "mysql", "requests", "streamer", "PawnPlus", "ColAndreas", "json", "pawnregex", "pawn-memory", "Whirlpool"],
         "main_scripts": [
             "VNBASE"
         ],
-        "side_scripts": ["filterscripts/mapfix", "filterscripts/door"]
+        "side_scripts": ["filterscripts/mapfix", "filterscripts/door", "filterscripts/Teleport"]
     },
     "rcon": {
         "allow_teleport": false,
