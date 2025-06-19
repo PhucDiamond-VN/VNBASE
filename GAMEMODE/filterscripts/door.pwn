@@ -331,5 +331,12 @@ public SetDoorIntVirtualWorld(did, virtualworld){
 	UpdateDynamicDoor(did);
 	return 1;
 }
+forward SetDoorRangeEnterExit(did, Float:range);
+public SetDoorRangeEnterExit(did, Float:range){
+	if(did < 0 || did >= MAX_DOORS)return 0;
+	DoorInfo[did][dRangeEnterExit] = range;
+	return 1;
+}
+
 
 forward OnPlayerEnterExitDoor(playerid, doorid, response, Float:x, Float:y, Float:z, virtualworld, interior);
