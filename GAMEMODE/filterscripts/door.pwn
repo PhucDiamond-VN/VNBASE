@@ -31,56 +31,56 @@ static LoadDoor(){
 	return 1;
 }
 static SaveDoor(did){
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dPos_Ext[0]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Ext[0]` = %f WHERE `id` = %d",
         DoorInfo[did][dPos_Ext][0],
         did), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dPos_Ext[1]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Ext[1]` = %f WHERE `id` = %d",
         DoorInfo[did][dPos_Ext][1],
         did), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dPos_Ext[2]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Ext[2]` = %f WHERE `id` = %d",
         DoorInfo[did][dPos_Ext][2],
         did), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dPos_Ext[3]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Ext[3]` = %f WHERE `id` = %d",
         DoorInfo[did][dPos_Ext][3],
         did), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dIntId_Ext` = %d WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dIntId_Ext` = %d WHERE `id` = %d",
         DoorInfo[did][dIntId_Ext],
         did), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dVwId_Ext` = %d WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dVwId_Ext` = %d WHERE `id` = %d",
         DoorInfo[did][dVwId_Ext],
         did), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dModelPickup_Ext` = %d WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dModelPickup_Ext` = %d WHERE `id` = %d",
         DoorInfo[did][dModelPickup_Ext],
         did), false);
 
 
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dPos_Int[0]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Int[0]` = %f WHERE `id` = %d",
         DoorInfo[did][dPos_Int][0],
         did), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dPos_Int[1]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Int[1]` = %f WHERE `id` = %d",
         DoorInfo[did][dPos_Int][1],
         did), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dPos_Int[2]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Int[2]` = %f WHERE `id` = %d",
         DoorInfo[did][dPos_Int][2],
         did), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dPos_Int[3]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Int[3]` = %f WHERE `id` = %d",
         DoorInfo[did][dPos_Int][3],
         did), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dIntId_Int` = %d WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dIntId_Int` = %d WHERE `id` = %d",
         DoorInfo[did][dIntId_Int],
         did), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dVwId_Int` = %d WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dVwId_Int` = %d WHERE `id` = %d",
         DoorInfo[did][dVwId_Int],
         did), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dModelPickup_Int` = %d WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dModelPickup_Int` = %d WHERE `id` = %d",
         DoorInfo[did][dModelPickup_Int],
         did), false);
 
 
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dLabelText` = %s WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dLabelText` = %s WHERE `id` = %d",
         DoorInfo[did][dLabelText],
         did), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `door` SET `dRangeEnterExit` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dRangeEnterExit` = %f WHERE `id` = %d",
         DoorInfo[did][dRangeEnterExit],
         did), false);
 	return 1;
@@ -155,7 +155,8 @@ public OnFilterScriptInit(){
 
     mysql_query(MYSQL_DEFAULT_HANDLE, va_return("ALTER TABLE `Door` ADD COLUMN `dLabelText` VARCHAR(%d)", DOOR_LABEL_TEXT_SIZE), false);
     mysql_query(MYSQL_DEFAULT_HANDLE, "ALTER TABLE `Door` ADD COLUMN `dRangeEnterExit` Float", false);
-
+    for(new did; did < MAX_DOORS; did++)
+    	mysql_query(MYSQL_DEFAULT_HANDLE, "INSERT INTO `Door` (`dModelPickup_Ext`, `dModelPickup_Int`, `dRangeEnterExit`) VALUES ('19606', '19198', '3.0')", false);
     LoadDoor();
 	return 1;
 }
@@ -225,6 +226,7 @@ forward DeleteDoor(did);
 public DeleteDoor(did){
 	if(did < 0 || did >= MAX_DOORS)return 0;
 	DoorInfo[did][dPos_Ext][0] = DoorInfo[did][dPos_Ext][1] = DoorInfo[did][dPos_Ext][2] = DoorInfo[did][dPos_Int][0] = DoorInfo[did][dPos_Int][1] = DoorInfo[did][dPos_Int][2] = 0;
+	ChangeCheck = true;
 	UpdateDynamicDoor(did);
 	return 1;
 }
@@ -336,6 +338,7 @@ public SetDoorIntVirtualWorld(did, virtualworld){
 forward SetDoorRangeEnterExit(did, Float:range);
 public SetDoorRangeEnterExit(did, Float:range){
 	if(did < 0 || did >= MAX_DOORS)return 0;
+	ChangeCheck = true;
 	DoorInfo[did][dRangeEnterExit] = range;
 	return 1;
 }
