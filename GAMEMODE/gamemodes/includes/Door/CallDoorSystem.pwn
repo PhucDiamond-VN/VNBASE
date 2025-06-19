@@ -40,4 +40,7 @@ stock SetDoorExtVirtualWorld(did, virtualworld){
 stock SetDoorIntVirtualWorld(did, virtualworld){
 	return CallRemoteFunction("SetDoorIntVirtualWorld", "dd", did, virtualworld);
 }
+stock SetDoorRangeEnterExit(did, Float:range){
+	return CallRemoteFunction("SetDoorRangeEnterExit", "df", did, range);
+}
 forward OnPlayerEnterExitDoor(playerid, doorid, response, Float:x, Float:y, Float:z, virtualworld, interior);

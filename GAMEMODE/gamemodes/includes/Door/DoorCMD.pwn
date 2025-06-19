@@ -8,6 +8,9 @@ CMD:cdoor(playerid){
 		SetDoorIntInterior(did, GetPlayerInterior(playerid));
 		SetDoorExtVirtualWorld(did, GetPlayerVirtualWorld(playerid));
 		SetDoorIntVirtualWorld(did, GetPlayerVirtualWorld(playerid));
+		SetDoorRangeEnterExit(did, 3.0);
+		SetDoorExtModelPickup(did, 19606);
+		SetDoorIntModelPickup(did, 19524);
 		return 1;
 	}
 	return 0;
