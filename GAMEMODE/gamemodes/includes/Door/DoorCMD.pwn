@@ -76,6 +76,7 @@ CMD:dedit(playerid, params[]){
 	return 0;
 }
 public OnPlayerEnterExitDoor(playerid, doorid, response, Float:x, Float:y, Float:z, virtualworld, interior){
+	if(!GetDoorOpen(doorid))return SendClientMessage(playerid, MAU_DO, "Canh cua nay dang bi khoa!");
 	Teleport(playerid, x, y, z, virtualworld, interior);
 	return 1;
 }
