@@ -21,7 +21,7 @@ stock LoadPlayerInfo(playerid){
 stock InsertPlayer(playerid, const rpassword[])
 {
     mysql_query(MYSQL_DEFAULT_HANDLE, va_return("INSERT INTO `players` (`username`, `password`) VALUES ('%s', '%s')",
-        PlayerInfo[playerid][username], rpassword));
+        strtoupper(PlayerInfo[playerid][username]), rpassword));
     PlayerInfo[playerid][mysqlid] = cache_insert_id();
     return 1;
 }
@@ -38,7 +38,7 @@ stock SavePlayerInfo(playerid){
     GetAllDataPlayer(playerid);
 //////////////////////////////////////////////////// nếu thêm dữ liệu mới thì cập nhật chỗ này /////////////////////////////////////////////////////////
     mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `players` SET `username` = %s WHERE `id` = %d",
-        PlayerInfo[playerid][username],
+        strtoupper(PlayerInfo[playerid][username]),
         PlayerInfo[playerid][mysqlid]), false);
     mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `players` SET `password` = %s WHERE `id` = %d",
         PlayerInfo[playerid][password],

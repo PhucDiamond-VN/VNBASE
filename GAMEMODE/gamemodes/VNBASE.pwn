@@ -3,6 +3,7 @@
 #include <easydialog>
 #include <streamer>
 #include <Pawn.CMD>
+#include <sscanf2>
 #include <YSI-Includes\YSI_Coding\y_hooks>
 #include <YSI-Includes\YSI_Coding\y_va>
 #include <YSI-Includes\YSI_Coding\y_timers>
@@ -59,7 +60,7 @@ hook OnGameModeInit()
 }
 
 
-
+#include "./includes/Color-define.pwn"
 #include "./includes/database.pwn"
 #include "./includes/stock.pwn"
 #include "./includes/Door/DoorCMD.pwn"

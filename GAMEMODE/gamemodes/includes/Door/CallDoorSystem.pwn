@@ -43,4 +43,70 @@ stock SetDoorIntVirtualWorld(did, virtualworld){
 stock SetDoorRangeEnterExit(did, Float:range){
 	return CallRemoteFunction("SetDoorRangeEnterExit", "df", did, range);
 }
+stock SetDoorOpen(did, bool:Open){
+	return CallRemoteFunction("SetDoorOpen", "dd", did, Open);
+}
+stock SetDoorTestLos(did, bool:TestLos){
+	return CallRemoteFunction("SetDoorTestLos", "dd", did, TestLos);
+}
+
+
+
+
+
+
+
+stock GetDoorExtAngle(did){
+	return CallRemoteFunction("GetDoorExtAngle", "d", did);
+}
+stock GetDoorIntAngle(did){
+	return CallRemoteFunction("GetDoorIntAngle", "d", did);
+}
+stock GetDoorExtModelPickup(did){
+	return CallRemoteFunction("GetDoorExtModelPickup", "d", did);
+}
+stock GetDoorIntModelPickup(did){
+	return CallRemoteFunction("GetDoorIntModelPickup", "d", did);
+}
+stock GetDoorExtInterior(did){
+	return CallRemoteFunction("GetDoorExtInterior", "d", did);
+}
+stock GetDoorIntInterior(did){
+	return CallRemoteFunction("GetDoorIntInterior", "d", did);
+}
+stock GetDoorExtVirtualWorld(did){
+	return CallRemoteFunction("GetDoorExtVirtualWorld", "d", did);
+}
+stock GetDoorIntVirtualWorld(did){
+	return CallRemoteFunction("GetDoorIntVirtualWorld", "d", did);
+}
+stock GetDoorRangeEnterExit(did){
+	return CallRemoteFunction("GetDoorRangeEnterExit", "d", did);
+}
+stock GetDoorOpen(did){
+	return CallRemoteFunction("GetDoorOpen", "d", did);
+}
+stock GetDoorTestLos(did){
+	return CallRemoteFunction("GetDoorTestLos", "d", did);
+}
+stock GaetDoorExtPos(did, &Float:x, &Float:y, &Float:z){
+	CallRemoteFunction("GetDoorExtPos", "dfff", did, x, y, z);
+	x = GetSVarFloat("GetDoorExtPos_x");
+	y = GetSVarFloat("GetDoorExtPos_y");
+	z = GetSVarFloat("GetDoorExtPos_z");
+	return 1;
+}
+stock GaetDoorIntPos(did, &Float:x, &Float:y, &Float:z){
+	CallRemoteFunction("GetDoorIntPos", "dfff", did, x, y, z);
+	x = GetSVarFloat("GetDoorIntPos_x");
+	y = GetSVarFloat("GetDoorIntPos_y");
+	z = GetSVarFloat("GetDoorIntPos_z");
+	return 1;
+}
+
+
+
+
+
+
 forward OnPlayerEnterExitDoor(playerid, doorid, response, Float:x, Float:y, Float:z, virtualworld, interior);
