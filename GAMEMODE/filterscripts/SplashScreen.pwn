@@ -20,8 +20,8 @@ public OnFilterScriptExit(){
 func StartASplashScreen(playerid, const CallBack[], statee){
 	if(GetPVarType(playerid, "ASplashScreen_Timer"))KillTimer(GetPVarInt(playerid, "ASplashScreen_Timer"));
 
-	if(ASPLASH_Screen[playerid] != PlayerText:-1)PlayerTextDrawDestroy(playerid, ASPLASH_Screen[playerid]);
-	ASPLASH_Screen[playerid] = CreatePlayerTextDraw(playerid, 0.000000, 0.000000, "LD_SPAC:black");
+	if(ASPLASH_Screen[playerid] == PlayerText:-1)
+		ASPLASH_Screen[playerid] = CreatePlayerTextDraw(playerid, 0.000000, 0.000000, "LD_SPAC:black");
 	PlayerTextDrawFont(playerid, ASPLASH_Screen[playerid], 4);
 	PlayerTextDrawLetterSize(playerid, ASPLASH_Screen[playerid], 0.600000, 2.000000);
 	PlayerTextDrawTextSize(playerid, ASPLASH_Screen[playerid], 643.000000, 450.500000);
@@ -34,9 +34,19 @@ func StartASplashScreen(playerid, const CallBack[], statee){
 	PlayerTextDrawSetProportional(playerid, ASPLASH_Screen[playerid], true);
 	PlayerTextDrawSetSelectable(playerid, ASPLASH_Screen[playerid], false);
 
-	new sc = random(14)+1;
-	if(ASPLASH_Screen1[playerid] != PlayerText:-1)PlayerTextDrawDestroy(playerid, ASPLASH_Screen1[playerid]);
-	ASPLASH_Screen1[playerid] = CreatePlayerTextDraw(playerid, 0.000000, 0.000000, va_return("loadsc%d:loadsc%d", sc, sc));
+	new sc;
+	if(statee == 0){
+		sc = random(14)+1;
+		SetPVarInt(playerid, "Old_Pic", sc);
+	}
+	else{
+		if(GetPVarType(playerid, "Old_Pic"))
+			sc = GetPVarInt(playerid, "Old_Pic");
+		else
+			sc = 1;
+	}
+	if(ASPLASH_Screen1[playerid] == PlayerText:-1)
+		ASPLASH_Screen1[playerid] = CreatePlayerTextDraw(playerid, 0.000000, 0.000000, va_return("loadsc%d:loadsc%d", sc, sc));
 	PlayerTextDrawFont(playerid, ASPLASH_Screen1[playerid], 4);
 	PlayerTextDrawLetterSize(playerid, ASPLASH_Screen1[playerid], 0.600000, 2.000000);
 	PlayerTextDrawTextSize(playerid, ASPLASH_Screen1[playerid], 643.000000, 450.500000);
