@@ -108,6 +108,7 @@ Bạn có thể tự do sử dụng, sửa đổi, và phân phối lại – mi
 ## 🗓️ Lịch Sử Cập Nhật | Changelog
 
 - **v1.0** – Phát hành bản đầu tiên  
+- **v2.0** – Door, Teleport, SplashScreen - Update
 
 ---
 
