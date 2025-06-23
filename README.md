@@ -1,6 +1,6 @@
 # 🇻🇳 Dự Án Gamemode SAMP/OMP Việt Nam  
 ### *Vietnamese SAMP/OMP Gamemode Project*
-
+![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/VNBASE.png)
 ---
 
 ## 🌟 Giới thiệu | Introduction
