@@ -8,8 +8,6 @@
 #include <YSI-Includes\YSI_Coding\y_va>
 #include <YSI-Includes\YSI_Coding\y_timers>
 #include <YSI-Includes\YSI_Data\y_iterate>
-#include "./includes/CallTeleportSystem.pwn"
-#include "./includes/Door/CallDoorSystem.pwn"
 #define func%0(%1) forward %0(%1); public %0(%1)
 #if !defined setnull
 	#define setnull(%1) %1[0]='\1'; %1[1]=0
@@ -60,6 +58,9 @@ hook OnGameModeInit()
 }
 
 
+#include "../include/CallDoorSystem"
+#include "../include/CallTeleportSystem"
+#include "../include/CallSplashScreen"
 #include "./includes/Color-define.pwn"
 #include "./includes/database.pwn"
 #include "./includes/stock.pwn"
