@@ -14,7 +14,7 @@
     "logo": "",
     "discord": {
         "invite": "",
-        "bot_token": "MYBOTTOKEN"
+        "bot_token": ""
     },
     "chat_input_filter": true,
     "enable_query": true,
@@ -100,12 +100,15 @@
         "main_scripts": [
             "VNBASE"
         ],
-        "side_scripts": ["filterscripts/mapfix", "filterscripts/door", "filterscripts/Teleport", "filterscripts/SplashScreen"]
+        "side_scripts": ["filterscripts/mapfix", "filterscripts/door", "filterscripts/Teleport", "filterscripts/SplashScreen", "filterscripts/NameTags"]
     },
     "rcon": {
         "allow_teleport": false,
         "enable": false,
         "password": "VNBASE.RCON"
+    },
+    "crashdetect": {
+        "long_call_time" : 50000
     },
     "sleep": 5.0,
     "use_dyn_ticks": true,

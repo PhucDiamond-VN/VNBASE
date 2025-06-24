@@ -7,6 +7,7 @@
 #define FILTERSCRIPT
 
 #include <open.mp>
+#include <crashdetect>
 
 #define MAPFIX_VERSION					"4.6.6"
 
@@ -42,6 +43,7 @@ new
 
 public OnFilterScriptInit()
 {
+	SetCrashDetectLongCallTime(GetConsoleVarAsInt("crashdetect.long_call_time"));
 	#if defined GetSVarInt\
 		&& defined SetSVarInt
 		if(GetSVarInt("MapFixIsEnabled"))

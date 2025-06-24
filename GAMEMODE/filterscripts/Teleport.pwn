@@ -46,3 +46,10 @@ public OnPlayerDisconnect(playerid, reason){
 	}
 	return 1;
 }
+public OnFilterScriptInit(){
+	print(" ");
+	print("  -----------------------------------------------------------");
+	print("  |  Copyright 2025 PhucDiamond-VN/VNBASE - Teleport System |");
+	print("  -----------------------------------------------------------");
+	print(" ");
+}

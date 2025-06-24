@@ -1,3 +1,4 @@
+#define debug 0
 #include <open.mp>
 #include <a_mysql>
 #include <easydialog>
@@ -33,14 +34,15 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 main()
 {
-	printf(" ");
-	printf("  ------------------------------------------");
-	printf("  |  Copyright 2025 PhucDiamond-VN/VNBASE  |");
-	printf("  ------------------------------------------");
-	printf(" ");
+	print(" ");
+	print("  ------------------------------------------------");
+	print("  |  Copyright 2025 PhucDiamond-VN/VNBASE - Main |");
+	print("  ------------------------------------------------");
+	print(" ");
 }
 hook OnGameModeInit()
 {
+	SetCrashDetectLongCallTime(GetConsoleVarAsInt("crashdetect.long_call_time"));
 	mysql_connect_file("mysql.ini");
 	new error = mysql_errno(MYSQL_DEFAULT_HANDLE);
 	if (MYSQL_DEFAULT_HANDLE == MYSQL_INVALID_HANDLE || (error != 0 && error != 1060))

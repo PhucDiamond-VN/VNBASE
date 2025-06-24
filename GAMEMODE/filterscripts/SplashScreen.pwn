@@ -1,19 +1,25 @@
 #define NO_TAGS
+#define debug 0
 #include <open.mp>
 #include <YSI-Includes\YSI_Coding\y_va>
 #include <YSI-Includes\YSI_Coding\y_timers>
 #define func%0(%1) forward %0(%1); public %0(%1)
 new PlayerText:ASPLASH_Screen[MAX_PLAYERS] = {PlayerText:-1,...};
 new PlayerText:ASPLASH_Screen1[MAX_PLAYERS] = {PlayerText:-1,...};
+public OnFilterScriptInit(){
+	print(" ");
+	print("  ---------------------------------------------------------------");
+	print("  |  Copyright 2025 PhucDiamond-VN/VNBASE - SplashScreen System |");
+	print("  ---------------------------------------------------------------");
+	print(" ");
+	SetCrashDetectLongCallTime(GetConsoleVarAsInt("crashdetect.long_call_time"));
+	return 1;
+}
 public OnFilterScriptExit(){
 	foreach(new i:Player){
-		if(GetPVarType(i, "ASPLASH_CallBack")){
-			DeletePVar(i, "ASplashScreen_Value");
-			DeletePVar(i, "ASPLASH_CallBack");
-			if(GetPVarType(i, "ASplashScreen_Timer"))KillTimer(GetPVarInt(i, "ASplashScreen_Timer"));
-			if(ASPLASH_Screen[i] != PlayerText:-1)PlayerTextDrawDestroy(i, ASPLASH_Screen[i]);
-			if(ASPLASH_Screen1[i] != PlayerText:-1)PlayerTextDrawDestroy(i, ASPLASH_Screen1[i]);
-		}
+		if(GetPVarType(i, "ASplashScreen_Timer"))KillTimer(GetPVarInt(i, "ASplashScreen_Timer"));
+		if(ASPLASH_Screen[i] != PlayerText:-1)PlayerTextDrawDestroy(i, ASPLASH_Screen[i]);
+		if(ASPLASH_Screen1[i] != PlayerText:-1)PlayerTextDrawDestroy(i, ASPLASH_Screen1[i]);
 	}
 	return 1;
 }
@@ -35,15 +41,12 @@ func StartASplashScreen(playerid, const CallBack[], statee){
 	PlayerTextDrawSetSelectable(playerid, ASPLASH_Screen[playerid], false);
 
 	new sc;
-	if(statee == 0){
+	if(!GetPVarType(playerid, "Old_Sc")){
 		sc = random(14)+1;
-		SetPVarInt(playerid, "Old_Pic", sc);
+		SetPVarInt(playerid, "Old_Sc", sc);
 	}
 	else{
-		if(GetPVarType(playerid, "Old_Pic"))
-			sc = GetPVarInt(playerid, "Old_Pic");
-		else
-			sc = 1;
+		sc = GetPVarInt(playerid, "Old_Sc");
 	}
 	if(ASPLASH_Screen1[playerid] == PlayerText:-1)
 		ASPLASH_Screen1[playerid] = CreatePlayerTextDraw(playerid, 0.000000, 0.000000, va_return("loadsc%d:loadsc%d", sc, sc));
