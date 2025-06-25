@@ -31,6 +31,7 @@
 #define TimeSavePlayerData 60000*3 // 3 phút save một lần
 #define MinPassLen 3 // độ dài tối thiểu của pass
 #define MaxPassLen 33 // độ dài tối đa của pass
+#define LevelNewbie 3 // Từ level này trở xuống sẽ có tag Newbie
 /////////////////////////////////////////////////////////////////////////////////////////
 main()
 {
@@ -61,8 +62,10 @@ hook OnGameModeInit()
 
 
 #include "../include/CallDoorSystem"
+#include "../include/CallNameTagSystem"
 #include "../include/CallTeleportSystem"
 #include "../include/CallSplashScreen"
+#include "./includes/SystemMessage.pwn"
 #include "./includes/Color-define.pwn"
 #include "./includes/database.pwn"
 #include "./includes/stock.pwn"
@@ -93,5 +96,7 @@ ptask SavePlayerData[TimeSavePlayerData](playerid){
 }
 hook OnPlayerDisconnect(playerid, reason){
 	SavePlayerInfo(playerid);
+    new empty[pInfo];
+    PlayerInfo[playerid] = empty;
 	return 1;
 }

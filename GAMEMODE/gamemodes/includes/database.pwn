@@ -31,6 +31,13 @@ stock GetAllDataPlayer(playerid){ // Lấy các dữ liệu của player về Pl
     PlayerInfo[playerid][pvw] = GetPlayerVirtualWorld(playerid);
     GetPlayerFacingAngle(playerid, PlayerInfo[playerid][ppos][3]);
 }
+stock DefaultRegisterValue(playerid){
+    PlayerInfo[playerid][ppos][0] = ToaDo_DangkyXong_X;
+    PlayerInfo[playerid][ppos][1] = ToaDo_DangkyXong_Y;
+    PlayerInfo[playerid][ppos][2] = ToaDo_DangkyXong_Z;
+    PlayerInfo[playerid][ppos][3] = ToaDo_DangkyXong_A;
+    PlayerInfo[playerid][level] = 1;
+}
 stock SavePlayerInfo(playerid){
 	if(!PlayerInfo[playerid][IsLoging])return 0;
 	printf("Saveing player data %s", strtoupper(PlayerInfo[playerid][username]));
@@ -61,6 +68,9 @@ stock SavePlayerInfo(playerid){
     mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `players` SET `pvw` = %d WHERE `id` = %d",
         PlayerInfo[playerid][pvw],
         PlayerInfo[playerid][mysqlid]), false);
+    mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `players` SET `level` = %d WHERE `id` = %d",
+        PlayerInfo[playerid][level],
+        PlayerInfo[playerid][mysqlid]), false);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	printf("Save player data %s(%d) susscess", strtoupper(PlayerInfo[playerid][username]), PlayerInfo[playerid][mysqlid]);
@@ -88,10 +98,8 @@ hook OnGameModeInit(){
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
 hook OnPlayerConnect(playerid){
-    new empty[pInfo];
     SetPlayerHealth(playerid, 100);
     SetPlayerArmour(playerid, 0);
-    PlayerInfo[playerid] = empty;
 	return 1;
 }
 hook OnPlayerDisconnect(playerid, reason){
@@ -115,6 +123,7 @@ func OnPlayerDataLoaded(playerid)
     cache_get_value_name_int(0, "id", PlayerInfo[playerid][mysqlid]);
     cache_get_value_name_int(0, "pint", PlayerInfo[playerid][pint]);
     cache_get_value_name_int(0, "pvw", PlayerInfo[playerid][pvw]);
+    cache_get_value_name_int(0, "level", PlayerInfo[playerid][level]);
     cache_get_value_name_float(0, "ppos[0]", PlayerInfo[playerid][ppos][0]);
     cache_get_value_name_float(0, "ppos[1]", PlayerInfo[playerid][ppos][1]);
     cache_get_value_name_float(0, "ppos[2]", PlayerInfo[playerid][ppos][2]);

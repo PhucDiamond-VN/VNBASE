@@ -54,10 +54,7 @@ Dialog:PlayerRegister(playerid, response, listitem, inputtext[]) {
         if(strlen(inputtext) < MinPassLen || strlen(inputtext) >= MaxPassLen)return Dialog_Show(playerid, PlayerRegister, DIALOG_STYLE_INPUT, "Dang ky tai khoan", va_return("Tai khoan nay hien khong ton tai.\nhay nhap mat khau vao ben duoi de tien hanh dang ky.\n\n     Mat khau khong duoc qua ngan hoac qua dai (%d - %d ky tu)", MinPassLen, MaxPassLen-1), "Xong", "Thoat");
         format(PlayerInfo[playerid][password], MaxPassLen, inputtext);
         InsertPlayer(playerid, PlayerInfo[playerid][password]);
-        PlayerInfo[playerid][ppos][0] = ToaDo_DangkyXong_X;
-        PlayerInfo[playerid][ppos][1] = ToaDo_DangkyXong_Y;
-        PlayerInfo[playerid][ppos][2] = ToaDo_DangkyXong_Z;
-        PlayerInfo[playerid][ppos][3] = ToaDo_DangkyXong_A;
+        DefaultRegisterValue(playerid);
         SavePlayerInfo(playerid);
         PlayerInfo[playerid][IsLoging] = true;
         CallLocalFunction("OnPlayerLoging", "d", playerid);
@@ -100,9 +97,19 @@ func OnPlayerLoging(playerid){
     Teleport(playerid, PlayerInfo[playerid][ppos][0], PlayerInfo[playerid][ppos][1], PlayerInfo[playerid][ppos][2]);
     SetPlayerFacingAngle(playerid, PlayerInfo[playerid][ppos][3]);
     SetCameraBehindPlayer(playerid);
+    SetPlayerScore(playerid, PlayerInfo[playerid][level]);
+    if(PlayerInfo[playerid][level] <= LevelNewbie)AddTag(playerid, "Newbie");
+    if(TagExist(playerid, "Newbie")){
+        SM(playerid, sm_info, "Xin chao, ban la nguoi choi moi hay su dung /help de biet them ve game nhe!");
+    }
     return 1;
 }
-
+public OnPlayerLevelChange(playerid, oldlevel, newlevel){
+    if(newlevel <= LevelNewbie)AddTag(playerid, "Newbie");
+    else RemoveTag(playerid, "Newbie");
+    PlayerInfo[playerid][level] = newlevel;
+    return 1;
+}
 public OnPlayerCommandReceived(playerid, cmd[], params[], flags)
 {
   if (!PlayerInfo[playerid][IsLoging])

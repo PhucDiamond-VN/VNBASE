@@ -13,6 +13,12 @@ stock SendMessageToNearbyPlayers(playerid, Float:range, color, const message[])
         }
     }
 }
+forward OnPlayerLevelChange(playerid, oldlevel, newlevel);
+hook function SetPlayerScore(playerid, score){
+    new oldlevel = GetPlayerScore(playerid);
+    if(oldlevel != score)CallLocalFunction("OnPlayerLevelChange", "ddd", playerid, oldlevel, score);
+    return continue(playerid, score);
+}
 hook function ClearAnimations(playerid, FORCE_SYNC:forceSync = SYNC_ALL){
     return continue(playerid, forceSync);
 }
