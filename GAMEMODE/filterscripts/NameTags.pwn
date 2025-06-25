@@ -39,9 +39,26 @@ static updatetag(playerid){
 	if(!isnull(alltag))UpdateDynamic3DTextLabelText(PlayerTags[playerid], -1, alltag);
 	return 1;
 }
+forward TagExist(playerid, const tagexist[]);
+public TagExist(playerid, const tagexist[]){
+	for(new i; ;i++){
+		if(!GetPVarType(playerid, va_return("PlayerStringTags_%d", i))){
+			break;
+		}
+		else{
+			new tag[Max_Row_Len];
+			GetPVarString(playerid, va_return("PlayerStringTags_%d", i), tag);
+			if(strcmp(tagexist, tag, true) == 0){
+				return 1;
+			}
+		}
+	}
+	return 0;
+}
 forward AddTag(playerid, const text[]);
 public AddTag(playerid, const text[]){
-	if(strlen(text) > Max_Row_Len)return -1;
+	if(strlen(text) > Max_Row_Len)return 0;
+	if(TagExist(playerid, text))return 2;
 	new i, alltag[Max_Rows*Max_Row_Len+34*Max_Rows+Max_Rows-1], tag[Max_Row_Len];
 	for(new oldtaglen, row=1; ; i++){
 		if(!GetPVarType(playerid, va_return("PlayerStringTags_%d", i))){
@@ -83,22 +100,6 @@ public AddTag(playerid, const text[]){
 	UpdateDynamic3DTextLabelText(PlayerTags[playerid], -1, alltag);
 	return 1;
 }
-forward TagExist(playerid, const tagexist[]);
-public TagExist(playerid, const tagexist[]){
-	for(new i; ;i++){
-		if(!GetPVarType(playerid, va_return("PlayerStringTags_%d", i))){
-			break;
-		}
-		else{
-			new tag[Max_Row_Len];
-			GetPVarString(playerid, va_return("PlayerStringTags_%d", i), tag);
-			if(strcmp(tagexist, tag, true) == 0){
-				return 1;
-			}
-		}
-	}
-	return 0;
-}
 forward RemoveTag(playerid, const tagrm[]);
 public RemoveTag(playerid, const tagrm[]){
 	for(new i; ;i++){
@@ -120,11 +121,12 @@ public RemoveTag(playerid, const tagrm[]){
 						break;
 					}
 				}
+				updatetag(playerid);
 				return 1;
 			}
 		}
 	}
-	return 0;
+	return 1;
 }
 forward ClearTags(playerid);
 public ClearTags(playerid){
@@ -134,6 +136,7 @@ public ClearTags(playerid){
 		}
 		else break;
 	}
+	UpdateDynamic3DTextLabelText(PlayerTags[playerid], -1, "");
 	return 1;
 }
 public OnFilterScriptInit(){
