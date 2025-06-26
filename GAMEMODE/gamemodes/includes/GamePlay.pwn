@@ -132,3 +132,10 @@ public OnPlayerCommandPerformed(playerid, cmd[], params[], result, flags)
 
   return 1;
 }
+
+public OnPlayerDisableCheckPoint(playerid){
+    return 1;
+}
+public OnPlayerNewCheckPoint(playerid, Float:x, Float:y, Float:z, Float:size){
+    return 1;
+}

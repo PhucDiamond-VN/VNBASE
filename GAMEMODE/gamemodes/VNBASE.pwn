@@ -65,6 +65,7 @@ hook OnGameModeInit()
 #include "../include/CallNameTagSystem"
 #include "../include/CallTeleportSystem"
 #include "../include/CallSplashScreen"
+#include "./includes/ProCheckPoint"
 #include "./includes/SystemMessage.pwn"
 #include "./includes/Color-define.pwn"
 #include "./includes/database.pwn"
