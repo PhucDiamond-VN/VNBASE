@@ -23,7 +23,7 @@
 		        "-d3"
 			], 
 		    "file_regex": "(.*?)\\(([0-9]*)[- 0-9]*\\)", 
-		    "selector": "$project_path/GAMEMODE/gamemodes/young.pwn",
+		    "selector": "$project_path/GAMEMODE/gamemodes/VNBASE.pwn",
 		}
 	],
 }
