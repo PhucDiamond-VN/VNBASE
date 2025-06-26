@@ -96,7 +96,7 @@
     },
     "password": "",
     "pawn": {
-        "legacy_plugins": ["crashdetect", "mysql", "requests", "streamer", "PawnPlus", "ColAndreas", "json", "pawnregex", "pawn-memory", "Whirlpool"],
+        "legacy_plugins": ["crashdetect", "mysql", "requests", "streamer", "PawnPlus", "ColAndreas", "json", "pawnregex", "pawn-memory", "Whirlpool", "textdraw-streamer"],
         "main_scripts": [
             "VNBASE"
         ],

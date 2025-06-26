@@ -139,3 +139,17 @@ public OnPlayerDisableCheckPoint(playerid){
 public OnPlayerNewCheckPoint(playerid, Float:x, Float:y, Float:z, Float:size){
     return 1;
 }
+public OnCancelDynamicTextDraw(playerid)
+{
+    return 0;
+}
+
+public OnClickDynamicTextDraw(playerid, Text:textid)
+{
+    return 0;
+}
+
+public OnClickDynamicPlayerTextDraw(playerid, PlayerText:textid)
+{
+    return 0;
+}

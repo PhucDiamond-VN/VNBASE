@@ -41,7 +41,7 @@ func StartASplashScreen(playerid, const CallBack[], statee){
 	PlayerTextDrawSetSelectable(playerid, ASPLASH_Screen[playerid], false);
 
 	new sc;
-	if(!GetPVarType(playerid, "Old_Sc")){
+	if(!GetPVarType(playerid, "Old_Sc") || !statee){
 		sc = random(14)+1;
 		SetPVarInt(playerid, "Old_Sc", sc);
 	}

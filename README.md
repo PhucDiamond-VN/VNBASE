@@ -31,12 +31,12 @@ Dự án ra đời để tạo một môi trường **sạch, dễ mở rộng, 
 
 ## 🔧 Công Nghệ Sử Dụng | Technologies Used
 
-- **Ngôn ngữ / Language:** `PAWN (Qawno)`
-- **Server:** `SAMP Dedicated Server` / `OPEN.MP`
+- **Ngôn ngữ / Language:** `Qawno`
+- **Server:** `OPEN.MP`
 - **Plugins:**  
   `streamer`, `sscanf`, `pawncmd`, `mysql`, `crashdetect`, `requests`,  
   `PawnPlus`, `ColAndreas`, `discord-connector`, `json`, `pawnregex`,  
-  `pawn-memory`, `Whirlpool`
+  `pawn-memory`, `Whirlpool`, `textdraw-streamer`
 - **Hệ điều hành hỗ trợ / Supported OS:** `Windows`
 
 ---

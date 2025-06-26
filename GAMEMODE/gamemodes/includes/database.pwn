@@ -102,10 +102,6 @@ hook OnPlayerConnect(playerid){
     SetPlayerArmour(playerid, 0);
 	return 1;
 }
-hook OnPlayerDisconnect(playerid, reason){
-    PlayerInfo[playerid][IsLoging] = false;
-    return 1;
-}
 hook OnPlayerSpawn(playerid){
     if(!PlayerInfo[playerid][IsLoging])LoadPlayerInfo(playerid);
     SetCameraBehindPlayer(playerid);

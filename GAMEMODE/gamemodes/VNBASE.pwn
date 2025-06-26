@@ -5,6 +5,7 @@
 #include <streamer>
 #include <Pawn.CMD>
 #include <sscanf2>
+#include <textdraw-streamer>
 #include <YSI-Includes\YSI_Coding\y_hooks>
 #include <YSI-Includes\YSI_Coding\y_va>
 #include <YSI-Includes\YSI_Coding\y_timers>
@@ -99,5 +100,6 @@ hook OnPlayerDisconnect(playerid, reason){
 	SavePlayerInfo(playerid);
     new empty[pInfo];
     PlayerInfo[playerid] = empty;
+    PlayerInfo[playerid][IsLoging] = false;
 	return 1;
 }
