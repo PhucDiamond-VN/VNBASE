@@ -15,6 +15,7 @@
 |`crashdetect`|Y-Less|https://github.com/Y-Less/samp-plugin-crashdetect|
 |`Pawn.CMD`|katursis|https://github.com/katursis/Pawn.CMD|
 |`Pawn.Regex`|katursis|https://github.com/katursis/Pawn.Regex|
+|`Pawn.RakNet`|katursis|https://github.com/katursis/Pawn.RakNet|
 |`SA-MP-MySQL`|pBlueG|https://github.com/pBlueG/SA-MP-MySQL|
 |`discord-connector`|pBlueG|https://github.com/maddinat0r/samp-discord-connector|
 |`pawn-requests`|Southclaws|https://github.com/Southclaws/pawn-requests|
