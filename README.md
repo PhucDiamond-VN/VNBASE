@@ -1,6 +1,31 @@
 # 🇻🇳 Dự Án Gamemode SAMP/OMP Việt Nam  
 ### *Vietnamese SAMP/OMP Gamemode Project*
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/VNBASE.png)
+
+---
+
+# Plugins using and Credits
+***Xin cảm ơn các tác giả đã tạo ra và cho phép sử dụng***   
+***Thanks to the authors for creating and allowing use.***
+| Plugins | Credits |Links|
+|---------|---------|-----|
+|`All open.mp plugins and server runtimes`|AmyrAhmady|https://github.com/openmultiplayer/open.mp|
+|`Ysi`|Y-Less|https://github.com/pawn-lang/YSI-Includes|
+|`Sscaf`|Y-Less|https://github.com/Y-Less/sscanf|
+|`crashdetect`|Y-Less|https://github.com/Y-Less/samp-plugin-crashdetect|
+|`Pawn.CMD`|katursis|https://github.com/katursis/Pawn.CMD|
+|`Pawn.Regex`|katursis|https://github.com/katursis/Pawn.Regex|
+|`SA-MP-MySQL`|pBlueG|https://github.com/pBlueG/SA-MP-MySQL|
+|`discord-connector`|pBlueG|https://github.com/maddinat0r/samp-discord-connector|
+|`pawn-requests`|Southclaws|https://github.com/Southclaws/pawn-requests|
+|`Whirlpool`|Southclaws|https://github.com/Southclaws/samp-whirlpool|
+|`json`|Southclaws|https://github.com/Southclaws/pawn-json|
+|`PawnPlus`|IS4Code|https://github.com/IS4Code/PawnPlus|
+|`ColAndreas`|Pottus|https://github.com/Pottus/ColAndreas|
+|`pawn-memory`|BigETI|https://github.com/BigETI/pawn-memory|
+|`textdraw-streamer`|nexquery|https://github.com/nexquery/samp-textdraw-streamer|
+|`streamer`|samp-incognito|https://github.com/samp-incognito/samp-streamer-plugin|
+
 ---
 
 ## 🌟 Giới thiệu | Introduction
@@ -29,14 +54,6 @@ Dự án ra đời để tạo một môi trường **sạch, dễ mở rộng, 
 
 ---
 
-## 🔧 Công Nghệ Sử Dụng | Technologies Used
-
-- **Ngôn ngữ / Language:** `Qawno`
-- **Server:** `OPEN.MP`
-- **Plugins:**  
-  `streamer`, `sscanf`, `pawncmd`, `mysql`, `crashdetect`, `requests`,  
-  `PawnPlus`, `ColAndreas`, `discord-connector`, `json`, `pawnregex`,  
-  `pawn-memory`, `Whirlpool`, `textdraw-streamer`
 - **Hệ điều hành hỗ trợ / Supported OS:** `Windows`
 
 ---
