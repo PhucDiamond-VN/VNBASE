@@ -4,8 +4,8 @@
 #include <YSI-Includes\YSI_Coding\y_va>
 #include <YSI-Includes\YSI_Coding\y_timers>
 #define func%0(%1) forward %0(%1); public %0(%1)
-new PlayerText:ASPLASH_Screen[MAX_PLAYERS] = {PlayerText:-1,...};
-new PlayerText:ASPLASH_Screen1[MAX_PLAYERS] = {PlayerText:-1,...};
+static PlayerText:ASPLASH_Screen[MAX_PLAYERS] = {PlayerText:-1,...};
+static PlayerText:ASPLASH_Screen1[MAX_PLAYERS] = {PlayerText:-1,...};
 public OnFilterScriptInit(){
 	print(" ");
 	print("  ---------------------------------------------------------------");
@@ -81,6 +81,7 @@ public OnPlayerDisconnect(playerid, reason){
 	}
 	return 1;
 }
+func IsSplashScreenExist(playerid)return GetPVarType(playerid, "ASplashScreen_Timer");
 func ASplashScreenUpdate(playerid, statee){
 	if(statee == 0){
 		SetPVarInt(playerid, "ASplashScreen_Value", GetPVarInt(playerid, "ASplashScreen_Value")+25);

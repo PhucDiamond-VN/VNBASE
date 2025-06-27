@@ -1,5 +1,6 @@
 #define FILTERSCRIPT
 #include <open.mp>
+#include <crashdetect>
 #include <streamer>
 #include "../include/CallSplashScreen"
 enum eTele{
@@ -7,7 +8,7 @@ enum eTele{
 	tele_vw,
 	tele_int
 }
-new PlayerTeleInfo[MAX_PLAYERS][eTele];
+static PlayerTeleInfo[MAX_PLAYERS][eTele];
 forward waitloadingmap(playerid);
 public waitloadingmap(playerid){
 	DeletePVar(playerid, "waitloadingmap");
@@ -47,6 +48,7 @@ public OnPlayerDisconnect(playerid, reason){
 	return 1;
 }
 public OnFilterScriptInit(){
+	SetCrashDetectLongCallTime(GetConsoleVarAsInt("crashdetect.long_call_time"));
 	print(" ");
 	print("  -----------------------------------------------------------");
 	print("  |  Copyright 2025 PhucDiamond-VN/VNBASE - Teleport System |");

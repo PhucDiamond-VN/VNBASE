@@ -63,6 +63,7 @@ hook OnGameModeInit()
 
 
 #include "../include/CallDoorSystem"
+#include "../include/CallSetGodSystem"
 #include "../include/CallNameTagSystem"
 #include "../include/CallTeleportSystem"
 #include "../include/CallSplashScreen"
@@ -72,7 +73,9 @@ hook OnGameModeInit()
 #include "./includes/database.pwn"
 #include "./includes/stock.pwn"
 #include "./includes/Door/DoorCMD.pwn"
-#include "./includes/GamePlay.pwn"
+#include "./includes/LogingAndRegister.pwn"
+#include "./includes/CallBack.pwn"
+#include "./includes/Command.pwn"
 
 
 

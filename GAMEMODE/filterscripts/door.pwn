@@ -27,8 +27,8 @@ enum dinfo{
 	dTestLos,
 	Float:dRangeEnterExit
 }
-new bool:ChangeCheck;
-new DoorInfo[MAX_DOORS][dinfo];
+static bool:ChangeCheck;
+static DoorInfo[MAX_DOORS][dinfo];
 static LoadDoor(){
 	mysql_pquery(MYSQL_DEFAULT_HANDLE, "SELECT * FROM `Door`", "OnDoorDataLoaded");
 	return 1;

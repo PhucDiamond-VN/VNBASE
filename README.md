@@ -25,6 +25,7 @@
 |`pawn-memory`|BigETI|https://github.com/BigETI/pawn-memory|
 |`textdraw-streamer`|nexquery|https://github.com/nexquery/samp-textdraw-streamer|
 |`streamer`|samp-incognito|https://github.com/samp-incognito/samp-streamer-plugin|
+|`mapfix`|Nexius|https://github.com/NexiusTailer/MapFix|
 
 ---
 
