@@ -48,10 +48,12 @@ public OnPlayerEnterExitDoor(playerid, doorid, response, Float:x, Float:y, Float
 public OnPlayerEnterSafeZone(playerid, szid){
     SM(playerid, sm_info, "Ban dang duoc bao ve boi safezone!");
     SetGod(playerid, true);
+    AddTag(playerid, "{03fc90}SafeZone bao ve");
     return 1;
 }
 public OnPlayerExitSafeZone(playerid, szid){
     SM(playerid, sm_info, "Ban da roi khoi khu vuc safezone hay can than!");
     SetGod(playerid, false);
+    RemoveTag(playerid, "{03fc90}SafeZone bao ve");
     return 1;
 }

@@ -3,12 +3,13 @@
 #include <streamer>
 #include <YSI-Includes\YSI_Data\y_iterate>
 #include <YSI-Includes\YSI_Coding\y_va>
-#define Max_Row_Len 25
+#define Max_NameTag_Len 100
+#define Max_Row_Len 50
 #define Max_Rows 4
 static Float:draw_radius;
 static STREAMER_TAG_3D_TEXT_LABEL:PlayerTags[MAX_PLAYERS];
 static updatetag(playerid){
-	new alltag[Max_Rows*Max_Row_Len+34*Max_Rows+Max_Rows-1], tag[Max_Row_Len+1];
+	new alltag[Max_Rows*Max_Row_Len+34*Max_Rows+Max_Rows-1], tag[Max_NameTag_Len];
 	for(new i, oldtaglen, row=1; ; i++){
 		if(!GetPVarType(playerid, va_return("PlayerStringTags_%d", i))){
 			break;
@@ -46,7 +47,7 @@ public TagExist(playerid, const tagexist[]){
 			break;
 		}
 		else{
-			new tag[Max_Row_Len+1];
+			new tag[Max_NameTag_Len];
 			GetPVarString(playerid, va_return("PlayerStringTags_%d", i), tag);
 			if(strcmp(tagexist, tag, true) == 0){
 				return 1;
@@ -59,7 +60,7 @@ forward AddTag(playerid, const text[]);
 public AddTag(playerid, const text[]){
 	if(strlen(text) > Max_Row_Len)return 0;
 	if(TagExist(playerid, text))return 2;
-	new i, alltag[Max_Rows*Max_Row_Len+34*Max_Rows+Max_Rows-1], tag[Max_Row_Len+1];
+	new i, alltag[Max_Rows*Max_Row_Len+34*Max_Rows+Max_Rows-1], tag[Max_NameTag_Len];
 	for(new oldtaglen, row=1; ; i++){
 		if(!GetPVarType(playerid, va_return("PlayerStringTags_%d", i))){
 			SetPVarString(playerid, va_return("PlayerStringTags_%d", i), text);
@@ -107,7 +108,7 @@ public RemoveTag(playerid, const tagrm[]){
 			break;
 		}
 		else{
-			new tag[Max_Row_Len+1];
+			new tag[Max_NameTag_Len];
 			GetPVarString(playerid, va_return("PlayerStringTags_%d", i), tag);
 			if(strcmp(tagrm, tag, true) == 0){
 				DeletePVar(playerid, va_return("PlayerStringTags_%d", i));

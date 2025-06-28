@@ -116,11 +116,13 @@ Bạn có thể tự do sử dụng, sửa đổi, và phân phối lại – mi
 
 ## 📸 Ảnh Màn Hình | Screenshots
 
-- **Door system**
+- **Door System**
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/doorcommand.png)
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/door.png)
-- **Splash Screen & Teleport system**
+- **Splash Screen & Teleport System**
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/SplashScreen.gif)
+- **SetGod & SafeZone System**
+![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/SetGodANDSafeZone.png)
 
 ---
 
