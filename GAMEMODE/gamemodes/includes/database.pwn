@@ -50,16 +50,16 @@ stock SavePlayerInfo(playerid){
     mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `players` SET `password` = %s WHERE `id` = %d",
         PlayerInfo[playerid][password],
         PlayerInfo[playerid][mysqlid]), false);
-    mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `players` SET `ppos[0]` = %f WHERE `id` = %d",
+    mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `players` SET `ppos[0]` = %.1f WHERE `id` = %d",
         PlayerInfo[playerid][ppos][0],
         PlayerInfo[playerid][mysqlid]), false);
-    mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `players` SET `ppos[1]` = %f WHERE `id` = %d",
+    mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `players` SET `ppos[1]` = %.1f WHERE `id` = %d",
         PlayerInfo[playerid][ppos][1],
         PlayerInfo[playerid][mysqlid]), false);
-    mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `players` SET `ppos[2]` = %f WHERE `id` = %d",
+    mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `players` SET `ppos[2]` = %.1f WHERE `id` = %d",
         PlayerInfo[playerid][ppos][2],
         PlayerInfo[playerid][mysqlid]), false);
-    mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `players` SET `ppos[3]` = %f WHERE `id` = %d",
+    mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `players` SET `ppos[3]` = %.1f WHERE `id` = %d",
         PlayerInfo[playerid][ppos][3],
         PlayerInfo[playerid][mysqlid]), false);
     mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `players` SET `pint` = %d WHERE `id` = %d",

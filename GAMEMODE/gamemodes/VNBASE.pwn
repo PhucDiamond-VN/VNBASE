@@ -67,15 +67,15 @@ hook OnGameModeInit()
 #include "../include/CallNameTagSystem"
 #include "../include/CallTeleportSystem"
 #include "../include/CallSplashScreen"
+#include "../include/CallSafeZoneSystem"
 #include "./includes/ProCheckPoint"
 #include "./includes/SystemMessage.pwn"
 #include "./includes/Color-define.pwn"
 #include "./includes/database.pwn"
-#include "./includes/stock.pwn"
-#include "./includes/Door/DoorCMD.pwn"
+#include "./includes/stocks.pwn"
 #include "./includes/LogingAndRegister.pwn"
-#include "./includes/CallBack.pwn"
-#include "./includes/Command.pwn"
+#include "./includes/CallBacks.pwn"
+#include "./includes/Commands.pwn"
 
 
 

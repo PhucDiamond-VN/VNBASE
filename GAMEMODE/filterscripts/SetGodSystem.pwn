@@ -28,18 +28,8 @@ func SetGod(playerid, bool:statee){
 	}
 	return 1;
 }
-public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bodypart){
-	if(IsGod(playerid)){
-		new Float:php, Float:par;
-		GetPlayerHealth(playerid, php);
-		GetPlayerArmour(playerid, par);
-		if(php != 255)SetPlayerHealth(playerid, 255);
-		if(par != 255)SetPlayerArmour(playerid, 255);
-	}
-	return 1;
-}
 
-static SendSetPlayerHeath(playerid, Float:hp){
+static SendSetPlayerHealth(playerid, Float:hp){
 	new BitStream:cbs = BS_New();
 	BS_WriteValue(cbs,
 		PR_FLOAT, hp
@@ -48,7 +38,7 @@ static SendSetPlayerHeath(playerid, Float:hp){
 	BS_Delete(cbs);
 	return 1;
 }
-static SendSetPlayerArmor(playerid, Float:armor){
+static SendSetPlayerArmour(playerid, Float:armor){
 	new BitStream:cbs = BS_New();
 	BS_WriteValue(cbs,
 		PR_FLOAT, armor
@@ -71,12 +61,12 @@ public OnIncomingPacket(playerid, packetid, BitStream:bs){
 	    BS_ReadOnFootSync(bs, onFootData);
 		if(onFootData[PR_health] != 255){
 			onFootData[PR_health] = 255;
-			SendSetPlayerHeath(playerid, 255);
+			SendSetPlayerHealth(playerid, 255);
 			change = true;
 		}
 		if(onFootData[PR_armour] != 255){
 			onFootData[PR_armour] = 255;
-			SendSetPlayerArmor(playerid, 255);
+			SendSetPlayerArmour(playerid, 255);
 			change = true;
 		}
 		if(change){
@@ -90,12 +80,12 @@ public OnIncomingPacket(playerid, packetid, BitStream:bs){
 	    BS_ReadInCarSync(bs, inCarData);
 		if(inCarData[PR_playerHealth] != 255){
 			inCarData[PR_playerHealth] = 255;
-			SetPlayerHealth(playerid, 255);
+			SendSetPlayerHealth(playerid, 255);
 			change = true;
 		}
 		if(inCarData[PR_armour] != 255){
 			inCarData[PR_armour] = 255;
-			SetPlayerArmour(playerid, 255);
+			SendSetPlayerArmour(playerid, 255);
 			change = true;
 		}
 		if(change){
@@ -109,12 +99,12 @@ public OnIncomingPacket(playerid, packetid, BitStream:bs){
 	    BS_ReadPassengerSync(bs, passengerData);
 		if(passengerData[PR_playerHealth] != 255){
 			passengerData[PR_playerHealth] = 255;
-			SetPlayerHealth(playerid, 255);
+			SendSetPlayerHealth(playerid, 255);
 			change = true;
 		}
 		if(passengerData[PR_playerArmour] != 255){
 			passengerData[PR_playerArmour] = 255;
-			SetPlayerArmour(playerid, 255);
+			SendSetPlayerArmour(playerid, 255);
 			change = true;
 		}
 		if(change){
@@ -148,6 +138,11 @@ public OnOutgoingRPC(playerid, rpcid, BitStream:bs){
 	return 1;
 }
 public OnFilterScriptInit(){
+	print(" ");
+	print("  ---------------------------------------------------------");
+	print("  |  Copyright 2025 PhucDiamond-VN/VNBASE - SetGod System |");
+	print("  ---------------------------------------------------------");
+	print(" ");
 	foreach(new playerid : Player){
 		if(IsGod(playerid))SetGod(playerid, true);
 	}
@@ -157,8 +152,8 @@ public OnFilterScriptExit(){
 	SetCrashDetectLongCallTime(GetConsoleVarAsInt("crashdetect.long_call_time"));
 	foreach(new playerid:Player){
 		if(IsGod(playerid)){
-			SetPlayerHealth(playerid, GetPVarFloat(playerid, "offgodset_HP"));
-			SetPlayerArmour(playerid, GetPVarFloat(playerid, "offgodset_AR"));
+			SendSetPlayerHealth(playerid, GetPVarFloat(playerid, "offgodset_HP"));
+			SendSetPlayerArmour(playerid, GetPVarFloat(playerid, "offgodset_AR"));
 		}
 	}
 	return 1;

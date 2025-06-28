@@ -100,7 +100,7 @@
         "main_scripts": [
             "VNBASE"
         ],
-        "side_scripts": ["filterscripts/mapfix", "filterscripts/door", "filterscripts/Teleport", "filterscripts/SplashScreen", "filterscripts/NameTags", "filterscripts/SetGodSystem"]
+        "side_scripts": ["filterscripts/mapfix", "filterscripts/door", "filterscripts/Teleport", "filterscripts/SplashScreen", "filterscripts/NameTags", "filterscripts/SetGodSystem", "filterscripts/SafeZoneSystem"]
     },
     "rcon": {
         "allow_teleport": false,

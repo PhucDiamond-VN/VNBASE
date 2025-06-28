@@ -40,3 +40,18 @@ public OnClickDynamicPlayerTextDraw(playerid, PlayerText:textid)
 {
     return 0;
 }
+public OnPlayerEnterExitDoor(playerid, doorid, response, Float:x, Float:y, Float:z, virtualworld, interior){
+    if(!GetDoorOpen(doorid))return SendClientMessage(playerid, MAU_DO1, "Canh cua nay dang bi khoa!");
+    Teleport(playerid, x, y, z, virtualworld, interior);
+    return 1;
+}
+public OnPlayerEnterSafeZone(playerid, szid){
+    SM(playerid, sm_info, "Ban dang duoc bao ve boi safezone!");
+    SetGod(playerid, true);
+    return 1;
+}
+public OnPlayerExitSafeZone(playerid, szid){
+    SM(playerid, sm_info, "Ban da roi khoi khu vuc safezone hay can than!");
+    SetGod(playerid, false);
+    return 1;
+}

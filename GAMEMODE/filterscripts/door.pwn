@@ -3,7 +3,6 @@
 #include <a_mysql>
 #include <streamer>
 #include <YSI-Includes\YSI_Coding\y_va>
-#include <YSI-Includes\YSI_Coding\y_timers>
 #include <YSI-Includes\YSI_Data\y_iterate>
 #define MAX_DOORS 2000
 #define DOOR_LABEL_TEXT_SIZE 256
@@ -25,25 +24,35 @@ enum dinfo{
 	dLabelText[DOOR_LABEL_TEXT_SIZE],
 	dIsOpen,
 	dTestLos,
-	Float:dRangeEnterExit
+	Float:dRangeEnterExit,
+	SaveTimer
 }
-static bool:ChangeCheck;
 static DoorInfo[MAX_DOORS][dinfo];
 static LoadDoor(){
 	mysql_pquery(MYSQL_DEFAULT_HANDLE, "SELECT * FROM `Door`", "OnDoorDataLoaded");
 	return 1;
 }
-static SaveDoor(did){
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Ext[0]` = %f WHERE `id` = %d",
+forward StartSave(did);
+public StartSave(did){
+	DoorInfo[did][SaveTimer] = -1;
+	return SaveDoor(did, true);
+}
+static SaveDoor(did, bool:save = false){
+	if(!save){
+		if(DoorInfo[did][SaveTimer] != -1)KillTimer(DoorInfo[did][SaveTimer]);
+		DoorInfo[did][SaveTimer] = SetTimerEx("StartSave", 60000, false, "d", did);
+		return 1;
+	}
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Ext[0]` = %.1f WHERE `id` = %d",
         DoorInfo[did][dPos_Ext][0],
         did+1), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Ext[1]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Ext[1]` = %.1f WHERE `id` = %d",
         DoorInfo[did][dPos_Ext][1],
         did+1), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Ext[2]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Ext[2]` = %.1f WHERE `id` = %d",
         DoorInfo[did][dPos_Ext][2],
         did+1), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Ext[3]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Ext[3]` = %.1f WHERE `id` = %d",
         DoorInfo[did][dPos_Ext][3],
         did+1), false);
 	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dIntId_Ext` = %d WHERE `id` = %d",
@@ -57,16 +66,16 @@ static SaveDoor(did){
         did+1), false);
 
 
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Int[0]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Int[0]` = %.1f WHERE `id` = %d",
         DoorInfo[did][dPos_Int][0],
         did+1), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Int[1]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Int[1]` = %.1f WHERE `id` = %d",
         DoorInfo[did][dPos_Int][1],
         did+1), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Int[2]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Int[2]` = %.1f WHERE `id` = %d",
         DoorInfo[did][dPos_Int][2],
         did+1), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Int[3]` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dPos_Int[3]` = %.1f WHERE `id` = %d",
         DoorInfo[did][dPos_Int][3],
         did+1), false);
 	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dIntId_Int` = %d WHERE `id` = %d",
@@ -83,7 +92,7 @@ static SaveDoor(did){
 	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dLabelText` = %s WHERE `id` = %d",
         DoorInfo[did][dLabelText],
         did+1), false);
-	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dRangeEnterExit` = %f WHERE `id` = %d",
+	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dRangeEnterExit` = %.1f WHERE `id` = %d",
         DoorInfo[did][dRangeEnterExit],
         did+1), false);
 	mysql_query(MYSQL_DEFAULT_HANDLE, va_return("UPDATE `Door` SET `dIsOpen` = %d WHERE `id` = %d",
@@ -193,30 +202,25 @@ public OnFilterScriptInit(){
     LoadDoor();
 	return 1;
 }
-static SaveAllDoor(){
-	for(new did; did<MAX_DOORS; did++){
-		if(IsDoorExist(did))SaveDoor(did);
-	}
-	ChangeCheck = false;
-	return 1;
-}
-task TaskSaveDoor[60000](){
-	if(ChangeCheck)SaveAllDoor();
-}
 public OnFilterScriptExit(){
-	if(ChangeCheck)SaveAllDoor();
 	for(new did; did<MAX_DOORS; did++){
-		if(DoorInfo[did][dPickupId_Ext] != STREAMER_TAG_PICKUP:-1){
-			DestroyDynamicPickup(DoorInfo[did][dPickupId_Ext]);
+		if(DoorInfo[did][SaveTimer] != -1){
+			KillTimer(DoorInfo[did][SaveTimer]);
+			SaveDoor(did, true);
 		}
-		if(DoorInfo[did][dLabelId_Ext] != STREAMER_TAG_3D_TEXT_LABEL:-1){
-			DestroyDynamic3DTextLabel(DoorInfo[did][dLabelId_Ext]);
-		}
-		if(DoorInfo[did][dPickupId_Int] != STREAMER_TAG_PICKUP:-1){
-			DestroyDynamicPickup(DoorInfo[did][dPickupId_Int]);
-		}
-		if(DoorInfo[did][dLabelId_Int] != STREAMER_TAG_3D_TEXT_LABEL:-1){
-			DestroyDynamic3DTextLabel(DoorInfo[did][dLabelId_Int]);
+		if(IsDoorExist(did)){
+			if(DoorInfo[did][dPickupId_Ext] != STREAMER_TAG_PICKUP:-1){
+				DestroyDynamicPickup(DoorInfo[did][dPickupId_Ext]);
+			}
+			if(DoorInfo[did][dLabelId_Ext] != STREAMER_TAG_3D_TEXT_LABEL:-1){
+				DestroyDynamic3DTextLabel(DoorInfo[did][dLabelId_Ext]);
+			}
+			if(DoorInfo[did][dPickupId_Int] != STREAMER_TAG_PICKUP:-1){
+				DestroyDynamicPickup(DoorInfo[did][dPickupId_Int]);
+			}
+			if(DoorInfo[did][dLabelId_Int] != STREAMER_TAG_3D_TEXT_LABEL:-1){
+				DestroyDynamic3DTextLabel(DoorInfo[did][dLabelId_Int]);
+			}
 		}
 	}
 	return 1;
@@ -228,6 +232,7 @@ public OnDoorDataLoaded(){
 		DoorInfo[did][dLabelId_Ext] = STREAMER_TAG_3D_TEXT_LABEL:-1;
 		DoorInfo[did][dPickupId_Int] = STREAMER_TAG_PICKUP:-1;
 		DoorInfo[did][dLabelId_Int] = STREAMER_TAG_3D_TEXT_LABEL:-1;
+		DoorInfo[did][SaveTimer] = -1;
 		cache_get_value_name_float(did, "dPos_Ext[0]", DoorInfo[did][dPos_Ext][0]);
 		cache_get_value_name_float(did, "dPos_Ext[1]", DoorInfo[did][dPos_Ext][1]);
 		cache_get_value_name_float(did, "dPos_Ext[2]", DoorInfo[did][dPos_Ext][2]);
@@ -277,8 +282,8 @@ public DeleteDoor(did){
 	if(did < 0 || did >= MAX_DOORS)return 0;
 	if(!IsDoorExist(did))return 1;
 	DoorInfo[did][dPos_Ext][0] = DoorInfo[did][dPos_Ext][1] = DoorInfo[did][dPos_Ext][2] = DoorInfo[did][dPos_Int][0] = DoorInfo[did][dPos_Int][1] = DoorInfo[did][dPos_Int][2] = 0;
-	ChangeCheck = true;
 	UpdateDynamicDoor(did);
+	SaveDoor(did);
 	return 1;
 }
 forward IsDoorExist(did);
@@ -303,8 +308,8 @@ public SetDoorExtPos(did, Float:x, Float:y, Float:z){
 	DoorInfo[did][dPos_Ext][0] = x;
 	DoorInfo[did][dPos_Ext][1] = y;
 	DoorInfo[did][dPos_Ext][2] = z;
-	ChangeCheck = true;
 	UpdateDynamicDoor(did);
+	SaveDoor(did);
 	return 1;
 }
 forward SetDoorIntPos(did, Float:x, Float:y, Float:z);
@@ -314,8 +319,8 @@ public SetDoorIntPos(did, Float:x, Float:y, Float:z){
 	DoorInfo[did][dPos_Int][0] = x;
 	DoorInfo[did][dPos_Int][1] = y;
 	DoorInfo[did][dPos_Int][2] = z;
-	ChangeCheck = true;
 	UpdateDynamicDoor(did);
+	SaveDoor(did);
 	return 1;
 }
 forward SetDoorExtAngle(did, Float:Angle);
@@ -323,7 +328,7 @@ public SetDoorExtAngle(did, Float:Angle){
 	if(did < 0 || did >= MAX_DOORS)return 0;
 	if(DoorInfo[did][dPos_Ext][3] == Angle)return 1;
 	DoorInfo[did][dPos_Ext][3] = Angle;
-	ChangeCheck = true;
+	SaveDoor(did);
 	return 1;
 }
 forward SetDoorIntAngle(did, Float:Angle);
@@ -331,7 +336,7 @@ public SetDoorIntAngle(did, Float:Angle){
 	if(did < 0 || did >= MAX_DOORS)return 0;
 	if(DoorInfo[did][dPos_Int][3] == Angle)return 1;
 	DoorInfo[did][dPos_Int][3] = Angle;
-	ChangeCheck = true;
+	SaveDoor(did);
 	return 1;
 }
 forward SetDoorExtModelPickup(did, modelid);
@@ -339,8 +344,8 @@ public SetDoorExtModelPickup(did, modelid){
 	if(did < 0 || did >= MAX_DOORS)return 0;
 	if(DoorInfo[did][dModelPickup_Ext] == modelid)return 1;
 	DoorInfo[did][dModelPickup_Ext] = modelid;
-	ChangeCheck = true;
 	UpdateDynamicDoor(did);
+	SaveDoor(did);
 	return 1;
 }
 forward SetDoorIntModelPickup(did, modelid);
@@ -348,8 +353,8 @@ public SetDoorIntModelPickup(did, modelid){
 	if(did < 0 || did >= MAX_DOORS)return 0;
 	if(DoorInfo[did][dModelPickup_Int] == modelid)return 1;
 	DoorInfo[did][dModelPickup_Int] = modelid;
-	ChangeCheck = true;
 	UpdateDynamicDoor(did);
+	SaveDoor(did);
 	return 1;
 }
 forward SetDoorTextLabelContent(did, const text[]);
@@ -357,8 +362,8 @@ public SetDoorTextLabelContent(did, const text[]){
 	if(did < 0 || did >= MAX_DOORS)return 0;
 	if(strcmp(DoorInfo[did][dLabelText], text, true) == 0)return 1;
 	format(DoorInfo[did][dLabelText], DOOR_LABEL_TEXT_SIZE, text);
-	ChangeCheck = true;
 	UpdateDynamicDoor(did);
+	SaveDoor(did);
 	return 1;
 }
 forward SetDoorExtInterior(did, interior);
@@ -366,8 +371,8 @@ public SetDoorExtInterior(did, interior){
 	if(did < 0 || did >= MAX_DOORS)return 0;
 	if(DoorInfo[did][dIntId_Ext] == interior)return 1;
 	DoorInfo[did][dIntId_Ext] = interior;
-	ChangeCheck = true;
 	UpdateDynamicDoor(did);
+	SaveDoor(did);
 	return 1;
 }
 forward SetDoorIntInterior(did, interior);
@@ -375,8 +380,8 @@ public SetDoorIntInterior(did, interior){
 	if(did < 0 || did >= MAX_DOORS)return 0;
 	if(DoorInfo[did][dIntId_Int] == interior)return 1;
 	DoorInfo[did][dIntId_Int] = interior;
-	ChangeCheck = true;
 	UpdateDynamicDoor(did);
+	SaveDoor(did);
 	return 1;
 }
 forward SetDoorExtVirtualWorld(did, virtualworld);
@@ -384,8 +389,8 @@ public SetDoorExtVirtualWorld(did, virtualworld){
 	if(did < 0 || did >= MAX_DOORS)return 0;
 	if(DoorInfo[did][dVwId_Ext] == virtualworld)return 1;
 	DoorInfo[did][dVwId_Ext] = virtualworld;
-	ChangeCheck = true;
 	UpdateDynamicDoor(did);
+	SaveDoor(did);
 	return 1;
 }
 forward SetDoorIntVirtualWorld(did, virtualworld);
@@ -393,16 +398,16 @@ public SetDoorIntVirtualWorld(did, virtualworld){
 	if(did < 0 || did >= MAX_DOORS)return 0;
 	if(DoorInfo[did][dVwId_Int] == virtualworld)return 1;
 	DoorInfo[did][dVwId_Int] = virtualworld;
-	ChangeCheck = true;
 	UpdateDynamicDoor(did);
+	SaveDoor(did);
 	return 1;
 }
 forward SetDoorRangeEnterExit(did, Float:range);
 public SetDoorRangeEnterExit(did, Float:range){
 	if(did < 0 || did >= MAX_DOORS)return 0;
 	if(DoorInfo[did][dRangeEnterExit]  == range) return 1;
-	ChangeCheck = true;
 	DoorInfo[did][dRangeEnterExit] = range;
+	SaveDoor(did);
 	return 1;
 }
 forward SetDoorOpen(did, Open);
@@ -410,8 +415,8 @@ public SetDoorOpen(did, Open){
 	if(did < 0 || did >= MAX_DOORS)return 0;
 	if(DoorInfo[did][dIsOpen] == Open)return 1;
 	DoorInfo[did][dIsOpen] = Open;
-	ChangeCheck = true;
 	UpdateDynamicDoor(did);
+	SaveDoor(did);
 	return 1;
 }
 forward SetDoorTestLos(did, TestLos);
@@ -419,8 +424,8 @@ public SetDoorTestLos(did, TestLos){
 	if(did < 0 || did >= MAX_DOORS)return 0;
 	if(DoorInfo[did][dTestLos] == TestLos)return 1;
 	DoorInfo[did][dTestLos] = TestLos;
-	ChangeCheck = true;
 	UpdateDynamicDoor(did);
+	SaveDoor(did);
 	return 1;
 }
 
