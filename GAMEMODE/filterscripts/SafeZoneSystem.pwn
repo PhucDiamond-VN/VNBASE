@@ -65,7 +65,7 @@ static UpdateSafeZone(szid){
 		SafeZone[szid][Pickup] = Invalid_pickup;
 	}
 	if(IsSafeZoneExist(szid)){
-		SafeZone[szid][Label] = CreateDynamic3DTextLabel(va_return("{34ebeb}[SafeZone | ID:%d]\n{03fc90}Noi nay duoc bao ve\n{03fc90}Tai day, ban khong the tang cong!\n{05fa3e}Hieu luc trong ban kich {f7ec1e}%.1fm", szid, SafeZone[szid][size]), -1, SafeZone[szid][pos][0], SafeZone[szid][pos][1], SafeZone[szid][pos][2], SafeZone[szid][size]*2, .testlos = 1, .worldid = SafeZone[szid][vw], .interiorid = SafeZone[szid][int]);
+		SafeZone[szid][Label] = CreateDynamic3DTextLabel(va_return("{34ebeb}[SafeZone | ID:%d]\n{03fc90}Noi nay duoc bao ve\n{03fc90}Tai day, ban khong the tang cong!\n{05fa3e}Hieu luc trong ban kich {f7ec1e}%.1fm", szid, SafeZone[szid][size]), -1, SafeZone[szid][pos][0], SafeZone[szid][pos][1], SafeZone[szid][pos][2], 50, .testlos = 1, .worldid = SafeZone[szid][vw], .interiorid = SafeZone[szid][int]);
 		SafeZone[szid][Pickup] = CreateDynamicPickup(1242, -1, SafeZone[szid][pos][0], SafeZone[szid][pos][1], SafeZone[szid][pos][2], SafeZone[szid][vw], SafeZone[szid][int]);
 	}
 	return 1;

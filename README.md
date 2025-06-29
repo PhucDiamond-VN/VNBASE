@@ -20,6 +20,7 @@
 |`discord-connector`|pBlueG|https://github.com/maddinat0r/samp-discord-connector|
 |`pawn-requests`|Southclaws|https://github.com/Southclaws/pawn-requests|
 |`Whirlpool`|Southclaws|https://github.com/Southclaws/samp-whirlpool|
+|`progress2`|Southclaws|https://github.com/Southclaws/progress2|
 |`json`|Southclaws|https://github.com/Southclaws/pawn-json|
 |`PawnPlus`|IS4Code|https://github.com/IS4Code/PawnPlus|
 |`ColAndreas`|Pottus|https://github.com/Pottus/ColAndreas|
@@ -121,7 +122,7 @@ Bạn có thể tự do sử dụng, sửa đổi, và phân phối lại – mi
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/door.png)
 - **Splash Screen & Teleport System**
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/SplashScreen.gif)
-- **SetGod & SafeZone System**
+- **SetGod & NameTags & SafeZone System**
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/SetGodANDSafeZone.png)
 
 ---
