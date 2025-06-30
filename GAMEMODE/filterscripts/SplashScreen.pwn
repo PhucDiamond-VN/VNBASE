@@ -30,13 +30,18 @@ public OnFilterScriptExit(){
 	return 1;
 }
 func StartASplashScreen(playerid, const CallBack[], statee){
-	if(GetPVarType(playerid, "ASplashScreen_Timer"))KillTimer(GetPVarInt(playerid, "ASplashScreen_Timer"));
+	if(GetPVarType(playerid, "ASplashScreen_Timer")){
+		KillTimer(GetPVarInt(playerid, "ASplashScreen_Timer"));
+		new ASPLASH_CallBack[32];GetPVarString(playerid, "ASPLASH_CallBack", ASPLASH_CallBack, sizeof ASPLASH_CallBack);
+		DeletePVar(playerid, "ASPLASH_CallBack");
+		if(!isnull(ASPLASH_CallBack))CallRemoteFunction(ASPLASH_CallBack, "ii", playerid, statee);
+	}
 
 	if(ASPLASH_Screen[playerid] == PlayerText:-1)
-		ASPLASH_Screen[playerid] = CreatePlayerTextDraw(playerid, 0.000000, 0.000000, "LD_SPAC:black");
+		ASPLASH_Screen[playerid] = CreatePlayerTextDraw(playerid, -1.000000, -1.000000, "LD_SPAC:black");
 	PlayerTextDrawFont(playerid, ASPLASH_Screen[playerid], 4);
 	PlayerTextDrawLetterSize(playerid, ASPLASH_Screen[playerid], 0.600000, 2.000000);
-	PlayerTextDrawTextSize(playerid, ASPLASH_Screen[playerid], 643.000000, 450.500000);
+	PlayerTextDrawTextSize(playerid, ASPLASH_Screen[playerid], 644.000000, 451.500000);
 	PlayerTextDrawSetOutline(playerid, ASPLASH_Screen[playerid], 1);
 	PlayerTextDrawSetShadow(playerid, ASPLASH_Screen[playerid], 0);
 	PlayerTextDrawAlignment(playerid, ASPLASH_Screen[playerid], 1);
@@ -55,10 +60,10 @@ func StartASplashScreen(playerid, const CallBack[], statee){
 		sc = GetPVarInt(playerid, "Old_Sc");
 	}
 	if(ASPLASH_Screen1[playerid] == PlayerText:-1)
-		ASPLASH_Screen1[playerid] = CreatePlayerTextDraw(playerid, 0.000000, 0.000000, va_return("loadsc%d:loadsc%d", sc, sc));
+		ASPLASH_Screen1[playerid] = CreatePlayerTextDraw(playerid, -1.000000, -1.000000, va_return("loadsc%d:loadsc%d", sc, sc));
 	PlayerTextDrawFont(playerid, ASPLASH_Screen1[playerid], 4);
 	PlayerTextDrawLetterSize(playerid, ASPLASH_Screen1[playerid], 0.600000, 2.000000);
-	PlayerTextDrawTextSize(playerid, ASPLASH_Screen1[playerid], 643.000000, 450.500000);
+	PlayerTextDrawTextSize(playerid, ASPLASH_Screen1[playerid], 644.000000, 451.500000);
 	PlayerTextDrawSetOutline(playerid, ASPLASH_Screen1[playerid], 1);
 	PlayerTextDrawSetShadow(playerid, ASPLASH_Screen1[playerid], 0);
 	PlayerTextDrawAlignment(playerid, ASPLASH_Screen1[playerid], 1);
@@ -102,7 +107,7 @@ func ASplashScreenUpdate(playerid, statee){
 
 			new ASPLASH_CallBack[32];GetPVarString(playerid, "ASPLASH_CallBack", ASPLASH_CallBack, sizeof ASPLASH_CallBack);
 			DeletePVar(playerid, "ASPLASH_CallBack");
-			CallRemoteFunction(ASPLASH_CallBack, "ii", playerid, statee);
+			if(!isnull(ASPLASH_CallBack))CallRemoteFunction(ASPLASH_CallBack, "ii", playerid, statee);
 			return;
 		}
 		else{
@@ -122,7 +127,7 @@ func ASplashScreenUpdate(playerid, statee){
 			
 			new ASPLASH_CallBack[32];GetPVarString(playerid, "ASPLASH_CallBack", ASPLASH_CallBack, sizeof ASPLASH_CallBack);
 			DeletePVar(playerid, "ASPLASH_CallBack");
-			CallRemoteFunction(ASPLASH_CallBack, "ii", playerid, statee);
+			if(!isnull(ASPLASH_CallBack))CallRemoteFunction(ASPLASH_CallBack, "ii", playerid, statee);
 			return;
 		}
 		else{

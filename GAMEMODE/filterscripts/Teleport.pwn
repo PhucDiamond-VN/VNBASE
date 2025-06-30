@@ -15,6 +15,9 @@ enum eTele{
 static PlayerTeleInfo[MAX_PLAYERS][eTele];
 forward waitloadingmap(playerid);
 public waitloadingmap(playerid){
+	SetPlayerVirtualWorld(playerid, PlayerTeleInfo[playerid][tele_vw]);
+	SetPlayerInterior(playerid, PlayerTeleInfo[playerid][tele_int]);
+	SetPlayerPos(playerid, PlayerTeleInfo[playerid][tele_pos][0], PlayerTeleInfo[playerid][tele_pos][1], PlayerTeleInfo[playerid][tele_pos][2]);
 	DeletePVar(playerid, "waitloadingmap");
 	if(CallRemoteFunction("OnPlayerTeleportSuccess", "d", playerid)) TogglePlayerControllable(playerid, true);
 	SplashScreen(playerid, "TeleportScreen", 1);
