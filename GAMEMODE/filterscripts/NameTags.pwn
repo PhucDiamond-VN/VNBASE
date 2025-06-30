@@ -1,4 +1,5 @@
 #define debug 0
+#define TagDebug 0
 #include <open.mp>
 #include <streamer>
 #include <YSI-Includes\YSI_Data\y_iterate>
@@ -98,6 +99,9 @@ public AddTag(playerid, const text[]){
 			}
 		}
 	}
+	#if TagDebug == 1
+		SendClientMessage(playerid, -1, "New Tag: %s", text);
+	#endif
 	UpdateDynamic3DTextLabelText(PlayerTags[playerid], -1, alltag);
 	return 1;
 }
@@ -123,6 +127,9 @@ public RemoveTag(playerid, const tagrm[]){
 					}
 				}
 				updatetag(playerid);
+				#if TagDebug == 1
+					SendClientMessage(playerid, -1, "Remove Tag: %s", tagrm);
+				#endif
 				return 1;
 			}
 		}
@@ -159,9 +166,15 @@ public OnFilterScriptInit(){
 	return 1;
 }
 public OnFilterScriptExit(){
+	print(" ");
+	print("  **  Unloading - NameTags System **");
+	print(" ");
 	foreach(new playerid:Player){
 		DestroyDynamic3DTextLabel(PlayerTags[playerid]);
 	}
+	print(" ");
+	print("  **  Unload Success - NameTags System **");
+	print(" ");
 	return 1;
 }
 public OnPlayerConnect(playerid){

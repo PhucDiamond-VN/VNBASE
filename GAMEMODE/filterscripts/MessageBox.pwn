@@ -15,6 +15,8 @@ new PlayerBar:bar1;
 static bool:isplayerinit[MAX_PLAYERS];
 static bool:isplayershow[MAX_PLAYERS];
 static playertimerbar[MAX_PLAYERS] = {-1,...};
+static MB_Func[MAX_PLAYERS][32];
+static MB_Timer[MAX_PLAYERS];
 static Init(playerid){
 	if(isplayerinit[playerid])return 1;
 	isplayerinit[playerid] = true;
@@ -65,12 +67,10 @@ static Show(playerid, type){
 }
 forward timerbar(playerid);
 public timerbar(playerid){
-	new Float:value = GetPlayerProgressBarValue(playerid, bar1), Float:addvalue = MAX_BAR_VALUE/10/GetPVarInt(playerid, "exittimer");
+	new Float:value = GetPlayerProgressBarValue(playerid, bar1), Float:addvalue = MAX_BAR_VALUE/10/MB_Timer[playerid];
 	if(value + addvalue >= MAX_BAR_VALUE){
 		new func[32];
-		if(GetPVarType(playerid, "MBfunc")){
-			GetPVarString(playerid, "MBfunc", func);
-		}
+		func = MB_Func[playerid];
 		Hide(playerid);
 		if(!isnull(func))CallRemoteFunction(func, "d", playerid);
 		KillTimer(playertimerbar[playerid]);
@@ -99,7 +99,7 @@ static Hide(playerid){
 		DestroyPlayerProgressBar(playerid, bar1);
 		isplayerinit[playerid] = false;
 	}
-	DeletePVar(playerid, "MBfunc");
+	format(MB_Func[playerid], 32, "");
 	return 1;
 }
 public OnPlayerDisconnect(playerid, reason){
@@ -107,12 +107,18 @@ public OnPlayerDisconnect(playerid, reason){
 	return 1;
 }
 public OnFilterScriptExit(){
+	print(" ");
+	print("  **  Unloading - MessageBox System **");
+	print(" ");
 	foreach(new playerid : Player){
 		Hide(playerid);
 	}
 	for(new t; t<sizeof Text_Global;t++){
 		TextDrawDestroy(Text_Global[t]);
 	}
+	print(" ");
+	print("  **  Unload Success - MessageBox System **");
+	print(" ");
 	return 1;
 }
 public OnFilterScriptInit(){
@@ -171,7 +177,7 @@ public OnClickDynamicTextDraw(playerid, Text:textid)
 	if(!isplayershow[playerid])return 0;
 	if(textid == Text_Global[3] || textid == INVALID_TEXT_DRAW){
 		new func[32];
-		GetPVarString(playerid, "MBfunc", func);
+		func = MB_Func[playerid];
 		Hide(playerid);
 		if(strcmp(func, "null") != 0)CallRemoteFunction(func, "d", playerid);
 		return 1;
@@ -191,9 +197,9 @@ public MessageBox(playerid, const title[], const content[], exittimer, bool:exit
 	else if(exittimer > 0 && !exitbutton)Show(playerid, TIME);
 	else Show(playerid, HIDE);
 
-	if(exittimer > 0)SetPVarInt(playerid, "exittimer", exittimer);
-	if(!isnull(func))SetPVarString(playerid, "MBfunc", func);
-	else DeletePVar(playerid, "MBfunc");
+	if(exittimer > 0)MB_Timer[playerid] = exittimer;
+	if(!isnull(func))format(MB_Func[playerid], 32, func);
+	else format(MB_Func[playerid], 32, "");
 	return 1;
 }
 forward ExitMessageBox(playerid);

@@ -66,7 +66,7 @@ func OnPlayerRegister(playerid){
     Teleport(playerid, ToaDo_Cammera_Dangky);
     SetPlayerCameraPos(playerid, ToaDo_Cammera_Dangky);
     SetPlayerCameraLookAt(playerid, GocNhin_Cammera_Dangky);
-    SetPlayerVirtualWorld(playerid, 1000+playerid);
+    SetPlayerVirtualWorld(playerid, playerid+1);
     TogglePlayerControllable(playerid, false);
     Dialog_Show(playerid, PlayerRegister, DIALOG_STYLE_INPUT, "Dang ky tai khoan", "Tai khoan nay hien khong ton tai.\nhay nhap mat khau vao ben duoi de tien hanh dang ky.", "Xong", "Thoat");
 }
@@ -85,7 +85,7 @@ func OnPlayerLoging(playerid){
         Teleport(playerid, ToaDo_Cammera_Dangky);
         SetPlayerCameraPos(playerid, ToaDo_Cammera_Dangky);
         SetPlayerCameraLookAt(playerid, GocNhin_Cammera_Dangky);
-        SetPlayerVirtualWorld(playerid, 1000+playerid);
+        SetPlayerVirtualWorld(playerid, playerid+1);
         TogglePlayerControllable(playerid, false);
         Dialog_Show(playerid, PlayerLogin, DIALOG_STYLE_INPUT, "Dang nhap", "Tai khoan nay da ton tai.\nhay nhap mat khau vao ben duoi de tien hanh dang nhap.", "Xong", "Thoat");
         return 1;

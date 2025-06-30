@@ -148,6 +148,35 @@ static UpdateDynamicDoor(did, bool:update = false){
 	}
 	return 1;
 }
+public OnFilterScriptExit(){
+	print(" ");
+	print("  **  Unloading - Doors System **");
+	print(" ");
+	for(new did; did<MAX_DOORS; did++){
+		if(DoorInfo[did][SaveTimer] != -1){
+			KillTimer(DoorInfo[did][SaveTimer]);
+			SaveDoor(did, true);
+		}
+		if(IsDoorExist(did)){
+			if(DoorInfo[did][dPickupId_Ext] != STREAMER_TAG_PICKUP:-1){
+				DestroyDynamicPickup(DoorInfo[did][dPickupId_Ext]);
+			}
+			if(DoorInfo[did][dLabelId_Ext] != STREAMER_TAG_3D_TEXT_LABEL:-1){
+				DestroyDynamic3DTextLabel(DoorInfo[did][dLabelId_Ext]);
+			}
+			if(DoorInfo[did][dPickupId_Int] != STREAMER_TAG_PICKUP:-1){
+				DestroyDynamicPickup(DoorInfo[did][dPickupId_Int]);
+			}
+			if(DoorInfo[did][dLabelId_Int] != STREAMER_TAG_3D_TEXT_LABEL:-1){
+				DestroyDynamic3DTextLabel(DoorInfo[did][dLabelId_Int]);
+			}
+		}
+	}
+	print(" ");
+	print("  **  Unload Success - Doors System **");
+	print(" ");
+	return 1;
+}
 public OnFilterScriptInit(){
 	print(" ");
 	print("  --------------------------------------------------------");
@@ -200,29 +229,6 @@ public OnFilterScriptInit(){
     }
     cache_delete(cache);
     LoadDoor();
-	return 1;
-}
-public OnFilterScriptExit(){
-	for(new did; did<MAX_DOORS; did++){
-		if(DoorInfo[did][SaveTimer] != -1){
-			KillTimer(DoorInfo[did][SaveTimer]);
-			SaveDoor(did, true);
-		}
-		if(IsDoorExist(did)){
-			if(DoorInfo[did][dPickupId_Ext] != STREAMER_TAG_PICKUP:-1){
-				DestroyDynamicPickup(DoorInfo[did][dPickupId_Ext]);
-			}
-			if(DoorInfo[did][dLabelId_Ext] != STREAMER_TAG_3D_TEXT_LABEL:-1){
-				DestroyDynamic3DTextLabel(DoorInfo[did][dLabelId_Ext]);
-			}
-			if(DoorInfo[did][dPickupId_Int] != STREAMER_TAG_PICKUP:-1){
-				DestroyDynamicPickup(DoorInfo[did][dPickupId_Int]);
-			}
-			if(DoorInfo[did][dLabelId_Int] != STREAMER_TAG_3D_TEXT_LABEL:-1){
-				DestroyDynamic3DTextLabel(DoorInfo[did][dLabelId_Int]);
-			}
-		}
-	}
 	return 1;
 }
 forward OnDoorDataLoaded();

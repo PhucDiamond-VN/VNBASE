@@ -8,7 +8,7 @@
 func IsGod(playerid)return GetPVarType(playerid, "Godstate");
 func SetGod(playerid, bool:statee){
 	if(statee){
-		if(IsGod(playerid))return 1;
+		if(IsGod(playerid) || !CallRemoteFunction("OnPlayerEnterGodMode", "d", playerid))return 1;
 		new Float:hp, Float:ar;
 		GetPlayerHealth(playerid, hp);
 		GetPlayerArmour(playerid, ar);
@@ -19,7 +19,7 @@ func SetGod(playerid, bool:statee){
 		SetPVarInt(playerid, "Godstate", 1);
 	}
 	else{
-		if(!IsGod(playerid))return 1;
+		if(!IsGod(playerid) || !CallRemoteFunction("OnPlayerExitGodMode", "d", playerid))return 1;
 		DeletePVar(playerid, "Godstate");
 		SetPlayerHealth(playerid, GetPVarFloat(playerid, "offgodset_HP"));
 		SetPlayerArmour(playerid, GetPVarFloat(playerid, "offgodset_AR"));
@@ -29,6 +29,14 @@ func SetGod(playerid, bool:statee){
 	return 1;
 }
 
+forward OnPlayerExitGodMode(playerid);
+public OnPlayerExitGodMode(playerid){
+	return 1;
+}
+forward OnPlayerEnterGodMode(playerid);
+public OnPlayerEnterGodMode(playerid){
+	return 1;
+}
 static SendSetPlayerHealth(playerid, Float:hp){
 	new BitStream:cbs = BS_New();
 	BS_WriteValue(cbs,
@@ -138,6 +146,7 @@ public OnOutgoingRPC(playerid, rpcid, BitStream:bs){
 	return 1;
 }
 public OnFilterScriptInit(){
+	SetCrashDetectLongCallTime(GetConsoleVarAsInt("crashdetect.long_call_time"));
 	print(" ");
 	print("  ---------------------------------------------------------");
 	print("  |  Copyright 2025 PhucDiamond-VN/VNBASE - SetGod System |");
@@ -149,13 +158,18 @@ public OnFilterScriptInit(){
 	return 1;
 }
 public OnFilterScriptExit(){
-	SetCrashDetectLongCallTime(GetConsoleVarAsInt("crashdetect.long_call_time"));
+	print(" ");
+	print("  **  Unloading - SetGod System **");
+	print(" ");
 	foreach(new playerid:Player){
 		if(IsGod(playerid)){
 			SendSetPlayerHealth(playerid, GetPVarFloat(playerid, "offgodset_HP"));
 			SendSetPlayerArmour(playerid, GetPVarFloat(playerid, "offgodset_AR"));
 		}
 	}
+	print(" ");
+	print("  **  Unload Success - SetGod System **");
+	print(" ");
 	return 1;
 }
 public OnPlayerDisconnect(playerid, reason){

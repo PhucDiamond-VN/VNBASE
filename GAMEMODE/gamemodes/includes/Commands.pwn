@@ -24,6 +24,32 @@ CMD:setar(playerid, params[]){
 	}
 	return 0;
 }
+CMD:setvw(playerid, params[]){
+	if(IsPlayerAdmin(playerid)){
+		new giveplayerid, vw;
+		if(sscanf(params, "ud", giveplayerid, vw)){
+			return SM(playerid, sm_error, "/setvw (playerid/playername) (VirtualWorldID)");
+		}
+		if(!IsPlayerConnected(giveplayerid))return SM(playerid, sm_error, "Nguoi choi khong ton tai");
+		SetPlayerVirtualWorld(giveplayerid, vw);
+		SM(sm_admin, sm_info, "%s da set VirtualWorld cho %s = %d", PlayerInfo[playerid][username], PlayerInfo[giveplayerid][username], vw);
+		return 1;
+	}
+	return 0;
+}
+CMD:setint(playerid, params[]){
+	if(IsPlayerAdmin(playerid)){
+		new giveplayerid, int;
+		if(sscanf(params, "ud", giveplayerid, int)){
+			return SM(playerid, sm_error, "/setint (playerid/playername) (InteriorID)");
+		}
+		if(!IsPlayerConnected(giveplayerid))return SM(playerid, sm_error, "Nguoi choi khong ton tai");
+		SetPlayerInterior(giveplayerid, int);
+		SM(sm_admin, sm_info, "%s da set Interior cho %s = %d", PlayerInfo[playerid][username], PlayerInfo[giveplayerid][username], int);
+		return 1;
+	}
+	return 0;
+}
 CMD:setgod(playerid, params[]){
 	if(IsPlayerAdmin(playerid)){
 		new giveplayerid;

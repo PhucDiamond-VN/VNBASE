@@ -16,11 +16,17 @@ public OnFilterScriptInit(){
 	return 1;
 }
 public OnFilterScriptExit(){
+	print(" ");
+	print("  **  Unloading - SplashScreen System **");
+	print(" ");
 	foreach(new i:Player){
 		if(GetPVarType(i, "ASplashScreen_Timer"))KillTimer(GetPVarInt(i, "ASplashScreen_Timer"));
 		if(ASPLASH_Screen[i] != PlayerText:-1)PlayerTextDrawDestroy(i, ASPLASH_Screen[i]);
 		if(ASPLASH_Screen1[i] != PlayerText:-1)PlayerTextDrawDestroy(i, ASPLASH_Screen1[i]);
 	}
+	print(" ");
+	print("  **  Unload Success - SplashScreen System **");
+	print(" ");
 	return 1;
 }
 func StartASplashScreen(playerid, const CallBack[], statee){

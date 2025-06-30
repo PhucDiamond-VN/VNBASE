@@ -6,3 +6,5 @@ stock IsGod(playerid){
 stock SetGod(playerid, bool:statee){
 	return CallRemoteFunction("SetGod", "db", playerid, statee);
 }
+forward OnPlayerEnterGodMode(playerid);
+forward OnPlayerExitGodMode(playerid);

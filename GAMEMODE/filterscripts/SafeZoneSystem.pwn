@@ -3,6 +3,8 @@
 #include <a_mysql>
 #include <streamer>
 #include <YSI-Includes\YSI_Coding\y_va>
+#include "../include/CallSetGodSystem"
+#include "../include/CallNameTagSystem"
 #define MAX_SAFEZONE 500
 enum eSafeZone{
 	Float:pos[3],
@@ -134,6 +136,9 @@ public OnSafeZoneDataLoaded(){
 	return 1;
 }
 public OnFilterScriptExit(){
+	print(" ");
+	print("  **  Unloading - SafeZone System **");
+	print(" ");
 	for(new szid;szid<MAX_SAFEZONE;szid++){
 		if(SafeZone[szid][SaveTimer] != -1){
 			KillTimer(SafeZone[szid][SaveTimer]);
@@ -148,6 +153,9 @@ public OnFilterScriptExit(){
 			}
 		}
 	}
+	print(" ");
+	print("  **  Unload Success - SafeZone System **");
+	print(" ");
 	return 1;
 }
 static GetFreeSafeZone(){
@@ -195,5 +203,21 @@ public OnPlayerUpdate(playerid){
 }
 public OnPlayerDisconnect(playerid, reason){
 	DeletePVar(playerid, "InSafeZone");
+	return 1;
+}
+forward OnPlayerEnterSafeZone(playerid, szid);
+public OnPlayerEnterSafeZone(playerid, szid){
+    SetGod(playerid, true);
+    AddTag(playerid, "{03fc90}SafeZone bao ve");
+    return 1;
+}
+forward OnPlayerExitSafeZone(playerid, szid);
+public OnPlayerExitSafeZone(playerid, szid){
+    SetGod(playerid, false);
+    RemoveTag(playerid, "{03fc90}SafeZone bao ve");
+    return 1;
+}
+public OnPlayerExitGodMode(playerid){
+	if(IsPlayerInSafeZone(playerid))return 0;
 	return 1;
 }
