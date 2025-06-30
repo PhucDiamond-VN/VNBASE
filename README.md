@@ -139,3 +139,12 @@ Bạn có thể tự do sử dụng, sửa đổi, và phân phối lại – mi
 - Cộng đồng SAMP Việt Nam
 - Các tác giả plugin PAWN
 - OPEN.MP Team
+
+---
+
+## Donate | ủng hộ phát triển
+**Dự án cần sự giúp sức từ các bạn, các bạn có thể ủng hộ dự án qua hình thức donate dóng góp.**  
+**The project needs your help, you can support the project by donating.**
+
+- Vietinbank: 106882941420 | Lê Trọng Phúc
+- Visa Direct/Moneysend: 4026 4900 0622 2264 | Le Trong Phuc
