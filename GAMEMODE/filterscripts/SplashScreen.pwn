@@ -3,6 +3,7 @@
 #include <open.mp>
 #include <YSI-Includes\YSI_Coding\y_va>
 #include <YSI-Includes\YSI_Coding\y_timers>
+#include <textdraw-streamer>
 #define func%0(%1) forward %0(%1); public %0(%1)
 static PlayerText:ASPLASH_Screen[MAX_PLAYERS] = {PlayerText:-1,...};
 static PlayerText:ASPLASH_Screen1[MAX_PLAYERS] = {PlayerText:-1,...};

@@ -1,9 +1,9 @@
 #define debug 0
 #include <open.mp>
 #include <progress2>
-#include <textdraw-streamer>
 #include <YSI-Includes\YSI_Coding\y_va>
 #include <YSI-Includes\YSI_Data\y_iterate>
+#include <textdraw-streamer>
 #define HIDE 0
 #define ALL 1
 #define BUTTON 2

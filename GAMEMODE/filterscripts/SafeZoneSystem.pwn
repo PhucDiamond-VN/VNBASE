@@ -3,6 +3,7 @@
 #include <a_mysql>
 #include <streamer>
 #include <YSI-Includes\YSI_Coding\y_va>
+#include <YSI-Includes\YSI_Coding\y_timers>
 #include "../include/CallSetGodSystem"
 #include "../include/CallNameTagSystem"
 #define MAX_SAFEZONE 500
@@ -189,7 +190,7 @@ forward IsPlayerInSafeZone(playerid);
 public IsPlayerInSafeZone(playerid){
 	return GetPVarType(playerid, "InSafeZone");
 }
-public OnPlayerUpdate(playerid){
+ptask SafeZoneUpdate[100](playerid){
 	new szid = GetPlayerSafeZone(playerid);
 	if(szid != -1 && !GetPVarType(playerid, "InSafeZone")){
 		SetPVarInt(playerid, "InSafeZone", szid);

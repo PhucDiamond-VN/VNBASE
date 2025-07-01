@@ -328,6 +328,13 @@ native DestroyDynamic3DTextLabel(STREAMER_TAG_3D_TEXT_LABEL:id);
 native IsValidDynamic3DTextLabel(STREAMER_TAG_3D_TEXT_LABEL:id);
 native GetDynamic3DTextLabelText(STREAMER_TAG_3D_TEXT_LABEL:id, text[], maxtext = sizeof text);
 native UpdateDynamic3DTextLabelText(STREAMER_TAG_3D_TEXT_LABEL:id, color, const text[]);
+stock SetDynamic3DTextLabelPos(STREAMER_TAG_3D_TEXT_LABEL:label, Float:x, Float:y, Float:z){
+	if(!IsValidDynamic3DTextLabel(label))return 0;
+	Streamer_SetFloatData(STREAMER_TYPE_3D_TEXT_LABEL, label, E_STREAMER_X, x);
+	Streamer_SetFloatData(STREAMER_TYPE_3D_TEXT_LABEL, label, E_STREAMER_Y, y);
+	Streamer_SetFloatData(STREAMER_TYPE_3D_TEXT_LABEL, label, E_STREAMER_Z, z);
+	return 1;
+}
 
 // Natives (Areas)
 
