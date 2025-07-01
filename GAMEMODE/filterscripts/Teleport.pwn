@@ -1,4 +1,5 @@
 #define FILTERSCRIPT
+#define debug 0
 #include <open.mp>
 #include <crashdetect>
 #include <streamer>

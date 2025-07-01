@@ -58,3 +58,6 @@ public OnPlayerExitSafeZone(playerid, szid){
     SM(playerid, sm_info, "Ban da roi khoi khu vuc safezone hay can than!");
     return 1;
 }
+public OnPlayerExitGodMode(playerid){
+    if(TagExist(playerid, "{34ebeb}Trang thai bat tu"))SetGod(playerid, true);
+}

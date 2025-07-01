@@ -58,8 +58,8 @@ CMD:setgod(playerid, params[]){
 		}
 		if(!IsPlayerConnected(giveplayerid))return SM(playerid, sm_error, "Nguoi choi khong ton tai");
 		if(IsGod(giveplayerid)){
-			SetGod(giveplayerid, false);
 			RemoveTag(giveplayerid, "{34ebeb}Trang thai bat tu");
+			SetGod(giveplayerid, false);
 			SM(sm_admin, sm_info, "%s da tat god cho %s", PlayerInfo[playerid][username], PlayerInfo[giveplayerid][username]);
 		}
 		else{

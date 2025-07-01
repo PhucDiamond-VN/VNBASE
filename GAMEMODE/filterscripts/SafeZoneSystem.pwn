@@ -218,6 +218,5 @@ public OnPlayerExitSafeZone(playerid, szid){
     return 1;
 }
 public OnPlayerExitGodMode(playerid){
-	if(IsPlayerInSafeZone(playerid))return 0;
-	return 1;
+	if(IsPlayerInSafeZone(playerid))SetGod(playerid, true);
 }

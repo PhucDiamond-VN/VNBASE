@@ -5,38 +5,7 @@
 #include <YSI-Includes\YSI_Data\y_iterate>
 
 #define func%0(%1) forward %0(%1); public %0(%1)
-func IsGod(playerid)return GetPVarType(playerid, "Godstate");
-func SetGod(playerid, bool:statee){
-	if(statee){
-		if(IsGod(playerid) || !CallRemoteFunction("OnPlayerEnterGodMode", "d", playerid))return 1;
-		new Float:hp, Float:ar;
-		GetPlayerHealth(playerid, hp);
-		GetPlayerArmour(playerid, ar);
-		SetPVarFloat(playerid, "offgodset_HP", hp);
-		SetPVarFloat(playerid, "offgodset_AR", ar);
-		SetPlayerHealth(playerid, 255);
-		SetPlayerArmour(playerid, 255);
-		SetPVarInt(playerid, "Godstate", 1);
-	}
-	else{
-		if(!IsGod(playerid) || !CallRemoteFunction("OnPlayerExitGodMode", "d", playerid))return 1;
-		DeletePVar(playerid, "Godstate");
-		SetPlayerHealth(playerid, GetPVarFloat(playerid, "offgodset_HP"));
-		SetPlayerArmour(playerid, GetPVarFloat(playerid, "offgodset_AR"));
-		DeletePVar(playerid, "offgodset_HP");
-		DeletePVar(playerid, "offgodset_AR");
-	}
-	return 1;
-}
 
-forward OnPlayerExitGodMode(playerid);
-public OnPlayerExitGodMode(playerid){
-	return 1;
-}
-forward OnPlayerEnterGodMode(playerid);
-public OnPlayerEnterGodMode(playerid){
-	return 1;
-}
 static SendSetPlayerHealth(playerid, Float:hp){
 	new BitStream:cbs = BS_New();
 	BS_WriteValue(cbs,
@@ -55,6 +24,40 @@ static SendSetPlayerArmour(playerid, Float:armor){
 	BS_Delete(cbs);
 	return 1;
 }
+func IsGod(playerid)return GetPVarType(playerid, "Godstate");
+func SetGod(playerid, bool:statee){
+	if(statee){
+		if(IsGod(playerid))return 1;
+		new Float:hp, Float:ar;
+		GetPlayerHealth(playerid, hp);
+		GetPlayerArmour(playerid, ar);
+		SetPVarFloat(playerid, "offgodset_HP", hp);
+		SetPVarFloat(playerid, "offgodset_AR", ar);
+		SendSetPlayerHealth(playerid, 255);
+		SendSetPlayerArmour(playerid, 255);
+		SetPVarInt(playerid, "Godstate", 1);
+		CallRemoteFunction("OnPlayerEnterGodMode", "d", playerid);
+	}
+	else{
+		if(!IsGod(playerid))return 1;
+		DeletePVar(playerid, "Godstate");
+		new Float:oldhp = GetPVarFloat(playerid, "offgodset_HP");
+		new Float:oldar = GetPVarFloat(playerid, "offgodset_AR");
+		CallRemoteFunction("OnPlayerExitGodMode", "d", playerid);
+		if(GetPVarType(playerid, "Godstate")){
+			SetPVarFloat(playerid, "offgodset_HP", oldhp);
+			SetPVarFloat(playerid, "offgodset_AR", oldar);
+		}
+		else{
+			SendSetPlayerHealth(playerid, oldhp);
+			SendSetPlayerArmour(playerid, oldar);
+			DeletePVar(playerid, "offgodset_HP");
+			DeletePVar(playerid, "offgodset_AR");
+		}
+	}
+	return 1;
+}
+
 public OnIncomingPacket(playerid, packetid, BitStream:bs){
 	if(packetid == 206){//BulletSync 
 		new bulletData[PR_BulletSync];
@@ -163,8 +166,8 @@ public OnFilterScriptExit(){
 	print(" ");
 	foreach(new playerid:Player){
 		if(IsGod(playerid)){
-			SendSetPlayerHealth(playerid, GetPVarFloat(playerid, "offgodset_HP"));
-			SendSetPlayerArmour(playerid, GetPVarFloat(playerid, "offgodset_AR"));
+			SetPlayerHealth(playerid, GetPVarFloat(playerid, "offgodset_HP"));
+			SetPlayerArmour(playerid, GetPVarFloat(playerid, "offgodset_AR"));
 		}
 	}
 	print(" ");

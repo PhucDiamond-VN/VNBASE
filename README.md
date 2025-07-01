@@ -143,7 +143,7 @@ Bạn có thể tự do sử dụng, sửa đổi, và phân phối lại – mi
 ---
 
 ## Donate | ủng hộ phát triển
-**Dự án cần sự giúp sức từ các bạn, các bạn có thể ủng hộ dự án qua hình thức donate dóng góp.**  
+**Dự án cần sự giúp sức từ các bạn, các bạn có thể ủng hộ dự án qua hình thức donate quyên góp.**  
 **The project needs your help, you can support the project by donating.**
 
 - Vietinbank: 106882941420 | Lê Trọng Phúc
