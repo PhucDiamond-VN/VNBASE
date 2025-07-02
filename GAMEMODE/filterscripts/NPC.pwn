@@ -2,11 +2,8 @@
 #define FILTERSCRIPT
 #include <open.mp>
 #include <streamer>
-#include <textdraw-streamer>
 #include <YSI-Includes\YSI_Data\y_iterate>
 #include <YSI-Includes\YSI_Coding\y_timers>
-#include <YSI-Includes\YSI_Coding\y_va>
-#include <YSI-Includes\YSI_Coding\y_hooks>
 #include "../include/CallMessageBox"
 #define func%0(%1) forward %0(%1); public %0(%1)
 #define MAX_NPC 100
@@ -31,8 +28,8 @@ enum enpc{
 static NPC[MAX_NPC][enpc];
 static testnpc;
 public OnFilterScriptInit(){
-	testnpc = CreateNPC("Test", 2, 2473.1721,-1685.9218,13.5078,324.2752, 0);
-	ApplyNPCAnimation(testnpc, "ped", "IDLE_chat", 4.0, true, false, false, false, 0);
+	testnpc = CreateNPC("CJ", 0, 2491.5347,-1687.6877,13.5174,0.5137, 0);
+	ApplyNPCAnimation(testnpc, "SMOKING", "M_smklean_loop", 4.0, true, false, false, false, 0);
 	return 1;
 }
 public OnFilterScriptExit(){
@@ -115,10 +112,8 @@ func ApplyNPCAnimation(npcid, const animationLibrary[], const animationName[], F
 	NPC[npcid][ani_freeze] = freeze;
 	NPC[npcid][ani_time] = time;
 	if(NPC[npcid][FaceToPlayer] == -1){
-		if(NPC[npcid][IsClearAni]){
-			ApplyActorAnimation(NPC[npcid][actorid], NPC[npcid][ani_lib], NPC[npcid][ani_name], NPC[npcid][ani_delta], NPC[npcid][ani_loop], NPC[npcid][ani_lockx], NPC[npcid][ani_locky], NPC[npcid][ani_freeze], NPC[npcid][ani_time]);
-			NPC[npcid][IsClearAni] = false;
-		}
+		ApplyActorAnimation(NPC[npcid][actorid], NPC[npcid][ani_lib], NPC[npcid][ani_name], NPC[npcid][ani_delta], NPC[npcid][ani_loop], NPC[npcid][ani_lockx], NPC[npcid][ani_locky], NPC[npcid][ani_freeze], NPC[npcid][ani_time]);
+		NPC[npcid][IsClearAni] = false;
 	}
 	return 1;
 }
@@ -197,5 +192,10 @@ public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys){
 			}
 		}
 	}
+	return 1;
+}
+forward OnPlayerTalkingToNPC(playerid, npcid);
+public OnPlayerTalkingToNPC(playerid, npcid){
+	MessageBox(playerid, "CJ", "Nay ban dang lam gi o day ?, khu nay la cua Grove Street va ban co 1p de tra loi cau hoi cua toi hoac roi khoi noi nay", 0, true);
 	return 1;
 }

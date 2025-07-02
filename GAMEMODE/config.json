@@ -120,7 +120,9 @@
             "filterscripts/NameTags", 
             "filterscripts/SetGodSystem", 
             "filterscripts/SafeZoneSystem", 
-            "filterscripts/MessageBox"
+            "filterscripts/MessageBox", 
+            "filterscripts/NPC",
+            "filterscripts/vactions"
         ]
     },
     "rcon": {

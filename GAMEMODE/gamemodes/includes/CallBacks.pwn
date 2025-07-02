@@ -20,6 +20,10 @@ public OnPlayerCommandPerformed(playerid, cmd[], params[], result, flags)
 
   return 1;
 }
+public OnPlayerText(playerid, text[]){
+    ApplyAnimation(playerid, "ped", "IDLE_chat", 4.0, false, false, false, false, 1000, SYNC_ALL);
+    return 1;
+}
 public OnPlayerDisableCheckPoint(playerid){
     return 1;
 }
