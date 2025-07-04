@@ -1,3 +1,4 @@
+#define FILTERSCRIPT
 #define debug 0
 #define TagDebug 0
 #include <open.mp>

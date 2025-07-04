@@ -175,3 +175,7 @@ CMD:dsafezone(playerid, params[]){
 	}
 	return 0;
 }
+CMD:test(playerid){
+	SetPlayerCheckpoint(playerid, 2491.5347,-1687.6877,13.5174, 5, "null");
+	return 1;
+}

@@ -10,6 +10,7 @@
 | Plugins | Credits |Links|
 |---------|---------|-----|
 |`All open.mp plugins and server runtimes`|AmyrAhmady|https://github.com/openmultiplayer/open.mp|
+|`GPS`|AmyrAhmady|https://github.com/AmyrAhmady/samp-gps-plugin|
 |`Ysi`|Y-Less|https://github.com/pawn-lang/YSI-Includes|
 |`Sscaf`|Y-Less|https://github.com/Y-Less/sscanf|
 |`crashdetect`|Y-Less|https://github.com/Y-Less/samp-plugin-crashdetect|
@@ -28,6 +29,8 @@
 |`textdraw-streamer`|nexquery|https://github.com/nexquery/samp-textdraw-streamer|
 |`streamer`|samp-incognito|https://github.com/samp-incognito/samp-streamer-plugin|
 |`mapfix`|Nexius|https://github.com/NexiusTailer/MapFix|
+|`map-zones`|kristoisberg|https://github.com/kristoisberg/samp-map-zones|
+|`vactions RP Animations`|Lyve|https://sampforum.blast.hk/showthread.php?tid=402286|
 
 ---
 
@@ -124,13 +127,20 @@ Bạn có thể tự do sử dụng, sửa đổi, và phân phối lại – mi
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/SplashScreen.gif)
 - **SetGod & NameTags & SafeZone System**
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/SetGodANDSafeZone.png)
+- **MessageBox & NPC System**
+![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/npc1.png)
+![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/npc2.png)
+- **CheckPoint Info System**
+![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/cpinfo1.png)
+![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/cpinfo2.png)
 
 ---
 
 ## 🗓️ Lịch Sử Cập Nhật | Changelog
 
 - **v1.0** – Phát hành bản đầu tiên  
-- **v2.0** – Door, Teleport, SplashScreen - Update
+- **v2.0** – Door, Teleport, SplashScreen - New Systems
+- **v3.0** – NPC, MessageBox, CheckPoint, Animation RP - New Systems
 
 ---
 

@@ -26,14 +26,23 @@ enum enpc{
 	bool:IsClearAni,
 }
 static NPC[MAX_NPC][enpc];
-static testnpc;
+
 public OnFilterScriptInit(){
-	testnpc = CreateNPC("CJ", 0, 2491.5347,-1687.6877,13.5174,0.5137, 0);
-	ApplyNPCAnimation(testnpc, "SMOKING", "M_smklean_loop", 4.0, true, false, false, false, 0);
+	print(" ");
+	print("  ------------------------------------------------------");
+	print("  |  Copyright 2025 PhucDiamond-VN/VNBASE - NPC System |");
+	print("  ------------------------------------------------------");
+	print(" ");
+	SetCrashDetectLongCallTime(GetConsoleVarAsInt("crashdetect.long_call_time"));
 	return 1;
 }
 public OnFilterScriptExit(){
-	DestroyNPC(testnpc);
+	print(" ");
+	print("  **  Unloading - NPC System **");
+	print(" ");
+	print(" ");
+	print("  **  Unload Success - NPC System **");
+	print(" ");
 	return 1;
 }
 static bool:IsNPCExist(npcid){
@@ -192,10 +201,5 @@ public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys){
 			}
 		}
 	}
-	return 1;
-}
-forward OnPlayerTalkingToNPC(playerid, npcid);
-public OnPlayerTalkingToNPC(playerid, npcid){
-	MessageBox(playerid, "CJ", "Nay ban dang lam gi o day ?, khu nay la cua Grove Street va ban co 1p de tra loi cau hoi cua toi hoac roi khoi noi nay", 0, true);
 	return 1;
 }

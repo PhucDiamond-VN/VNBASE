@@ -1,3 +1,4 @@
+#define FILTERSCRIPT
 #define NO_TAGS
 #define debug 0
 #include <open.mp>
@@ -90,6 +91,8 @@ public OnPlayerDisconnect(playerid, reason){
 		KillTimer(GetPVarInt(playerid, "ASplashScreen_Timer"));
 		DeletePVar(playerid, "ASplashScreen_Timer");
 		DeletePVar(playerid, "ASPLASH_CallBack");
+		ASPLASH_Screen1[playerid] = PlayerText:-1;
+		ASPLASH_Screen[playerid] = PlayerText:-1;
 	}
 	return 1;
 }

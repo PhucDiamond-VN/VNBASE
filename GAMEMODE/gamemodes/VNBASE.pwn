@@ -3,6 +3,7 @@
 #include <a_mysql>
 #include <easydialog>
 #include <streamer>
+#include <Pawn.Raknet>
 #include <Pawn.CMD>
 #include <sscanf2>
 #include <progress2>
@@ -70,6 +71,7 @@ hook OnGameModeInit()
 #include "../include/CallSplashScreen"
 #include "../include/CallSafeZoneSystem"
 #include "../include/CallMessageBox"
+#include "../include/CallNPCSystem"
 #include "./includes/ProCheckPoint"
 #include "./includes/SystemMessage.pwn"
 #include "./includes/Color-define.pwn"
@@ -77,6 +79,7 @@ hook OnGameModeInit()
 #include "./includes/stocks.pwn"
 #include "./includes/LogingAndRegister.pwn"
 #include "./includes/CallBacks.pwn"
+#include "./includes/NPC_sctript.pwn"
 #include "./includes/Commands.pwn"
 
 
