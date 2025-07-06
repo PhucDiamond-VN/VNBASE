@@ -107,8 +107,7 @@
             "pawnregex", 
             "pawn-memory", 
             "Whirlpool", 
-            "GPS", 
-            "textdraw-streamer"
+            "GPS"
         ],
         "main_scripts": [
             "VNBASE"
@@ -124,7 +123,8 @@
             "filterscripts/MessageBox", 
             "filterscripts/NPC",
             "filterscripts/vactions",
-            "filterscripts/CheckPointInfo"
+            "filterscripts/CheckPointInfo",
+            "filterscripts/Inventory"
         ]
     },
     "rcon": {

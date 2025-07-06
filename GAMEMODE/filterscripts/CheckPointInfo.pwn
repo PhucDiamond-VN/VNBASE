@@ -6,16 +6,16 @@
 #include <Pawn.Raknet>
 #include <PawnPlus>
 #include <YSI-Includes\YSI_Data\y_iterate>
-#include <textdraw-streamer>
 #include <GPS>
 #include <map-zones>
 #define func%0(%1) forward %0(%1); public %0(%1)
-#define MAX_ARROW 30
+#define MAX_ARROW 15
 static PlayerText: Text_Player[MAX_PLAYERS][2] = {{PlayerText:-1,...},...};
 static UpdateTimer[MAX_PLAYERS] = {-1,...};
 static Float:PlayerOldPos[MAX_PLAYERS][3];
 static ObjectArrow[MAX_PLAYERS][MAX_ARROW] = {{-1,...},...};
 static Float:Cache[MAX_PLAYERS][MAX_ARROW];
+static Iterator:PlayerExistCheckpoint<MAX_PLAYERS>;
 static Float:GetAbsoluteAngle(Float:angle) {
 	while(angle < 0.0) {
 		angle += 360.0;
@@ -137,7 +137,7 @@ func UpdateCheckPointInfo(playerid, Float:x, Float:y, Float:z, index){
 	GetPlayerPos(playerid, ppos[0], ppos[1], ppos[2]);
 	if(PlayerOldPos[playerid][0] == ppos[0] && PlayerOldPos[playerid][1] == ppos[1] && PlayerOldPos[playerid][2] == ppos[2]){
 		if(IsPlayerCheckpointActive(playerid) && PlayerCheckPointIndex[playerid] == index)
-			UpdateTimer[playerid] = SetTimerEx("UpdateCheckPointInfo", 300, false, "dfffd", playerid, x, y, z, index);
+			UpdateTimer[playerid] = SetTimerEx("UpdateCheckPointInfo", 300+50*Iter_Count(PlayerExistCheckpoint), false, "dfffd", playerid, x, y, z, index);
 		return 1;
 	}
 	PlayerOldPos[playerid][0] = ppos[0];
@@ -146,7 +146,7 @@ func UpdateCheckPointInfo(playerid, Float:x, Float:y, Float:z, index){
 	if(GetPlayerInterior(playerid)){
 		PlayerTextDrawSetString(playerid, Text_Player[playerid][1], "Loading...");
 		if(IsPlayerCheckpointActive(playerid) && PlayerCheckPointIndex[playerid] == index)
-			UpdateTimer[playerid] = SetTimerEx("UpdateCheckPointInfo", 300, false, "dfffd", playerid, x, y, z, index);
+			UpdateTimer[playerid] = SetTimerEx("UpdateCheckPointInfo", 300+50*Iter_Count(PlayerExistCheckpoint), false, "dfffd", playerid, x, y, z, index);
 		return 1;
 	}
 	if(IsValidMapZone(map)){
@@ -162,14 +162,14 @@ func UpdateCheckPointInfo(playerid, Float:x, Float:y, Float:z, index){
 		UpdateARROW(playerid, Path);
     	DestroyPath(Path);
 		if(IsPlayerCheckpointActive(playerid) && PlayerCheckPointIndex[playerid] == index)
-			UpdateTimer[playerid] = SetTimerEx("UpdateCheckPointInfo", 300, false, "dfffd", playerid, x, y, z, index);
+			UpdateTimer[playerid] = SetTimerEx("UpdateCheckPointInfo", 300+50*Iter_Count(PlayerExistCheckpoint), false, "dfffd", playerid, x, y, z, index);
 		else return 1;
 		if(distance == 0)PlayerTextDrawSetString(playerid, Text_Player[playerid][1], "Khoang cach duong bay: %.1f km~n~Khoang cach mat dat: Khong xac dinh~n~Vi tri cua ban: %s", GetDistanceToPoint2D(ppos[0], ppos[1], x, y), locationname);
 		else PlayerTextDrawSetString(playerid, Text_Player[playerid][1], "Khoang cach duong bay: %.1f km~n~Khoang cach mat dat: %.1f km~n~Vi tri cua ban: %s", GetDistanceToPoint2D(ppos[0], ppos[1], x, y), distance, locationname);
 	}
 	else{
 		if(IsPlayerCheckpointActive(playerid) && PlayerCheckPointIndex[playerid] == index)
-			UpdateTimer[playerid] = SetTimerEx("UpdateCheckPointInfo", 300, false, "dfffd", playerid, x, y, z, index);
+			UpdateTimer[playerid] = SetTimerEx("UpdateCheckPointInfo", 300+50*Iter_Count(PlayerExistCheckpoint), false, "dfffd", playerid, x, y, z, index);
 		else return 1;
 		PlayerTextDrawSetString(playerid, Text_Player[playerid][1], "Khoang cach duong bay: %.1f km~n~Khoang cach mat dat: Khong xac dinh~n~Vi tri cua ban: %s", GetDistanceToPoint2D(ppos[0], ppos[1], x, y), locationname);
 	}
@@ -196,9 +196,11 @@ static DestroyCheckPointInfo(playerid){
 			Cache[playerid][o] = 0;
 		}
 	}
+	Iter_Remove(PlayerExistCheckpoint, playerid);
 	return 1;
 }
 static InitCheckPointInfo(playerid, Float:x, Float:y, Float:z){
+	Iter_Add(PlayerExistCheckpoint, playerid);
 	new locationname[MAX_MAP_ZONE_NAME];
 	new MapZone:map = GetMapZoneAtPoint2D(x, y);
 	if(IsValidMapZone(map)){
@@ -232,7 +234,7 @@ static InitCheckPointInfo(playerid, Float:x, Float:y, Float:z){
 
 	if(UpdateTimer[playerid] != -1)KillTimer(UpdateTimer[playerid]);
 	PlayerCheckPointIndex[playerid]++;
-	UpdateTimer[playerid] = SetTimerEx("UpdateCheckPointInfo", 300, false, "dfffd", playerid, x, y, z, PlayerCheckPointIndex[playerid]);
+	UpdateTimer[playerid] = SetTimerEx("UpdateCheckPointInfo", 300+50*Iter_Count(PlayerExistCheckpoint), false, "dfffd", playerid, x, y, z, PlayerCheckPointIndex[playerid]);
 	return 1;
 }
 public OnOutgoingRPC(playerid, rpcid, BitStream:bs){

@@ -7,7 +7,6 @@
 #include <Pawn.CMD>
 #include <sscanf2>
 #include <progress2>
-#include <textdraw-streamer>
 #include <YSI-Includes\YSI_Coding\y_hooks>
 #include <YSI-Includes\YSI_Coding\y_va>
 #include <YSI-Includes\YSI_Coding\y_timers>

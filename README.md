@@ -26,7 +26,6 @@
 |`PawnPlus`|IS4Code|https://github.com/IS4Code/PawnPlus|
 |`ColAndreas`|Pottus|https://github.com/Pottus/ColAndreas|
 |`pawn-memory`|BigETI|https://github.com/BigETI/pawn-memory|
-|`textdraw-streamer`|nexquery|https://github.com/nexquery/samp-textdraw-streamer|
 |`streamer`|samp-incognito|https://github.com/samp-incognito/samp-streamer-plugin|
 |`mapfix`|Nexius|https://github.com/NexiusTailer/MapFix|
 |`map-zones`|kristoisberg|https://github.com/kristoisberg/samp-map-zones|
@@ -120,17 +119,17 @@ Bạn có thể tự do sử dụng, sửa đổi, và phân phối lại – mi
 
 ## 📸 Ảnh Màn Hình | Screenshots
 
-- **Door System**
+- **Door System**  
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/doorcommand.png)
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/door.png)
-- **Splash Screen & Teleport System**
+- **Splash Screen & Teleport System**  
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/SplashScreen.gif)
-- **SetGod & NameTags & SafeZone System**
+- **SetGod & NameTags & SafeZone System**  
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/SetGodANDSafeZone.png)
-- **MessageBox & NPC System**
+- **MessageBox & NPC System**  
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/npc1.png)
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/npc2.png)
-- **CheckPoint Info System**
+- **CheckPoint Info System**  
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/cpinfo1.png)
 ![VNBASE-PROJECT](https://github.com/PhucDiamond-VN/VNBASE/blob/main/System-Image/cpinfo2.png)
 

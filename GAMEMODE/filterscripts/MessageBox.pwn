@@ -4,7 +4,6 @@
 #include <progress2>
 #include <YSI-Includes\YSI_Coding\y_va>
 #include <YSI-Includes\YSI_Data\y_iterate>
-#include <textdraw-streamer>
 #define HIDE 0
 #define ALL 1
 #define BUTTON 2
@@ -173,10 +172,10 @@ public OnFilterScriptInit(){
 	TextDrawSetSelectable(Text_Global[3], true);
 	return 1;
 }
-public OnClickDynamicTextDraw(playerid, Text:textid)
+public OnPlayerClickTextDraw(playerid, Text:clickedid)
 {
 	if(!isplayershow[playerid])return 0;
-	if(textid == Text_Global[3] || textid == INVALID_TEXT_DRAW){
+	if(clickedid == Text_Global[3] || clickedid == INVALID_TEXT_DRAW){
 		new func[32];
 		func = MB_Func[playerid];
 		Hide(playerid);

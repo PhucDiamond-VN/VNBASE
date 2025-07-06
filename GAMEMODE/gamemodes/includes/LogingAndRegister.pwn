@@ -68,7 +68,7 @@ func OnPlayerRegister(playerid){
     SetPlayerCameraLookAt(playerid, GocNhin_Cammera_Dangky);
     SetPlayerVirtualWorld(playerid, playerid+1);
     TogglePlayerControllable(playerid, false);
-    Dialog_Show(playerid, PlayerRegister, DIALOG_STYLE_INPUT, "Dang ky tai khoan", "Tai khoan nay hien khong ton tai.\nhay nhap mat khau vao ben duoi de tien hanh dang ky.", "Xong", "Thoat");
+    Dialog_Show(playerid, PlayerRegister, DIALOG_STYLE_PASSWORD, "Dang ky tai khoan", "Tai khoan nay hien khong ton tai.\nhay nhap mat khau vao ben duoi de tien hanh dang ky.", "Xong", "Thoat");
 }
 Dialog:PlayerLogin(playerid, response, listitem, inputtext[]) {
     if(response){
@@ -87,7 +87,7 @@ func OnPlayerLoging(playerid){
         SetPlayerCameraLookAt(playerid, GocNhin_Cammera_Dangky);
         SetPlayerVirtualWorld(playerid, playerid+1);
         TogglePlayerControllable(playerid, false);
-        Dialog_Show(playerid, PlayerLogin, DIALOG_STYLE_INPUT, "Dang nhap", "Tai khoan nay da ton tai.\nhay nhap mat khau vao ben duoi de tien hanh dang nhap.", "Xong", "Thoat");
+        Dialog_Show(playerid, PlayerLogin, DIALOG_STYLE_PASSWORD, "Dang nhap", "Tai khoan nay da ton tai.\nhay nhap mat khau vao ben duoi de tien hanh dang nhap.", "Xong", "Thoat");
         return 1;
     }
     TogglePlayerControllable(playerid, true);
