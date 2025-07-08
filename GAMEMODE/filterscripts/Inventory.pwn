@@ -49,18 +49,23 @@ enum eplayeritem{
 	bool:pequip,
 	bool:plock
 }
-enum pInfo{
-	bool:ShowInv,
-	InPage,
-	slec
-}
-static PlayerInfo[MAX_PLAYERS][pInfo] = {{false, 0, -1},...};
 static pSlotEmtype[eplayeritem] = {
 	-1,
 	0,
 	false,
-	false
+	true
 };
+enum pInfo{
+	bool:ShowInv,
+	InPage,
+	slec,
+	CountClick,
+	CountClickSlot,
+	CountClickTimer,
+	SplitItemSlot,
+	SlotDelete
+}
+static PlayerInfo[MAX_PLAYERS][pInfo] = {{false, 0, -1, 0, -1, -1, 0, -1},...};
 static PlayerItem[MAX_PLAYERS][MAX_PLAYER_SLOT][eplayeritem];
 static bool:IsValidItem(itemid){
 	if(itemid < 0 || itemid >= MAX_ITEM)return false;
@@ -73,11 +78,12 @@ static GetFreeSlotItem(){
 }
 static GetPlayerFreeSlot(playerid){
 	for(new slot;slot<MAX_PLAYER_SLOT;slot++){
-		if(PlayerItem[playerid][slot][pitemid] == -1)return slot;
+		if(PlayerItem[playerid][slot][pitemid] == -1 && !PlayerItem[playerid][slot][plock])return slot;
 	}
 	return -1;
 }
 static GetPlayerItemFreeAmount(playerid, slot, itemid){
+	if(PlayerItem[playerid][slot][plock])return 0;
 	return Item[itemid][imax_amount] - PlayerItem[playerid][slot][pamount];
 }
 static GetSlotInPage(itemslot, page){
@@ -108,6 +114,7 @@ static UpdatePlayerSlot(playerid, slot){
 			new itemslot = GetItemSlotForSlot(slot);
 			new Float:x, Float:y;
 			PlayerTextDrawGetPos(playerid, Text_Player[playerid][itemslot], x, y);
+			if(PlayerInfo[playerid][SlotDelete] == slot)PlayerInfo[playerid][SlotDelete] = -1;
 			if(PlayerInfo[playerid][slec] >= GetMinSlotInPage(PlayerInfo[playerid][InPage]) && PlayerInfo[playerid][slec] <= GetMaxSlotInPage(PlayerInfo[playerid][InPage])){
 				if(SlecTD[playerid] == PlayerText:-1){
 					SlecTD[playerid] = CreatePlayerTextDraw(playerid, x+9, y+9, "PARTICLE:target256");
@@ -139,51 +146,68 @@ static UpdatePlayerSlot(playerid, slot){
 				SlecTD[playerid] = PlayerText:-1;
 			}
 
-			if(PlayerItem[playerid][slot][pequip]){
-				if(EquipTD[playerid][itemslot] == PlayerText:-1){
-					EquipTD[playerid][itemslot] = CreatePlayerTextDraw(playerid, x+38, y+37, "PARTICLE:lockon");
-					PlayerTextDrawTextSize(playerid, EquipTD[playerid][itemslot], 12.000, 13.000);
-					PlayerTextDrawAlignment(playerid, EquipTD[playerid][itemslot], TEXT_DRAW_ALIGN_LEFT);
-					PlayerTextDrawColour(playerid, EquipTD[playerid][itemslot], -1);
-					PlayerTextDrawSetShadow(playerid, EquipTD[playerid][itemslot], 0);
-					PlayerTextDrawSetOutline(playerid, EquipTD[playerid][itemslot], 0);
-					PlayerTextDrawBackgroundColour(playerid, EquipTD[playerid][itemslot], 255);
-					PlayerTextDrawFont(playerid, EquipTD[playerid][itemslot], TEXT_DRAW_FONT_SPRITE_DRAW);
-					PlayerTextDrawSetProportional(playerid, EquipTD[playerid][itemslot], true);
-				}
-				PlayerTextDrawShow(playerid, EquipTD[playerid][itemslot]);
-			}
-			else if(EquipTD[playerid][itemslot] != PlayerText:-1){
-				PlayerTextDrawDestroy(playerid, EquipTD[playerid][itemslot]);
-				EquipTD[playerid][itemslot] = PlayerText:-1;
-			}
-
-			if(PlayerItem[playerid][slot][pamount] > 1){
-				if(AmountTD[playerid][itemslot] == PlayerText:-1){
-					AmountTD[playerid][itemslot] = CreatePlayerTextDraw(playerid, x+1, y-1, "%d", PlayerItem[playerid][slot][pamount]);
-					PlayerTextDrawLetterSize(playerid, AmountTD[playerid][itemslot], 0.200, 1.399);
-					PlayerTextDrawAlignment(playerid, AmountTD[playerid][itemslot], TEXT_DRAW_ALIGN_LEFT);
-					PlayerTextDrawColour(playerid, AmountTD[playerid][itemslot], -1);
-					PlayerTextDrawSetShadow(playerid, AmountTD[playerid][itemslot], 1);
-					PlayerTextDrawSetOutline(playerid, AmountTD[playerid][itemslot], 1);
-					PlayerTextDrawBackgroundColour(playerid, AmountTD[playerid][itemslot], 150);
-					PlayerTextDrawFont(playerid, AmountTD[playerid][itemslot], TEXT_DRAW_FONT_1);
-					PlayerTextDrawSetProportional(playerid, AmountTD[playerid][itemslot], true);
-				}
-				else PlayerTextDrawSetString(playerid, AmountTD[playerid][itemslot], "%d", PlayerItem[playerid][slot][pamount]);
-				PlayerTextDrawShow(playerid, AmountTD[playerid][itemslot]);
-			}
-			else if(AmountTD[playerid][itemslot] != PlayerText:-1){
-				PlayerTextDrawDestroy(playerid, AmountTD[playerid][itemslot]);
-				AmountTD[playerid][itemslot] = PlayerText:-1;
-			}
-			if(PlayerItem[playerid][slot][pitemid] != -1){
+			if(!PlayerItem[playerid][slot][plock] && PlayerItem[playerid][slot][pitemid] != -1){
 				PlayerTextDrawSetPreviewModel(playerid, Text_Player[playerid][itemslot], Item[PlayerItem[playerid][slot][pitemid]][imodel]);
 				PlayerTextDrawSetPreviewRot(playerid, Text_Player[playerid][itemslot], Item[PlayerItem[playerid][slot][pitemid]][irotx], Item[PlayerItem[playerid][slot][pitemid]][iroty], 0.000, Item[PlayerItem[playerid][slot][pitemid]][izoom]);
+
+				if(PlayerItem[playerid][slot][pamount] > 1){
+					if(AmountTD[playerid][itemslot] == PlayerText:-1){
+						AmountTD[playerid][itemslot] = CreatePlayerTextDraw(playerid, x+1, y-1, "%d", PlayerItem[playerid][slot][pamount]);
+						PlayerTextDrawLetterSize(playerid, AmountTD[playerid][itemslot], 0.200, 1.399);
+						PlayerTextDrawAlignment(playerid, AmountTD[playerid][itemslot], TEXT_DRAW_ALIGN_LEFT);
+						PlayerTextDrawColour(playerid, AmountTD[playerid][itemslot], -1);
+						PlayerTextDrawSetShadow(playerid, AmountTD[playerid][itemslot], 1);
+						PlayerTextDrawSetOutline(playerid, AmountTD[playerid][itemslot], 1);
+						PlayerTextDrawBackgroundColour(playerid, AmountTD[playerid][itemslot], 150);
+						PlayerTextDrawFont(playerid, AmountTD[playerid][itemslot], TEXT_DRAW_FONT_1);
+						PlayerTextDrawSetProportional(playerid, AmountTD[playerid][itemslot], true);
+					}
+					else PlayerTextDrawSetString(playerid, AmountTD[playerid][itemslot], "%d", PlayerItem[playerid][slot][pamount]);
+					PlayerTextDrawShow(playerid, AmountTD[playerid][itemslot]);
+				}
+				else if(AmountTD[playerid][itemslot] != PlayerText:-1){
+					PlayerTextDrawDestroy(playerid, AmountTD[playerid][itemslot]);
+					AmountTD[playerid][itemslot] = PlayerText:-1;
+				}
+				if(PlayerItem[playerid][slot][pequip]){
+					if(EquipTD[playerid][itemslot] == PlayerText:-1){
+						EquipTD[playerid][itemslot] = CreatePlayerTextDraw(playerid, x+38, y+37, "PARTICLE:lockon");
+						PlayerTextDrawTextSize(playerid, EquipTD[playerid][itemslot], 12.000, 13.000);
+						PlayerTextDrawAlignment(playerid, EquipTD[playerid][itemslot], TEXT_DRAW_ALIGN_LEFT);
+						PlayerTextDrawColour(playerid, EquipTD[playerid][itemslot], -1);
+						PlayerTextDrawSetShadow(playerid, EquipTD[playerid][itemslot], 0);
+						PlayerTextDrawSetOutline(playerid, EquipTD[playerid][itemslot], 0);
+						PlayerTextDrawBackgroundColour(playerid, EquipTD[playerid][itemslot], 255);
+						PlayerTextDrawFont(playerid, EquipTD[playerid][itemslot], TEXT_DRAW_FONT_SPRITE_DRAW);
+						PlayerTextDrawSetProportional(playerid, EquipTD[playerid][itemslot], true);
+					}
+					PlayerTextDrawShow(playerid, EquipTD[playerid][itemslot]);
+				}
+				else if(EquipTD[playerid][itemslot] != PlayerText:-1){
+					PlayerTextDrawDestroy(playerid, EquipTD[playerid][itemslot]);
+					EquipTD[playerid][itemslot] = PlayerText:-1;
+				}
 			}
 			else{
-				PlayerTextDrawSetPreviewModel(playerid, Text_Player[playerid][itemslot], 1122);
-				PlayerTextDrawSetPreviewRot(playerid, Text_Player[playerid][itemslot], 0, 0, 0.000, 10.000);
+				new bool:tmplock = PlayerItem[playerid][slot][plock];
+				PlayerItem[playerid][slot] = pSlotEmtype;
+				PlayerItem[playerid][slot][plock] = tmplock;
+				if(tmplock){
+					PlayerTextDrawSetPreviewModel(playerid, Text_Player[playerid][itemslot], 19804);
+					PlayerTextDrawSetPreviewRot(playerid, Text_Player[playerid][itemslot], 0, 0, 0.000, 1.000);
+				}
+				else{
+					PlayerTextDrawSetPreviewModel(playerid, Text_Player[playerid][itemslot], 1122);
+					PlayerTextDrawSetPreviewRot(playerid, Text_Player[playerid][itemslot], 0, 0, 0.000, 10.000);
+				}
+				if(AmountTD[playerid][itemslot] != PlayerText:-1){
+					PlayerTextDrawDestroy(playerid, AmountTD[playerid][itemslot]);
+					AmountTD[playerid][itemslot] = PlayerText:-1;
+				}
+				if(EquipTD[playerid][itemslot] != PlayerText:-1){
+					PlayerTextDrawDestroy(playerid, EquipTD[playerid][itemslot]);
+					EquipTD[playerid][itemslot] = PlayerText:-1;
+				}
 			}
 			PlayerTextDrawShow(playerid, Text_Player[playerid][itemslot]);
 		}
@@ -254,6 +278,13 @@ func HidePlayerInv(playerid){
 		PlayerInfo[playerid][ShowInv] = false;
 		CancelSelectTextDraw(playerid);
 	}
+	if(PlayerInfo[playerid][CountClickTimer] != -1){
+		KillTimer(PlayerInfo[playerid][CountClickTimer]);
+		PlayerInfo[playerid][CountClickTimer] = -1;
+		PlayerInfo[playerid][CountClickSlot] = -1;
+		PlayerInfo[playerid][CountClick] = 0;
+	}
+	PlayerInfo[playerid][SlotDelete] = -1;
 	return 1;
 }
 func IsPlayerItemFull(playerid, itemid, amount){
@@ -428,11 +459,11 @@ public OnFilterScriptInit(){
 	TextDrawSetProportional(Text_Global[9], true);
 	TextDrawSetSelectable(Text_Global[9], true);
 
-	testitem = InitItem(1, 1, 0, 0, 1, false, false, false);
+	testitem = InitItem(1, 1, 0, 0, 1, false, true, false);
 	SetItemName(testitem, "Skin Ong lao");
 	SetItemContent(testitem, "Day la mot skin ong lao danh ca...");
 
-	testitem1= InitItem(0, 1, 0, 0, 1, false, false, false);
+	testitem1= InitItem(0, 1, 0, 0, 1, false, false, true);
 	SetItemName(testitem1, "Skin CJ");
 	SetItemContent(testitem1, "Day la Skin main...");
 
@@ -675,6 +706,15 @@ static DestroyPlayerInvTextDraw(playerid){
 	}
 	return 1;
 }
+Dialog:DeleteDialog(playerid, response, listitem, inputtext[]){
+	if(PlayerInfo[playerid][SlotDelete] != -1 && response){
+		PlayerItem[playerid][PlayerInfo[playerid][SlotDelete]] = pSlotEmtype;
+		PlayerInfo[playerid][slec] = -1;
+		UpdatePlayerSlot(playerid, PlayerInfo[playerid][SlotDelete]);
+	}
+	PlayerInfo[playerid][SlotDelete] = -1;
+	return 1;
+}
 public OnPlayerClickTextDraw(playerid, Text:clickedid)
 {
 	if(IsPlayerShowInv(playerid)){
@@ -684,6 +724,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 				UpdatePlayerAllSlot(playerid);
 				UpdatePageBar(playerid);
 			}
+			return 1;
 		}
 		if(clickedid == Text_Global[4]){ // right
 			if(PlayerInfo[playerid][InPage] < MAX_PLAYER_INV_PAGE){
@@ -691,6 +732,19 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 				UpdatePlayerAllSlot(playerid);
 				UpdatePageBar(playerid);
 			}
+			return 1;
+		}
+		if(clickedid == Text_Global[6]){ // sot rac
+			if(PlayerInfo[playerid][slec] != -1){
+				if(PlayerItem[playerid][PlayerInfo[playerid][slec]][pitemid] != -1){
+					PlayerInfo[playerid][SlotDelete] = PlayerInfo[playerid][slec];
+					Dialog_Show(playerid, DeleteDialog, DIALOG_STYLE_MSGBOX, "Xoa item", va_return("Ban co chac muon xoa item nay [%s x%d]", Item[PlayerItem[playerid][PlayerInfo[playerid][slec]][pitemid]][iname], PlayerItem[playerid][PlayerInfo[playerid][slec]][pamount]), "Xoa", "Huy");
+				}
+			}
+			return 1;
+		}
+		if(clickedid == Text_Global[7]){ // vut ra dat
+			return 1;
 		}
 		if(clickedid == INVALID_TEXT_DRAW || clickedid == Text_Global[9]){
 			HidePlayerInv(playerid);
@@ -699,20 +753,100 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 	}
     return 0;
 }
+func OnPlayerUseItem(playerid, slot){
+	SendClientMessage(playerid, -1, "OnPlayerUseItem(%d, %d)", playerid, slot);
+	return 1;
+}
+func OnPlayerSplitItem(playerid, slot){
+	SendClientMessage(playerid, -1, "OnPlayerUseItem(%d, %d)", playerid, slot);
+	return 1;
+}
+func OnPlayerEquipItem(playerid, slot){
+	SendClientMessage(playerid, -1, "OnPlayerEquipItem(%d, %d)", playerid, slot);
+	return 1;
+}
+func OnPlayerClickLockSlot(playerid, slot){
+	SendClientMessage(playerid, -1, "OnPlayerClickLockSlot(%d, %d)", playerid, slot);
+	return 1;
+}
+Dialog:SplitItem(playerid, response, listitem, inputtext[]){
+	if(response && IsValidItem(PlayerItem[playerid][PlayerInfo[playerid][SplitItemSlot]][pitemid]) && PlayerItem[playerid][PlayerInfo[playerid][SplitItemSlot]][pamount] > 1){
+		new splitvalue = strval(inputtext);
+		if(PlayerItem[playerid][PlayerInfo[playerid][SplitItemSlot]][pamount] > splitvalue > 0){
+			new newslot = GetPlayerFreeSlot(playerid);
+			if(newslot != -1){
+				PlayerItem[playerid][newslot] = PlayerItem[playerid][PlayerInfo[playerid][SplitItemSlot]];
+				PlayerItem[playerid][newslot][pamount] = splitvalue;
+				PlayerItem[playerid][PlayerInfo[playerid][SplitItemSlot]][pamount] -= splitvalue;
+				UpdatePlayerSlot(playerid, newslot);
+				UpdatePlayerSlot(playerid, PlayerInfo[playerid][SplitItemSlot]);
+			}
+		}
+	}
+	return 1;
+}
+func fCountClick(playerid){
+	if(PlayerInfo[playerid][CountClick] == 1){
+		if(IsValidItem(PlayerItem[playerid][PlayerInfo[playerid][CountClickSlot]][pitemid])){
+			if(Item[PlayerItem[playerid][PlayerInfo[playerid][CountClickSlot]][pitemid]][iuse]){
+				CallRemoteFunction("OnPlayerUseItem", "dd", playerid, PlayerInfo[playerid][CountClickSlot]);
+			}
+			else if(Item[PlayerItem[playerid][PlayerInfo[playerid][CountClickSlot]][pitemid]][iequip]){
+				CallRemoteFunction("OnPlayerEquipItem", "dd", playerid, PlayerInfo[playerid][CountClickSlot]);
+			}
+		}
+	}
+	else if(PlayerInfo[playerid][CountClick] > 1){
+		if(IsValidItem(PlayerItem[playerid][PlayerInfo[playerid][CountClickSlot]][pitemid]) && PlayerItem[playerid][PlayerInfo[playerid][CountClickSlot]][pamount] > 1 && GetPlayerFreeSlot(playerid) != -1){
+			PlayerInfo[playerid][SplitItemSlot] = PlayerInfo[playerid][CountClickSlot];
+			Dialog_Show(playerid, SplitItem, DIALOG_STYLE_INPUT, "Tach item", "Nhap vao so luong ban muon tach", "Tach", "Huy");
+		}
+	}
+	PlayerInfo[playerid][CountClickSlot] = -1;
+	PlayerInfo[playerid][CountClick] = 0;
+	PlayerInfo[playerid][CountClickTimer] = -1;
+	return 1;
+}
 public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid){
 	if(IsPlayerShowInv(playerid)){
 		for(new itemslot;itemslot<MAX_PLAYER_ITEM_SLOT;itemslot++){
 			if(playertextid == Text_Player[playerid][itemslot]){
 				new slot = GetSlotInPage(itemslot, PlayerInfo[playerid][InPage]);
+				if(PlayerItem[playerid][slot][plock]){
+					CallRemoteFunction("OnPlayerClickLockSlot", "dd", playerid, slot);
+					return 1;
+				}
+				if(PlayerInfo[playerid][CountClickSlot] != slot){
+					if(PlayerInfo[playerid][CountClickTimer] != -1){
+						KillTimer(PlayerInfo[playerid][CountClickTimer]);
+						PlayerInfo[playerid][CountClick] = 0;
+						PlayerInfo[playerid][CountClickTimer] = -1;
+						PlayerInfo[playerid][CountClickSlot] = -1;
+					}
+					PlayerInfo[playerid][CountClickSlot] = slot;
+					PlayerInfo[playerid][CountClickTimer] = SetTimerEx("fCountClick", 400, false, "%d", playerid);
+				}
+				else{
+					PlayerInfo[playerid][CountClick]++;
+				}
+
 				if(PlayerInfo[playerid][slec] != slot){
 					if(PlayerInfo[playerid][slec] != -1 && PlayerItem[playerid][PlayerInfo[playerid][slec]][pitemid] != -1){
 						swarpandmerge(playerid, PlayerInfo[playerid][slec], slot);
 						PlayerInfo[playerid][slec] = -1;
+
+						if(PlayerInfo[playerid][CountClickTimer] != -1){
+							KillTimer(PlayerInfo[playerid][CountClickTimer]);
+							PlayerInfo[playerid][CountClick] = 0;
+							PlayerInfo[playerid][CountClickTimer] = -1;
+							PlayerInfo[playerid][CountClickSlot] = -1;
+						}
 					}
 					else PlayerInfo[playerid][slec] = slot;
 				}
-				else
+				else{
 					PlayerInfo[playerid][slec] = -1;
+				}
 				UpdatePlayerSlot(playerid, slot);
 				return 1;
 			}

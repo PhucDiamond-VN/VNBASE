@@ -51,7 +51,7 @@ hook OnGameModeInit(){
 
 Dialog:PlayerRegister(playerid, response, listitem, inputtext[]) {
     if(response){
-        if(strlen(inputtext) < MinPassLen || strlen(inputtext) >= MaxPassLen)return Dialog_Show(playerid, PlayerRegister, DIALOG_STYLE_INPUT, "Dang ky tai khoan", va_return("Tai khoan nay hien khong ton tai.\nhay nhap mat khau vao ben duoi de tien hanh dang ky.\n\n     Mat khau khong duoc qua ngan hoac qua dai (%d - %d ky tu)", MinPassLen, MaxPassLen-1), "Xong", "Thoat");
+        if(strlen(inputtext) < MinPassLen || strlen(inputtext) >= MaxPassLen)return Dialog_Show(playerid, PlayerRegister, DIALOG_STYLE_PASSWORD, "Dang ky tai khoan", va_return("Tai khoan nay hien khong ton tai.\nhay nhap mat khau vao ben duoi de tien hanh dang ky.\n\n     Mat khau khong duoc qua ngan hoac qua dai (%d - %d ky tu)", MinPassLen, MaxPassLen-1), "Xong", "Thoat");
         format(PlayerInfo[playerid][password], MaxPassLen, inputtext);
         InsertPlayer(playerid, PlayerInfo[playerid][password]);
         DefaultRegisterValue(playerid);
@@ -72,7 +72,7 @@ func OnPlayerRegister(playerid){
 }
 Dialog:PlayerLogin(playerid, response, listitem, inputtext[]) {
     if(response){
-        if(strlen(inputtext) < MinPassLen || strlen(inputtext) > MaxPassLen || strcmp(PlayerInfo[playerid][password], inputtext, true) != 0)return Dialog_Show(playerid, PlayerLogin, DIALOG_STYLE_INPUT, "Dang nhap", "Tai khoan nay da ton tai.\nhay nhap mat khau vao ben duoi de tien hanh dang nhap.\n\n     [!] Sai mat khau", "Xong", "Thoat");
+        if(strlen(inputtext) < MinPassLen || strlen(inputtext) > MaxPassLen || strcmp(PlayerInfo[playerid][password], inputtext, true) != 0)return Dialog_Show(playerid, PlayerLogin, DIALOG_STYLE_PASSWORD, "Dang nhap", "Tai khoan nay da ton tai.\nhay nhap mat khau vao ben duoi de tien hanh dang nhap.\n\n     [!] Sai mat khau", "Xong", "Thoat");
         PlayerInfo[playerid][IsLoging] = true;
         CallLocalFunction("OnPlayerLoging", "d", playerid);
     }
