@@ -5,13 +5,21 @@
 #include <YSI-Includes\YSI_Data\y_iterate>
 #include <a_mysql>
 #include <easydialog>
-#define MAX_ITEM 1000
 #define func%0(%1) forward %0(%1); public %0(%1)
+
+#define MAX_LOCKER 1000
+#define MAX_LOCKER_PAGE 20
+#define MAX_LOCKER_ITEM_SLOT 16
+#define MAX_LOCKER_SLOT MAX_LOCKER_PAGE*MAX_LOCKER_ITEM_SLOT
+#define MAX_LOCKER_NAME 50
+
+#define MAX_ITEM 1000
 #define MAX_PLAYER_INV_PAGE 20
 #define MAX_PLAYER_ITEM_SLOT 12
 #define MAX_PLAYER_SLOT MAX_PLAYER_ITEM_SLOT*MAX_PLAYER_INV_PAGE
 #define MAX_ITEM_NAME 50
 #define MAX_ITEM_CONTENT 256
+
 static Text: Text_Global[10];
 static PlayerText: Text_Player[MAX_PLAYERS][15] = {{PlayerText:-1},...};
 static PlayerText: SlecTD[MAX_PLAYERS] = {PlayerText:-1,...};
@@ -55,6 +63,7 @@ static pSlotEmtype[eplayeritem] = {
 	false,
 	true
 };
+static PlayerItem[MAX_PLAYERS][MAX_PLAYER_SLOT][eplayeritem];
 enum pInfo{
 	bool:ShowInv,
 	InPage,
@@ -66,7 +75,20 @@ enum pInfo{
 	SlotDelete
 }
 static PlayerInfo[MAX_PLAYERS][pInfo] = {{false, 0, -1, 0, -1, -1, 0, -1},...};
-static PlayerItem[MAX_PLAYERS][MAX_PLAYER_SLOT][eplayeritem];
+enum eLockerInfo{
+	lname[MAX_LOCKER_NAME],
+	Float:lx,
+	Float:ly,
+	Float:lz,
+	lint,
+	lvw
+}
+static LockerInfo[MAX_LOCKER][eLockerInfo];
+enum eLockerItem{
+	litemid,
+	lamount
+}
+static LockerItem[MAX_LOCKER][MAX_LOCKER_SLOT][eLockerItem];
 static bool:IsValidItem(itemid){
 	if(itemid < 0 || itemid >= MAX_ITEM)return false;
 	if(Item[itemid][imodel] != -1)return true;
@@ -255,6 +277,29 @@ static swarpandmerge(playerid, slot1, slot2){
 	UpdatePlayerSlot(playerid, slot2);
 	return 1;
 }
+static DestroyPlayerInvTextDraw(playerid){
+	for(new i;i<sizeof Text_Player[];i++){
+		if(Text_Player[playerid][i] != PlayerText:-1){
+			PlayerTextDrawDestroy(playerid, Text_Player[playerid][i]);
+			Text_Player[playerid][i] = PlayerText:-1;
+		}
+	}
+	if(SlecTD[playerid] != PlayerText:-1){
+		PlayerTextDrawDestroy(playerid, SlecTD[playerid]);
+		SlecTD[playerid] = PlayerText:-1;
+	}
+	for(new itemslot;itemslot<MAX_PLAYER_ITEM_SLOT;itemslot++){
+		if(EquipTD[playerid][itemslot] != PlayerText:-1){
+			PlayerTextDrawDestroy(playerid, EquipTD[playerid][itemslot]);
+			EquipTD[playerid][itemslot] = PlayerText:-1;
+		}
+		if(AmountTD[playerid][itemslot] != PlayerText:-1){
+			PlayerTextDrawDestroy(playerid, AmountTD[playerid][itemslot]);
+			AmountTD[playerid][itemslot] = PlayerText:-1;
+		}
+	}
+	return 1;
+}
 func IsPlayerShowInv(playerid){
 	return PlayerInfo[playerid][ShowInv];
 }
@@ -269,6 +314,16 @@ func ShowPlayerInv(playerid){
 		UpdatePlayerAllSlot(playerid);
 		SelectTextDraw(playerid, 0xf2ed5cff);
 	}
+	return 1;
+}
+func UnlockPlayerSlot(playerid, slot){
+	if(slot < 0 || slot >= MAX_PLAYER_SLOT)return 0;
+	PlayerItem[playerid][slot][plock] = false;
+	return 1;
+}
+func LockPlayerSlot(playerid, slot){
+	if(slot < 0 || slot >= MAX_PLAYER_SLOT)return 0;
+	PlayerItem[playerid][slot][plock] = true;
 	return 1;
 }
 func HidePlayerInv(playerid){
@@ -288,6 +343,7 @@ func HidePlayerInv(playerid){
 	return 1;
 }
 func IsPlayerItemFull(playerid, itemid, amount){
+	if(!IsValidItem(itemid))return 1;
 	for(new slot;slot<MAX_PLAYER_SLOT;slot++){
 		amount -= GetPlayerItemFreeAmount(playerid, slot, itemid);
 		if(amount <= 0)return 0;
@@ -309,16 +365,17 @@ func InitItem(model, max_amount, Float:rotx, Float:roty, Float:zoom, bool:trade,
 	return itemid;
 }
 func SetItemName(itemid, const name[]){
-	if(itemid < 0 || itemid >= MAX_ITEM)return 0;
+	if(!IsValidItem(itemid))return 0;
 	format(Item[itemid][iname], MAX_ITEM_NAME, name);
 	return 1;
 }
 func SetItemContent(itemid, const content[]){
-	if(itemid < 0 || itemid >= MAX_ITEM)return 0;
+	if(!IsValidItem(itemid))return 0;
 	format(Item[itemid][icontent], MAX_ITEM_CONTENT, content);
 	return 1;
 }
 func AddPlayerItem(playerid, itemid, amount){
+	if(!IsValidItem(itemid))return 0;
 	if(!IsPlayerItemFull(playerid, itemid, amount)){
 		for(new slot; slot<MAX_PLAYER_SLOT;slot++){
 			if(PlayerItem[playerid][slot][pitemid] == itemid || PlayerItem[playerid][slot][pitemid] == -1){
@@ -683,29 +740,11 @@ static InitPlayerTextDraw(playerid){
 	PlayerTextDrawSetProportional(playerid, Text_Player[playerid][14], true);
 	return 1;
 }
-static DestroyPlayerInvTextDraw(playerid){
-	for(new i;i<sizeof Text_Player[];i++){
-		if(Text_Player[playerid][i] != PlayerText:-1){
-			PlayerTextDrawDestroy(playerid, Text_Player[playerid][i]);
-			Text_Player[playerid][i] = PlayerText:-1;
-		}
-	}
-	if(SlecTD[playerid] != PlayerText:-1){
-		PlayerTextDrawDestroy(playerid, SlecTD[playerid]);
-		SlecTD[playerid] = PlayerText:-1;
-	}
-	for(new itemslot;itemslot<MAX_PLAYER_ITEM_SLOT;itemslot++){
-		if(EquipTD[playerid][itemslot] != PlayerText:-1){
-			PlayerTextDrawDestroy(playerid, EquipTD[playerid][itemslot]);
-			EquipTD[playerid][itemslot] = PlayerText:-1;
-		}
-		if(AmountTD[playerid][itemslot] != PlayerText:-1){
-			PlayerTextDrawDestroy(playerid, AmountTD[playerid][itemslot]);
-			AmountTD[playerid][itemslot] = PlayerText:-1;
-		}
-	}
-	return 1;
+
+func InitLocker(const LockerName[], Float:x, Float:y, Float:z, interior, virtualworld){
+
 }
+
 Dialog:DeleteDialog(playerid, response, listitem, inputtext[]){
 	if(PlayerInfo[playerid][SlotDelete] != -1 && response){
 		PlayerItem[playerid][PlayerInfo[playerid][SlotDelete]] = pSlotEmtype;
@@ -824,7 +863,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid){
 						PlayerInfo[playerid][CountClickSlot] = -1;
 					}
 					PlayerInfo[playerid][CountClickSlot] = slot;
-					PlayerInfo[playerid][CountClickTimer] = SetTimerEx("fCountClick", 400, false, "%d", playerid);
+					PlayerInfo[playerid][CountClickTimer] = SetTimerEx("fCountClick", 500, false, "%d", playerid);
 				}
 				else{
 					PlayerInfo[playerid][CountClick]++;
